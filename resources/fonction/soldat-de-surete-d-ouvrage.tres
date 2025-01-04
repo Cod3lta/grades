@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://bkflr2drl2apt"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_hkpy1"]
+[ext_resource type="Texture2D" uid="uid://bucnavodj6b58" path="res://assets/fonctions/soldat-de-surete-d-ouvrage-a.svg" id="2_13cre"]
+[ext_resource type="Texture2D" uid="uid://rgs2c0upvha4" path="res://assets/fonctions/soldat-de-surete-d-ouvrage-c.svg" id="3_8htgs"]
+
+[resource]
+script = ExtResource("1_hkpy1")
+description = ""
+name = "TR_FONCTION_SOLDAT_DE_SURETE_D_OUVRAGE_NAME"
+texture_a = ExtResource("2_13cre")
+texture_c = ExtResource("3_8htgs")
+favourite = false

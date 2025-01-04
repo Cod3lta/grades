@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://sbmufixuyicg"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_uq81i"]
+[ext_resource type="Texture2D" uid="uid://cyk64n4e00fyq" path="res://assets/fonctions/escadre-d-aviation-a.svg" id="2_ioie5"]
+[ext_resource type="Texture2D" uid="uid://dlfnnhbsevnus" path="res://assets/fonctions/escadre-d-aviation-c.svg" id="3_i1fks"]
+
+[resource]
+script = ExtResource("1_uq81i")
+description = ""
+name = "TR_FONCTION_ESCADRE_D_AVIATION_NAME"
+texture_a = ExtResource("2_ioie5")
+texture_c = ExtResource("3_i1fks")
+favourite = false

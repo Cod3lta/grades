@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://ch01fr8514acq"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_lmaxs"]
+[ext_resource type="Texture2D" uid="uid://b3kvanj0phnmb" path="res://assets/fonctions/marechal-ferrant-a.svg" id="2_k7lov"]
+[ext_resource type="Texture2D" uid="uid://db72mp0p4oj14" path="res://assets/fonctions/marechal-ferrant-c.svg" id="3_jppkn"]
+
+[resource]
+script = ExtResource("1_lmaxs")
+description = ""
+name = "TR_FONCTION_MARECHAL_FERRANT_NAME"
+texture_a = ExtResource("2_k7lov")
+texture_c = ExtResource("3_jppkn")
+favourite = false

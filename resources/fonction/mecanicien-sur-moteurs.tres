@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://wrscvvid73s0"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_wj0tg"]
+[ext_resource type="Texture2D" uid="uid://clokogw4ct8ee" path="res://assets/fonctions/mecanicien-sur-moteurs-a.svg" id="2_j3a3d"]
+[ext_resource type="Texture2D" uid="uid://rcuovkni48n5" path="res://assets/fonctions/mecanicien-sur-moteurs-c.svg" id="3_7lqhc"]
+
+[resource]
+script = ExtResource("1_wj0tg")
+description = ""
+name = "TR_FONCTION_MECANICIEN_SUR_MOTEURS_NAME"
+texture_a = ExtResource("2_j3a3d")
+texture_c = ExtResource("3_7lqhc")
+favourite = false

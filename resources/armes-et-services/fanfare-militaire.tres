@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ArmeService" load_steps=4 format=3 uid="uid://c5nlahnn4brdk"]
+
+[ext_resource type="Script" path="res://resources/armes-et-services/arme-service.gd" id="1_wkhje"]
+[ext_resource type="Texture2D" uid="uid://clhisiusgg3mf" path="res://assets/armes-et-services/fanfare-militaire-a.svg" id="2_4q7ic"]
+[ext_resource type="Texture2D" uid="uid://1kapveb46u02" path="res://assets/armes-et-services/fanfare-militaire-c.svg" id="3_025ec"]
+
+[resource]
+script = ExtResource("1_wkhje")
+type = 3
+name = "TR_ARME_SERVICE_FANFARE_MILITAIRE_NAME"
+texture_a = ExtResource("2_4q7ic")
+texture_c = ExtResource("3_025ec")
+favourite = false

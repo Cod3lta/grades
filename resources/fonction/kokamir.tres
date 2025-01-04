@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://dbde20ixlu3ei"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_nvcqr"]
+[ext_resource type="Texture2D" uid="uid://n6u5ien3ux31" path="res://assets/fonctions/kokamir-a.svg" id="2_ekht6"]
+[ext_resource type="Texture2D" uid="uid://d1eqd4hmh15xg" path="res://assets/fonctions/kokamir-c.svg" id="3_1iy56"]
+
+[resource]
+script = ExtResource("1_nvcqr")
+description = ""
+name = "TR_FONCTION_KOKAMIR_NAME"
+texture_a = ExtResource("2_ekht6")
+texture_c = ExtResource("3_1iy56")
+favourite = false

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Epaulettes" load_steps=3 format=3 uid="uid://bt474oi73fxfh"]
+
+[ext_resource type="Script" path="res://resources/epaulettes/epaulettes.gd" id="1_skunj"]
+[ext_resource type="Texture2D" uid="uid://bwmgc78bmapi6" path="res://assets/epaulettes/forces-speciales.svg" id="2_dnjqp"]
+
+[resource]
+script = ExtResource("1_skunj")
+incorporation = "TR_EPAULETTE_FORCES_SPECIALES_INCORPORATION"
+name = "TR_EPAULETTE_FORCES_SPECIALES_NAME"
+texture_a = ExtResource("2_dnjqp")
+favourite = false

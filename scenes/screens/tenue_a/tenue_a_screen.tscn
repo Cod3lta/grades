@@ -1,0 +1,196 @@
+[gd_scene load_steps=22 format=3 uid="uid://bajttu25cdiit"]
+
+[ext_resource type="Theme" uid="uid://si08rmojap6x" path="res://theme.tres" id="1_e4tux"]
+[ext_resource type="PackedScene" uid="uid://c80ksj3kscv3s" path="res://scenes/soldier/soldier_3d.tscn" id="2_e41rt"]
+[ext_resource type="Script" path="res://scenes/screens/tenue_a/tenue_a_screen.gd" id="2_ojc7a"]
+[ext_resource type="PackedScene" uid="uid://005sihdith00" path="res://scenes/screens/main/main-screen-button/main_screen_button.tscn" id="3_usimh"]
+[ext_resource type="Texture2D" uid="uid://3qkfbnadefxr" path="res://assets/curve-level.svg" id="4_34w00"]
+[ext_resource type="PackedScene" uid="uid://c6kxyioevk1j5" path="res://scenes/pages/coming_soon/coming_soon.tscn" id="5_4avop"]
+[ext_resource type="Script" path="res://scenes/screens/responsive_grid.gd" id="5_6tpxs"]
+[ext_resource type="PackedScene" uid="uid://bym4vanvvjp36" path="res://scenes/pages/berets/berets.tscn" id="5_fh6la"]
+[ext_resource type="PackedScene" uid="uid://dmddhc440cmmp" path="res://scenes/pages/distinctions/distinctions.tscn" id="6_dwcp1"]
+[ext_resource type="PackedScene" uid="uid://bo37frw78vf4i" path="res://scenes/pages/armes-et-services/arme_services.tscn" id="7_iplgh"]
+[ext_resource type="Texture2D" uid="uid://c3hlyqrvfhldb" path="res://assets/boutons/beret.svg" id="7_uq62n"]
+[ext_resource type="Texture2D" uid="uid://ccfkp33q0bn2a" path="res://assets/boutons/armes_services_a.svg" id="9_v1xph"]
+[ext_resource type="PackedScene" uid="uid://b01r6rg673tdj" path="res://scenes/pages/fonctions/fonctions.tscn" id="10_5q4ck"]
+[ext_resource type="PackedScene" uid="uid://dvrsyuwqp3ayg" path="res://scenes/pages/epaulettes/epaulettes.tscn" id="11_wnkhi"]
+[ext_resource type="Texture2D" uid="uid://c0gixvjkrnkx1" path="res://assets/boutons/fonction-a.svg" id="12_52ik6"]
+[ext_resource type="Texture2D" uid="uid://dalgp22k2doyw" path="res://assets/boutons/distinction.svg" id="13_nvatl"]
+[ext_resource type="Texture2D" uid="uid://dvbu8m6p810ks" path="res://assets/boutons/epaulette-a.svg" id="15_1hxwt"]
+
+[sub_resource type="Gradient" id="Gradient_omsg2"]
+colors = PackedColorArray(0.113725, 0.113725, 0.113725, 1, 0.113725, 0.113725, 0.113725, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_asi2s"]
+gradient = SubResource("Gradient_omsg2")
+height = 100
+fill_from = Vector2(0, 1)
+fill_to = Vector2(0, 0)
+
+[sub_resource type="Gradient" id="Gradient_or3kf"]
+colors = PackedColorArray(0.113725, 0.113725, 0.113725, 1, 0.113725, 0.113725, 0.113725, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_lns0l"]
+gradient = SubResource("Gradient_or3kf")
+height = 100
+fill_to = Vector2(0, 1)
+
+[node name="TenueAScreen" type="MarginContainer" node_paths=PackedStringArray("soldier_scene")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 1089.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("1_e4tux")
+script = ExtResource("2_ojc7a")
+soldier_scene = NodePath("VBoxContainer/MarginContainer2/SubViewportContainer/SubViewport/Node3D")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 1000)
+layout_mode = 2
+
+[node name="TextureRect2" type="TextureRect" parent="VBoxContainer/MarginContainer2"]
+layout_mode = 2
+texture = ExtResource("4_34w00")
+stretch_mode = 6
+
+[node name="TextureRect4" type="TextureRect" parent="VBoxContainer/MarginContainer2"]
+layout_mode = 2
+texture = SubResource("GradientTexture2D_asi2s")
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/MarginContainer2"]
+layout_mode = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+
+[node name="Label" type="Label" parent="VBoxContainer/MarginContainer2/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_type_variation = &"Header2"
+text = "TR_TENUE_A"
+uppercase = true
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="VBoxContainer/MarginContainer2"]
+layout_mode = 2
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="VBoxContainer/MarginContainer2/SubViewportContainer"]
+own_world_3d = true
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(1080, 1000)
+render_target_update_mode = 4
+
+[node name="Node3D" parent="VBoxContainer/MarginContainer2/SubViewportContainer/SubViewport" instance=ExtResource("2_e41rt")]
+tenue = "A"
+
+[node name="TextureRect3" type="TextureRect" parent="VBoxContainer/MarginContainer2"]
+layout_mode = 2
+size_flags_vertical = 8
+texture = SubResource("GradientTexture2D_asi2s")
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+vertical_scroll_mode = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/MarginContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_bottom = 200
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/MarginContainer/ScrollContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 45
+
+[node name="GridContainer3" type="GridContainer" parent="VBoxContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 20
+theme_override_constants/v_separation = 20
+columns = 2
+script = ExtResource("5_6tpxs")
+
+[node name="BtnBerets" parent="VBoxContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/GridContainer3" instance=ExtResource("3_usimh")]
+custom_minimum_size = Vector2(0, 490)
+layout_mode = 2
+text = "TR_BERET"
+soldier_position = 1
+linked_page = ExtResource("5_fh6la")
+background_image = ExtResource("7_uq62n")
+background_image_size = 0.35
+background_image_position = Vector2(-35, 0)
+
+[node name="BtnArmesServices" parent="VBoxContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/GridContainer3" instance=ExtResource("3_usimh")]
+custom_minimum_size = Vector2(0, 490)
+layout_mode = 2
+text = "TR_ARMES_ET_SERVICES"
+soldier_position = 2
+linked_page = ExtResource("7_iplgh")
+background_image = ExtResource("9_v1xph")
+background_image_size = 0.35
+background_image_position = Vector2(-35, 0)
+
+[node name="BtnPlaquettesNominatives" parent="VBoxContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/GridContainer3" instance=ExtResource("3_usimh")]
+visible = false
+layout_mode = 2
+text = "PLAQUETTES NOMINATIVES"
+linked_page = ExtResource("5_4avop")
+
+[node name="BtnFonctions" parent="VBoxContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/GridContainer3" instance=ExtResource("3_usimh")]
+custom_minimum_size = Vector2(0, 490)
+layout_mode = 2
+text = "TR_FONCTIONS"
+soldier_position = 3
+linked_page = ExtResource("10_5q4ck")
+background_image = ExtResource("12_52ik6")
+background_image_size = 0.35
+background_image_position = Vector2(-35, 0)
+
+[node name="BtnSpecialisations" parent="VBoxContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/GridContainer3" instance=ExtResource("3_usimh")]
+visible = false
+layout_mode = 2
+text = "SPÉCIALISATIONS"
+linked_page = ExtResource("5_4avop")
+
+[node name="BtnDistinctions" parent="VBoxContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/GridContainer3" instance=ExtResource("3_usimh")]
+custom_minimum_size = Vector2(0, 490)
+layout_mode = 2
+text = "TR_DISTINCTIONS"
+soldier_position = 4
+linked_page = ExtResource("6_dwcp1")
+background_image = ExtResource("13_nvatl")
+background_image_size = 0.35
+background_image_position = Vector2(-31, 0)
+
+[node name="BtnEpaulettes" parent="VBoxContainer/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/GridContainer3" instance=ExtResource("3_usimh")]
+custom_minimum_size = Vector2(0, 490)
+layout_mode = 2
+text = "TR_EPAULETTES"
+soldier_position = 5
+linked_page = ExtResource("11_wnkhi")
+background_image = ExtResource("15_1hxwt")
+background_image_size = 0.35
+background_image_position = Vector2(-35, 0)
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+texture = SubResource("GradientTexture2D_lns0l")

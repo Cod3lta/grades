@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://di183jtkfhqik"]
+
+[ext_resource type="Script" path="res://scenes/swipe_down.gd" id="1_8bhmv"]
+
+[node name="SwipeDown" type="MarginContainer"]
+script = ExtResource("1_8bhmv")

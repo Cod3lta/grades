@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dhq0g6258e0bu"]
+
+[ext_resource type="Script" path="res://scenes/pages/modal_opener.gd" id="1_hcd1o"]
+[ext_resource type="PackedScene" uid="uid://bxudtfhb0m15g" path="res://scenes/touch_button.tscn" id="2_w7dvs"]
+
+[node name="ModalOpener" type="MarginContainer" groups=["show_modal"]]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hcd1o")
+
+[node name="Button" parent="." instance=ExtResource("2_w7dvs")]
+visibility_layer = 0
+layout_mode = 2
+mouse_filter = 1
+
+[connection signal="touch_pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ArmeService" load_steps=4 format=3 uid="uid://c4e7wev7mpkcm"]
+
+[ext_resource type="Script" path="res://resources/armes-et-services/arme-service.gd" id="1_n5sdo"]
+[ext_resource type="Texture2D" uid="uid://bkckuiwa666ja" path="res://assets/armes-et-services/police-militaire-a.svg" id="2_6q5f0"]
+[ext_resource type="Texture2D" uid="uid://bjpxw0yf6jc5a" path="res://assets/armes-et-services/police-militaire-c.svg" id="3_aa5au"]
+
+[resource]
+script = ExtResource("1_n5sdo")
+type = 1
+name = "TR_ARME_SERVICE_POLICE_MILITAIRE_NAME"
+texture_a = ExtResource("2_6q5f0")
+texture_c = ExtResource("3_aa5au")
+favourite = false

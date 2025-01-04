@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Grade" load_steps=4 format=3 uid="uid://boy667ohdsjs5"]
+
+[ext_resource type="Script" path="res://resources/grades/grades.gd" id="1_61vmn"]
+[ext_resource type="Texture2D" uid="uid://nopon42rf1qn" path="res://assets/grades/adjudant-sous-officier-a.svg" id="2_cw1w4"]
+[ext_resource type="Texture2D" uid="uid://b262mnycl1skl" path="res://assets/grades/adjudant-sous-officier-c.svg" id="3_gfvve"]
+
+[resource]
+script = ExtResource("1_61vmn")
+short = "TR_ADJUDANT_SOUS_OFFICIER_SHORT"
+description = "TR_ADJUDANT_SOUS_OFFICIER_DESCRIPTION"
+type = 2
+name = "TR_ADJUDANT_SOUS_OFFICIER_NAME"
+texture_a = ExtResource("2_cw1w4")
+texture_c = ExtResource("3_gfvve")

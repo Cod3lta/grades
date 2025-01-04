@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://cqdud5ctj8vbm"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_myjeg"]
+[ext_resource type="Texture2D" uid="uid://8jw0wp7114p" path="res://assets/fonctions/pionnier-informatique-a.svg" id="2_7haka"]
+[ext_resource type="Texture2D" uid="uid://glht8ffrwv38" path="res://assets/fonctions/pionnier-informatique-c.svg" id="3_vr572"]
+
+[resource]
+script = ExtResource("1_myjeg")
+description = ""
+name = "TR_FONCTION_PIONNIER_INFORMATIQUE_NAME"
+texture_a = ExtResource("2_7haka")
+texture_c = ExtResource("3_vr572")
+favourite = false

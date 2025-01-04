@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ArmeService" load_steps=4 format=3 uid="uid://sowmemk3l20s"]
+
+[ext_resource type="Script" path="res://resources/armes-et-services/arme-service.gd" id="1_nfucq"]
+[ext_resource type="Texture2D" uid="uid://c5ai5uijh0nvm" path="res://assets/armes-et-services/genie-a.svg" id="2_1j1fu"]
+[ext_resource type="Texture2D" uid="uid://jeqv047txvj3" path="res://assets/armes-et-services/genie-c.svg" id="3_l0c2k"]
+
+[resource]
+script = ExtResource("1_nfucq")
+type = 1
+name = "TR_ARME_SERVICE_GENIE_NAME"
+texture_a = ExtResource("2_1j1fu")
+texture_c = ExtResource("3_l0c2k")
+favourite = false

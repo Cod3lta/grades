@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://bobod4s77rvri"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_80y2g"]
+[ext_resource type="Texture2D" uid="uid://dbbuwajqia71f" path="res://assets/fonctions/detachement-d-exploration-de-larmee-a.svg" id="2_aqim6"]
+[ext_resource type="Texture2D" uid="uid://dvk32o0h8q8dp" path="res://assets/fonctions/detachement-d-exploration-de-larmee-c.svg" id="3_xemxp"]
+
+[resource]
+script = ExtResource("1_80y2g")
+description = ""
+name = "TR_FONCTION_DETACHEMENT_D_EXPLORATION_DE_LARMEE_NAME"
+texture_a = ExtResource("2_aqim6")
+texture_c = ExtResource("3_xemxp")
+favourite = false

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://d0l3tkol0mf7n"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_k7mx0"]
+[ext_resource type="Texture2D" uid="uid://dex6wlxwloxdj" path="res://assets/fonctions/automobiliste-a.svg" id="2_4s8yg"]
+[ext_resource type="Texture2D" uid="uid://4g5cink220rd" path="res://assets/fonctions/automobiliste-c.svg" id="3_8kqcc"]
+
+[resource]
+script = ExtResource("1_k7mx0")
+description = ""
+name = "TR_FONCTION_AUTOMOBILISTE_NAME"
+texture_a = ExtResource("2_4s8yg")
+texture_c = ExtResource("3_8kqcc")
+favourite = false

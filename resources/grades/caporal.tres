@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Grade" load_steps=4 format=3 uid="uid://bmhjg7ipiaw5b"]
+
+[ext_resource type="Script" path="res://resources/grades/grades.gd" id="1_s0bvc"]
+[ext_resource type="Texture2D" uid="uid://dk8pkxc2m8tc1" path="res://assets/grades/caporal-a.svg" id="2_c4stp"]
+[ext_resource type="Texture2D" uid="uid://boi0dji814xjs" path="res://assets/grades/caporal-c.svg" id="3_l4bia"]
+
+[resource]
+script = ExtResource("1_s0bvc")
+short = "TR_CAPORAL_SHORT"
+description = "TR_CAPORAL_DESCRIPTION"
+type = 1
+name = "TR_CAPORAL_NAME"
+texture_a = ExtResource("2_c4stp")
+texture_c = ExtResource("3_l4bia")

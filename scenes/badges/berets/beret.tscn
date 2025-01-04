@@ -1,0 +1,51 @@
+[gd_scene load_steps=5 format=3 uid="uid://bxvnvn6uf6fi7"]
+
+[ext_resource type="Theme" uid="uid://si08rmojap6x" path="res://theme.tres" id="1_w1ypy"]
+[ext_resource type="Script" path="res://scenes/badges/berets/beret.gd" id="2_8wgnx"]
+[ext_resource type="Resource" uid="uid://qnyfugpie1bd" path="res://resources/berets/artillerie.tres" id="3_pygsi"]
+[ext_resource type="Texture2D" uid="uid://b2ylwp8bv0tuw" path="res://assets/berets/artillerie.svg" id="4_73a2c"]
+
+[node name="Beret" type="MarginContainer" node_paths=PackedStringArray("name_label", "texture_rect_a", "text_container")]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 100.0
+grow_horizontal = 2
+size_flags_vertical = 0
+theme = ExtResource("1_w1ypy")
+script = ExtResource("2_8wgnx")
+tenue_type = "A"
+r = ExtResource("3_pygsi")
+name_label = NodePath("HBoxContainer/Name")
+texture_rect_a = NodePath("HBoxContainer/Texture")
+text_container = NodePath("HBoxContainer/Name")
+setup = Callable()
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_constants/separation = 60
+
+[node name="Texture" type="TextureRect" parent="HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(350, 150)
+layout_mode = 2
+texture = ExtResource("4_73a2c")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Name" type="Label" parent="HBoxContainer"]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 45
+text = "Béret rouge"
+autowrap_mode = 3
+
+[node name="Button" type="Button" parent="."]
+visibility_layer = 0
+layout_mode = 2
+mouse_filter = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

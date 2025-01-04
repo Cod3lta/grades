@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://dtdwuttpm0s5s"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_5tbd1"]
+[ext_resource type="Texture2D" uid="uid://omo883ee70yc" path="res://assets/fonctions/fusilier-de-bord-a.svg" id="2_ir4kv"]
+[ext_resource type="Texture2D" uid="uid://ckrnf717y3epw" path="res://assets/fonctions/fusilier-de-bord-c.svg" id="3_6mmck"]
+
+[resource]
+script = ExtResource("1_5tbd1")
+description = ""
+name = "TR_FONCTION_FUSILIER_DE_BORD_NAME"
+texture_a = ExtResource("2_ir4kv")
+texture_c = ExtResource("3_6mmck")
+favourite = false

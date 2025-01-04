@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://jij3eelano0t"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_a76sx"]
+[ext_resource type="Texture2D" uid="uid://cqv6j2maxy8pj" path="res://assets/fonctions/pionnier-d-ondes-dirigees-a.svg" id="2_os87c"]
+[ext_resource type="Texture2D" uid="uid://4ylkrtrkktju" path="res://assets/fonctions/pionnier-d-ondes-dirigees-c.svg" id="3_dculq"]
+
+[resource]
+script = ExtResource("1_a76sx")
+description = ""
+name = "TR_FONCTION_PIONNIER_D_ONDES_DIRIGEES_NAME"
+texture_a = ExtResource("2_os87c")
+texture_c = ExtResource("3_dculq")
+favourite = false

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Particulier" load_steps=3 format=3 uid="uid://baia6fs2l38hp"]
+
+[ext_resource type="Script" path="res://resources/particuliers/particulier.gd" id="1_1ju4h"]
+[ext_resource type="Texture2D" uid="uid://dm03apyaoc573" path="res://assets/particuliers/carriere.svg" id="2_iv45v"]
+
+[resource]
+script = ExtResource("1_1ju4h")
+type = 0
+name = "TR_PARTICULIERS_ASPIRANT_CARRIERE_NAME"
+texture_c = ExtResource("2_iv45v")
+favourite = false

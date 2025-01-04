@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://c2st1moga83xo"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_7mnkr"]
+[ext_resource type="Texture2D" uid="uid://bukl2cpkpnsx6" path="res://assets/fonctions/soldat-du-train-a.svg" id="2_4irjw"]
+[ext_resource type="Texture2D" uid="uid://cjproheablisc" path="res://assets/fonctions/soldat-du-train-c.svg" id="3_6pfdp"]
+
+[resource]
+script = ExtResource("1_7mnkr")
+description = ""
+name = "TR_FONCTION_SOLDAT_DU_TRAIN_NAME"
+texture_a = ExtResource("2_4irjw")
+texture_c = ExtResource("3_6pfdp")
+favourite = false

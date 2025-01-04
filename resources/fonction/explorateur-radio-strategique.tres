@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://bkxuct5sopp7"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_aivtp"]
+[ext_resource type="Texture2D" uid="uid://cvd2yy08hprcy" path="res://assets/fonctions/explorateur-radio-strategique-a.svg" id="2_s372f"]
+[ext_resource type="Texture2D" uid="uid://b4tqxdc7so157" path="res://assets/fonctions/explorateur-radio-strategique-c.svg" id="3_xmd20"]
+
+[resource]
+script = ExtResource("1_aivtp")
+description = ""
+name = "TR_FONCTION_EXPLORATEUR_RADIO_STRATEGIQUE_NAME"
+texture_a = ExtResource("2_s372f")
+texture_c = ExtResource("3_xmd20")
+favourite = false

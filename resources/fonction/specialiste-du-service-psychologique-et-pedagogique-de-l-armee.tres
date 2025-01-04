@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://bjsf3x2qh6pxr"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_eoagy"]
+[ext_resource type="Texture2D" uid="uid://cis0rsbt6ga18" path="res://assets/fonctions/specialiste-du-service-psychologique-et-pedagogique-de-l-armee-a.svg" id="2_1c15e"]
+[ext_resource type="Texture2D" uid="uid://cy7j7phnhqbo1" path="res://assets/fonctions/specialiste-du-service-psychologique-et-pedagogique-de-l-armee-c.svg" id="3_omi31"]
+
+[resource]
+script = ExtResource("1_eoagy")
+description = ""
+name = "TR_FONCTION_SPECIALISTE_DU_SERVICE_PSYCHOLOGIQUE_ET_PEDAGOGIQUE_DE_L_ARMEE_NAME"
+texture_a = ExtResource("2_1c15e")
+texture_c = ExtResource("3_omi31")
+favourite = false

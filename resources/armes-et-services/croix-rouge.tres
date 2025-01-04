@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ArmeService" load_steps=4 format=3 uid="uid://oagnaqncpo6p"]
+
+[ext_resource type="Script" path="res://resources/armes-et-services/arme-service.gd" id="1_huccv"]
+[ext_resource type="Texture2D" uid="uid://dhd4hhb4r8nyp" path="res://assets/armes-et-services/croix-rouge-a.svg" id="2_gl6v6"]
+[ext_resource type="Texture2D" uid="uid://cosb6c2jq6tx6" path="res://assets/armes-et-services/croix-rouge-c.svg" id="3_7akk6"]
+
+[resource]
+script = ExtResource("1_huccv")
+type = 3
+name = "TR_ARME_SERVICE_CROIX_ROUGE_NAME"
+texture_a = ExtResource("2_gl6v6")
+texture_c = ExtResource("3_7akk6")
+favourite = false

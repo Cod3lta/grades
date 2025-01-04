@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://qv8km65honhu"
+
+[deps]
+
+files=["res://localization/screens.fr.translation", "res://localization/screens.de.translation"]
+
+source_file="res://localization/screens.csv"
+dest_files=["res://localization/screens.fr.translation", "res://localization/screens.de.translation"]
+
+[params]
+
+compress=true
+delimiter=1

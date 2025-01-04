@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Distinction" load_steps=3 format=3 uid="uid://cymj5smerha2t"]
+
+[ext_resource type="Script" path="res://resources/distinctions/distinction.gd" id="1_cdnnh"]
+[ext_resource type="Texture2D" uid="uid://i6ahybdy3are" path="res://assets/distinctions/prestation.svg" id="2_fgri4"]
+
+[resource]
+script = ExtResource("1_cdnnh")
+description = "TR_DISTINCTIONS_PRESTATION_DESCRIPTION"
+type = 1
+name = "TR_DISTINCTIONS_PRESTATION_NAME"
+texture_a = ExtResource("2_fgri4")
+favourite = false

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ArmeService" load_steps=4 format=3 uid="uid://cjn2usptledv1"]
+
+[ext_resource type="Script" path="res://resources/armes-et-services/arme-service.gd" id="1_2rcp7"]
+[ext_resource type="Texture2D" uid="uid://b66vtb1x7abc5" path="res://assets/armes-et-services/forces-speciales-a.svg" id="2_8ix3e"]
+[ext_resource type="Texture2D" uid="uid://mdmma3sro7cb" path="res://assets/armes-et-services/forces-speciales-c.svg" id="3_rcbtn"]
+
+[resource]
+script = ExtResource("1_2rcp7")
+type = 1
+name = "TR_ARME_SERVICE_FORCES_SPECIALES_NAME"
+texture_a = ExtResource("2_8ix3e")
+texture_c = ExtResource("3_rcbtn")
+favourite = false

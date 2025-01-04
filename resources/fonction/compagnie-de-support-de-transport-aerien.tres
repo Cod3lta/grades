@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://dvhcx0o4kdob6"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_o324j"]
+[ext_resource type="Texture2D" uid="uid://cc6k8dy1pf2q1" path="res://assets/fonctions/compagnie-de-support-de-transport-aerien-a.svg" id="2_jkksm"]
+[ext_resource type="Texture2D" uid="uid://iva5qqdfs1fy" path="res://assets/fonctions/compagnie-de-support-de-transport-aerien-c.svg" id="3_7p710"]
+
+[resource]
+script = ExtResource("1_o324j")
+description = ""
+name = "TR_FONCTION_COMPAGNIE_DE_SUPPORT_DE_TRANSPORT_AERIEN_NAME"
+texture_a = ExtResource("2_jkksm")
+texture_c = ExtResource("3_7p710")
+favourite = false

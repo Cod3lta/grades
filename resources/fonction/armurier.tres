@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://d0cyf1t2rtx1r"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_6017q"]
+[ext_resource type="Texture2D" uid="uid://bqip1c8edrm52" path="res://assets/fonctions/armurier-a.svg" id="2_xwh7t"]
+[ext_resource type="Texture2D" uid="uid://dvjrhukkb1ipu" path="res://assets/fonctions/armurier-c.svg" id="3_51nqs"]
+
+[resource]
+script = ExtResource("1_6017q")
+description = ""
+name = "TR_FONCTION_ARMURIER_NAME"
+texture_a = ExtResource("2_xwh7t")
+texture_c = ExtResource("3_51nqs")
+favourite = false

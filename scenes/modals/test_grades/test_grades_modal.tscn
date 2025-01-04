@@ -1,0 +1,378 @@
+[gd_scene load_steps=14 format=3 uid="uid://y3qjiifo2qey"]
+
+[ext_resource type="Theme" uid="uid://si08rmojap6x" path="res://theme.tres" id="1_nru20"]
+[ext_resource type="Script" path="res://scenes/modals/test_grades/test_grades_modal.gd" id="2_ddiqv"]
+[ext_resource type="Script" path="res://scenes/modals/test_grades/guess_texture.gd" id="3_cxqki"]
+[ext_resource type="PackedScene" uid="uid://b6ik7amcaq60k" path="res://scenes/badges/grade/grade.tscn" id="4_2st6e"]
+[ext_resource type="Resource" uid="uid://dumrf83su8txo" path="res://resources/grades/recrue.tres" id="6_vj3hf"]
+[ext_resource type="Script" path="res://scenes/modals/test_grades/line_animation.gd" id="9_8rwi8"]
+[ext_resource type="Script" path="res://scenes/modals/test_grades/guess_name.gd" id="9_lxxpd"]
+[ext_resource type="Script" path="res://scenes/modals/test_grades/results.gd" id="11_bpy44"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l41ck"]
+bg_color = Color(0.2, 0.2, 0.2, 1)
+
+[sub_resource type="Animation" id="Animation_xtppj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Line2D:points")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array(0, 0, 0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_48qig"]
+resource_name = "correct"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Line2D:points")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4),
+"transitions": PackedFloat32Array(4, 0.25, 1),
+"update": 0,
+"values": [PackedVector2Array(-60, 0, -60, 0, -60, 0), PackedVector2Array(-60, 0, -20, 40, -20, 40), PackedVector2Array(-60, 0, -20, 40, 60, -40)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_la81d"]
+_data = {
+"RESET": SubResource("Animation_xtppj"),
+"correct": SubResource("Animation_48qig")
+}
+
+[sub_resource type="Curve" id="Curve_iajw7"]
+min_value = -1.0
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[node name="TestGradesModal" type="MarginContainer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 358.0
+grow_horizontal = 2
+theme = ExtResource("1_nru20")
+script = ExtResource("2_ddiqv")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 40
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="CancelButton" type="Button" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.584314, 0.584314, 0.584314, 1)
+theme_override_styles/focus = SubResource("StyleBoxFlat_l41ck")
+theme_override_styles/hover = SubResource("StyleBoxFlat_l41ck")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_l41ck")
+theme_override_styles/normal = SubResource("StyleBoxFlat_l41ck")
+text = "TR_ANNULER"
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.584314, 0.584314, 0.584314, 1)
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="VBoxContainer"]
+layout_mode = 2
+max_value = 1.0
+show_percentage = false
+
+[node name="GuessContainer" type="MarginContainer" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/margin_top = 100
+
+[node name="TabContainer" type="TabContainer" parent="VBoxContainer/GuessContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+current_tab = 0
+tabs_visible = false
+
+[node name="GuessTexture" type="VBoxContainer" parent="VBoxContainer/GuessContainer/TabContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 75
+script = ExtResource("3_cxqki")
+metadata/_tab_index = 0
+
+[node name="TopContainer" type="HBoxContainer" parent="VBoxContainer/GuessContainer/TabContainer/GuessTexture"]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+
+[node name="Name" type="Label" parent="VBoxContainer/GuessContainer/TabContainer/GuessTexture/TopContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+theme_type_variation = &"Header3"
+text = "name"
+autowrap_mode = 2
+
+[node name="LineAnimation" type="CenterContainer" parent="VBoxContainer/GuessContainer/TabContainer/GuessTexture/TopContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("9_8rwi8")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="VBoxContainer/GuessContainer/TabContainer/GuessTexture/TopContainer/LineAnimation"]
+libraries = {
+"": SubResource("AnimationLibrary_la81d")
+}
+
+[node name="Line2D" type="Line2D" parent="VBoxContainer/GuessContainer/TabContainer/GuessTexture/TopContainer/LineAnimation"]
+points = PackedVector2Array(0, 0, 0, 0, 0, 0)
+width = 20.0
+
+[node name="Control" type="Control" parent="VBoxContainer/GuessContainer/TabContainer/GuessTexture/TopContainer/LineAnimation"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="GridContainer" parent="VBoxContainer/GuessContainer/TabContainer/GuessTexture"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/h_separation = 60
+theme_override_constants/v_separation = 60
+columns = 2
+
+[node name="Choice1" type="MarginContainer" parent="VBoxContainer/GuessContainer/TabContainer/GuessTexture/VBoxContainer"]
+layout_mode = 2
+
+[node name="Grade" parent="VBoxContainer/GuessContainer/TabContainer/GuessTexture/VBoxContainer/Choice1" instance=ExtResource("4_2st6e")]
+layout_mode = 2
+size_flags_horizontal = 4
+r = ExtResource("6_vj3hf")
+show_text = false
+
+[node name="Button" type="Button" parent="VBoxContainer/GuessContainer/TabContainer/GuessTexture/VBoxContainer/Choice1"]
+visibility_layer = 0
+layout_mode = 2
+
+[node name="Choice2" type="MarginContainer" parent="VBoxContainer/GuessContainer/TabContainer/GuessTexture/VBoxContainer"]
+layout_mode = 2
+
+[node name="Grade" parent="VBoxContainer/GuessContainer/TabContainer/GuessTexture/VBoxContainer/Choice2" instance=ExtResource("4_2st6e")]
+layout_mode = 2
+size_flags_horizontal = 4
+r = ExtResource("6_vj3hf")
+show_text = false
+
+[node name="Button" type="Button" parent="VBoxContainer/GuessContainer/TabContainer/GuessTexture/VBoxContainer/Choice2"]
+visibility_layer = 0
+layout_mode = 2
+
+[node name="Choice3" type="MarginContainer" parent="VBoxContainer/GuessContainer/TabContainer/GuessTexture/VBoxContainer"]
+layout_mode = 2
+
+[node name="Grade" parent="VBoxContainer/GuessContainer/TabContainer/GuessTexture/VBoxContainer/Choice3" instance=ExtResource("4_2st6e")]
+layout_mode = 2
+size_flags_horizontal = 4
+r = ExtResource("6_vj3hf")
+show_text = false
+
+[node name="Button" type="Button" parent="VBoxContainer/GuessContainer/TabContainer/GuessTexture/VBoxContainer/Choice3"]
+visibility_layer = 0
+layout_mode = 2
+
+[node name="Choice4" type="MarginContainer" parent="VBoxContainer/GuessContainer/TabContainer/GuessTexture/VBoxContainer"]
+layout_mode = 2
+
+[node name="Grade" parent="VBoxContainer/GuessContainer/TabContainer/GuessTexture/VBoxContainer/Choice4" instance=ExtResource("4_2st6e")]
+layout_mode = 2
+size_flags_horizontal = 4
+r = ExtResource("6_vj3hf")
+show_text = false
+
+[node name="Button" type="Button" parent="VBoxContainer/GuessContainer/TabContainer/GuessTexture/VBoxContainer/Choice4"]
+visibility_layer = 0
+layout_mode = 2
+
+[node name="GuessName" type="VBoxContainer" parent="VBoxContainer/GuessContainer/TabContainer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 100
+script = ExtResource("9_lxxpd")
+metadata/_tab_index = 1
+
+[node name="TopContainer" type="GridContainer" parent="VBoxContainer/GuessContainer/TabContainer/GuessName"]
+layout_mode = 2
+columns = 3
+
+[node name="Control" type="Control" parent="VBoxContainer/GuessContainer/TabContainer/GuessName/TopContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Grade" parent="VBoxContainer/GuessContainer/TabContainer/GuessName/TopContainer" instance=ExtResource("4_2st6e")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 6
+show_text = false
+
+[node name="LineAnimation" type="CenterContainer" parent="VBoxContainer/GuessContainer/TabContainer/GuessName/TopContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("9_8rwi8")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="VBoxContainer/GuessContainer/TabContainer/GuessName/TopContainer/LineAnimation"]
+libraries = {
+"": SubResource("AnimationLibrary_la81d")
+}
+
+[node name="Line2D" type="Line2D" parent="VBoxContainer/GuessContainer/TabContainer/GuessName/TopContainer/LineAnimation"]
+points = PackedVector2Array(0, 0, 0, 0, 0, 0)
+width = 20.0
+
+[node name="Control" type="Control" parent="VBoxContainer/GuessContainer/TabContainer/GuessName/TopContainer/LineAnimation"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/GuessContainer/TabContainer/GuessName"]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="Button" type="Button" parent="VBoxContainer/GuessContainer/TabContainer/GuessName/VBoxContainer"]
+custom_minimum_size = Vector2(0, 60.1)
+layout_mode = 2
+theme_type_variation = &"ContentButton"
+text = "text"
+
+[node name="Button2" type="Button" parent="VBoxContainer/GuessContainer/TabContainer/GuessName/VBoxContainer"]
+custom_minimum_size = Vector2(0, 60.1)
+layout_mode = 2
+theme_type_variation = &"ContentButton"
+text = "text"
+
+[node name="Button3" type="Button" parent="VBoxContainer/GuessContainer/TabContainer/GuessName/VBoxContainer"]
+custom_minimum_size = Vector2(0, 60.1)
+layout_mode = 2
+theme_type_variation = &"ContentButton"
+text = "text"
+
+[node name="Button4" type="Button" parent="VBoxContainer/GuessContainer/TabContainer/GuessName/VBoxContainer"]
+custom_minimum_size = Vector2(0, 60.1)
+layout_mode = 2
+theme_type_variation = &"ContentButton"
+text = "text"
+
+[node name="Results" type="MarginContainer" parent="VBoxContainer/GuessContainer/TabContainer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme_override_constants/margin_top = 200
+theme_override_constants/margin_bottom = 200
+script = ExtResource("11_bpy44")
+metadata/_tab_index = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/GuessContainer/TabContainer/Results"]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="Label" type="Label" parent="VBoxContainer/GuessContainer/TabContainer/Results/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.584314, 0.584314, 0.584314, 1)
+text = "TR_RESULTAT"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/GuessContainer/TabContainer/Results/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 40
+alignment = 1
+
+[node name="Score" type="Label" parent="VBoxContainer/GuessContainer/TabContainer/Results/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_type_variation = &"Header1"
+text = "0"
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="VBoxContainer/GuessContainer/TabContainer/Results/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_type_variation = &"Header1"
+theme_override_colors/font_color = Color(0.584314, 0.584314, 0.584314, 1)
+text = "/"
+horizontal_alignment = 1
+
+[node name="Total" type="Label" parent="VBoxContainer/GuessContainer/TabContainer/Results/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_type_variation = &"Header1"
+text = "0"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="VBoxContainer/GuessContainer/TabContainer/Results/VBoxContainer"]
+layout_mode = 2
+theme_type_variation = &"ContentButton"
+text = "TR_FERMER"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/GuessContainer/TabContainer/Results/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Particle1" type="Control" parent="VBoxContainer/GuessContainer/TabContainer/Results/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+
+[node name="CPUParticles1" type="CPUParticles2D" parent="VBoxContainer/GuessContainer/TabContainer/Results/VBoxContainer/HBoxContainer2/Particle1"]
+unique_name_in_owner = true
+emitting = false
+amount = 25
+lifetime = 5.0
+one_shot = true
+speed_scale = 1.25
+explosiveness = 0.95
+direction = Vector2(0.5, -1)
+spread = 30.0
+initial_velocity_min = 799.94
+initial_velocity_max = 1000.0
+angle_min = -15.0
+angle_max = 15.0
+scale_amount_min = 41.99
+scale_amount_max = 65.6
+color = Color(0.371703, 0.498939, 0.204884, 1)
+hue_variation_max = 0.23
+hue_variation_curve = SubResource("Curve_iajw7")
+
+[node name="Control" type="Control" parent="VBoxContainer/GuessContainer/TabContainer/Results/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Particle2" type="Control" parent="VBoxContainer/GuessContainer/TabContainer/Results/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+
+[node name="CPUParticles2" type="CPUParticles2D" parent="VBoxContainer/GuessContainer/TabContainer/Results/VBoxContainer/HBoxContainer2/Particle2"]
+unique_name_in_owner = true
+emitting = false
+amount = 25
+lifetime = 5.0
+one_shot = true
+speed_scale = 1.25
+explosiveness = 0.95
+direction = Vector2(-0.5, -1)
+spread = 30.0
+initial_velocity_min = 799.94
+initial_velocity_max = 1000.0
+angle_min = -15.0
+angle_max = 15.0
+scale_amount_min = 41.99
+scale_amount_max = 65.6
+color = Color(0.350366, 0.363066, 0.459796, 1)
+hue_variation_min = -0.05
+hue_variation_max = 0.04
+hue_variation_curve = SubResource("Curve_iajw7")
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/CancelButton" to="." method="_on_cancel_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/GuessContainer/TabContainer/GuessTexture/VBoxContainer/Choice1/Button" to="." method="_on_button_pressed" binds= [0]]
+[connection signal="pressed" from="VBoxContainer/GuessContainer/TabContainer/GuessTexture/VBoxContainer/Choice2/Button" to="." method="_on_button_pressed" binds= [1]]
+[connection signal="pressed" from="VBoxContainer/GuessContainer/TabContainer/GuessTexture/VBoxContainer/Choice3/Button" to="." method="_on_button_pressed" binds= [2]]
+[connection signal="pressed" from="VBoxContainer/GuessContainer/TabContainer/GuessTexture/VBoxContainer/Choice4/Button" to="." method="_on_button_pressed" binds= [3]]
+[connection signal="pressed" from="VBoxContainer/GuessContainer/TabContainer/GuessName/VBoxContainer/Button" to="." method="_on_button_pressed" binds= [0]]
+[connection signal="pressed" from="VBoxContainer/GuessContainer/TabContainer/GuessName/VBoxContainer/Button2" to="." method="_on_button_pressed" binds= [1]]
+[connection signal="pressed" from="VBoxContainer/GuessContainer/TabContainer/GuessName/VBoxContainer/Button3" to="." method="_on_button_pressed" binds= [2]]
+[connection signal="pressed" from="VBoxContainer/GuessContainer/TabContainer/GuessName/VBoxContainer/Button4" to="." method="_on_button_pressed" binds= [3]]
+[connection signal="pressed" from="VBoxContainer/GuessContainer/TabContainer/Results/VBoxContainer/Button" to="." method="close_test"]

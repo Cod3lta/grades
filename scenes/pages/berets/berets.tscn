@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://bym4vanvvjp36"]
+
+[ext_resource type="Theme" uid="uid://si08rmojap6x" path="res://theme.tres" id="1_012ix"]
+[ext_resource type="Script" path="res://scenes/pages/berets/berets.gd" id="2_npt3s"]
+
+[node name="Berets" type="MarginContainer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 2441.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_012ix")
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 200
+script = ExtResource("2_npt3s")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 40
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_type_variation = &"Header2"
+text = "TR_BERET"
+autowrap_mode = 2
+uppercase = true
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="BeretsContainer" type="HFlowContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 60
+theme_override_constants/v_separation = 60
+alignment = 1
+last_wrap_alignment = 1

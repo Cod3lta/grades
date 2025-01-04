@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://ltp706inv82w"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_ihn3w"]
+[ext_resource type="Texture2D" uid="uid://4xf0eae18fc" path="res://assets/fonctions/prepose-aux-engins-de-sauvetage-a.svg" id="2_ytv7g"]
+[ext_resource type="Texture2D" uid="uid://db724mpiquiex" path="res://assets/fonctions/prepose-aux-engins-de-sauvetage-c.svg" id="3_a3di7"]
+
+[resource]
+script = ExtResource("1_ihn3w")
+description = ""
+name = "TR_FONCTION_PREPOSE_AUX_ENGINS_DE_SAUVETAGE_NAME"
+texture_a = ExtResource("2_ytv7g")
+texture_c = ExtResource("3_a3di7")
+favourite = false

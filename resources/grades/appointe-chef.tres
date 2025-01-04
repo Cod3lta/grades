@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Grade" load_steps=4 format=3 uid="uid://dt3o57d5wmbq1"]
+
+[ext_resource type="Script" path="res://resources/grades/grades.gd" id="1_vq4c0"]
+[ext_resource type="Texture2D" uid="uid://byurtuttiy08f" path="res://assets/grades/appointe-chef-a.svg" id="2_udl0p"]
+[ext_resource type="Texture2D" uid="uid://do7jsfu6t2n87" path="res://assets/grades/appointe-chef-c.svg" id="3_tt16i"]
+
+[resource]
+script = ExtResource("1_vq4c0")
+short = "TR_APPOINTE_CHEF_SHORT"
+description = "TR_APPOINTE_CHEF_DESCRIPTION"
+type = 0
+name = "TR_APPOINTE_CHEF_NAME"
+texture_a = ExtResource("2_udl0p")
+texture_c = ExtResource("3_tt16i")

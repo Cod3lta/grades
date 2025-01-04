@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://fmfor311poo"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_3u213"]
+[ext_resource type="Texture2D" uid="uid://cd0124gpty8b2" path="res://assets/fonctions/juge-d-instruction-a.svg" id="2_oabb2"]
+[ext_resource type="Texture2D" uid="uid://c41xkkfqlnw1y" path="res://assets/fonctions/juge-d-instruction-c.svg" id="3_bv7ug"]
+
+[resource]
+script = ExtResource("1_3u213")
+description = ""
+name = "TR_FONCTION_JUGE_D_INSTRUCTION_NAME"
+texture_a = ExtResource("2_oabb2")
+texture_c = ExtResource("3_bv7ug")
+favourite = false

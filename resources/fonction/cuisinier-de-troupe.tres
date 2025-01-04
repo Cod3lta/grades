@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://8auv5nnctje5"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_0mmev"]
+[ext_resource type="Texture2D" uid="uid://bmb16j4o3lba4" path="res://assets/fonctions/cuisinier-de-troupe-a.svg" id="2_untpw"]
+[ext_resource type="Texture2D" uid="uid://c35c1065klksy" path="res://assets/fonctions/cuisinier-de-troupe-c.svg" id="3_77p4y"]
+
+[resource]
+script = ExtResource("1_0mmev")
+description = ""
+name = "TR_FONCTION_CUISINIER_DE_TROUPE_NAME"
+texture_a = ExtResource("2_untpw")
+texture_c = ExtResource("3_77p4y")
+favourite = false

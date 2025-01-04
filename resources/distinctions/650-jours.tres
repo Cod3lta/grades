@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Distinction" load_steps=3 format=3 uid="uid://ck5a0bxibykyr"]
+
+[ext_resource type="Script" path="res://resources/distinctions/distinction.gd" id="1_wcvsi"]
+[ext_resource type="Texture2D" uid="uid://dpij1yhl4j8on" path="res://assets/distinctions/650-jours.svg" id="2_0pdjc"]
+
+[resource]
+script = ExtResource("1_wcvsi")
+description = "TR_DISTINCTIONS_650_JOURS_DESCRIPTION"
+type = 0
+name = "TR_DISTINCTIONS_650_JOURS_NAME"
+texture_a = ExtResource("2_0pdjc")
+favourite = false

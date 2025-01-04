@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Beret" load_steps=3 format=3 uid="uid://dwf0necvhlfuq"]
+
+[ext_resource type="Script" path="res://resources/berets/berets.gd" id="1_iyetc"]
+[ext_resource type="Texture2D" uid="uid://d2a47tg0y7sxa" path="res://assets/berets/police-militaire.svg" id="2_2fx43"]
+
+[resource]
+script = ExtResource("1_iyetc")
+incorporation = "TR_BERET_POLICE_MILITAIRE_INCORPORATION"
+name = "TR_BERET_POLICE_MILITAIRE_NAME"
+texture_a = ExtResource("2_2fx43")
+favourite = false

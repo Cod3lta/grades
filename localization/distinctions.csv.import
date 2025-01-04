@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://c1ulo0efipvem"
+
+[deps]
+
+files=["res://localization/distinctions.fr.translation", "res://localization/distinctions.de.translation"]
+
+source_file="res://localization/distinctions.csv"
+dest_files=["res://localization/distinctions.fr.translation", "res://localization/distinctions.de.translation"]
+
+[params]
+
+compress=true
+delimiter=1

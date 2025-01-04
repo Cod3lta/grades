@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://bq44tdg21wwkf"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_qoujg"]
+[ext_resource type="Texture2D" uid="uid://3i57lvxyw3kd" path="res://assets/fonctions/compagnie-logistique-de-transport-aerien-a.svg" id="2_6ak5f"]
+[ext_resource type="Texture2D" uid="uid://bvw435e5xea32" path="res://assets/fonctions/compagnie-logistique-de-transport-aerien-c.svg" id="3_822ur"]
+
+[resource]
+script = ExtResource("1_qoujg")
+description = ""
+name = "TR_FONCTION_COMPAGNIE_LOGISTIQUE_DE_TRANSPORT_AERIEN_NAME"
+texture_a = ExtResource("2_6ak5f")
+texture_c = ExtResource("3_822ur")
+favourite = false

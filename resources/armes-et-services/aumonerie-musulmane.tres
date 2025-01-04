@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ArmeService" load_steps=4 format=3 uid="uid://cot25ehb3wwdf"]
+
+[ext_resource type="Script" path="res://resources/armes-et-services/arme-service.gd" id="1_yevgs"]
+[ext_resource type="Texture2D" uid="uid://0ucbsl6n8gx3" path="res://assets/armes-et-services/aumonerie-musulmane-a.svg" id="2_82snl"]
+[ext_resource type="Texture2D" uid="uid://8xowxaabokw" path="res://assets/armes-et-services/aumonerie-musulmane-c.svg" id="3_f28ns"]
+
+[resource]
+script = ExtResource("1_yevgs")
+type = 2
+name = "TR_ARME_SERVICE_AUMONERIE_MUSULMANE_NAME"
+texture_a = ExtResource("2_82snl")
+texture_c = ExtResource("3_f28ns")
+favourite = false

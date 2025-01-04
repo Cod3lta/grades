@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Grade" load_steps=4 format=3 uid="uid://jbfk6y6on4bg"]
+
+[ext_resource type="Script" path="res://resources/grades/grades.gd" id="1_l3yu7"]
+[ext_resource type="Texture2D" uid="uid://bvna8w1vnk474" path="res://assets/grades/premier-lieutenant-a.svg" id="2_ve4qw"]
+[ext_resource type="Texture2D" uid="uid://bc8q1camunc6m" path="res://assets/grades/premier-lieutenant-c.svg" id="3_c7eie"]
+
+[resource]
+script = ExtResource("1_l3yu7")
+short = "TR_PREMIER_LIEUTENANT_SHORT"
+description = "TR_PREMIER_LIEUTENANT_DESCRIPTION"
+type = 3
+name = "TR_PREMIER_LIEUTENANT_NAME"
+texture_a = ExtResource("2_ve4qw")
+texture_c = ExtResource("3_c7eie")

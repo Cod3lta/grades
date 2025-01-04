@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://dh7tp7ycopc62"
+
+[deps]
+
+files=["res://localization/particuliers.fr.translation", "res://localization/particuliers.de.translation"]
+
+source_file="res://localization/particuliers.csv"
+dest_files=["res://localization/particuliers.fr.translation", "res://localization/particuliers.de.translation"]
+
+[params]
+
+compress=true
+delimiter=1

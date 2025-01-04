@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://h8h73pi1s6tr"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_bu2t6"]
+[ext_resource type="Texture2D" uid="uid://djr5jcdam1ouc" path="res://assets/fonctions/batteur-a.svg" id="2_crplb"]
+[ext_resource type="Texture2D" uid="uid://drfa520ms8x3g" path="res://assets/fonctions/batteur-c.svg" id="3_4oht5"]
+
+[resource]
+script = ExtResource("1_bu2t6")
+description = ""
+name = "TR_FONCTION_BATTEUR_NAME"
+texture_a = ExtResource("2_crplb")
+texture_c = ExtResource("3_4oht5")
+favourite = false

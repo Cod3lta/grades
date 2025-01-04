@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://jbl0sh8hsoe3"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_lscag"]
+[ext_resource type="Texture2D" uid="uid://dioug06r154br" path="res://assets/fonctions/soldat-d-hopital-a.svg" id="2_hirqn"]
+[ext_resource type="Texture2D" uid="uid://hubqxcm44sa8" path="res://assets/fonctions/soldat-d-hopital-c.svg" id="3_xffgc"]
+
+[resource]
+script = ExtResource("1_lscag")
+description = ""
+name = "TR_FONCTION_SOLDAT_D_HOPITAL_NAME"
+texture_a = ExtResource("2_hirqn")
+texture_c = ExtResource("3_xffgc")
+favourite = false

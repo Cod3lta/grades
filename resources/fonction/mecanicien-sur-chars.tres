@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://bmjmomrhadu4j"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_lo0c0"]
+[ext_resource type="Texture2D" uid="uid://dafbt5bobah4f" path="res://assets/fonctions/mecanicien-sur-chars-a.svg" id="2_snfaj"]
+[ext_resource type="Texture2D" uid="uid://deswdpy5m4btu" path="res://assets/fonctions/mecanicien-sur-chars-c.svg" id="3_gqdhf"]
+
+[resource]
+script = ExtResource("1_lo0c0")
+description = ""
+name = "TR_FONCTION_MECANICIEN_SUR_CHARS_NAME"
+texture_a = ExtResource("2_snfaj")
+texture_c = ExtResource("3_gqdhf")
+favourite = false

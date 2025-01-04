@@ -1,0 +1,48 @@
+[gd_scene load_steps=8 format=3 uid="uid://c80ksj3kscv3s"]
+
+[ext_resource type="Script" path="res://scenes/soldier/soldier_3d.gd" id="1_2rtyn"]
+[ext_resource type="PackedScene" uid="uid://shlgvl674gnt" path="res://scenes/soldier/uniform_c.tscn" id="2_85pmb"]
+[ext_resource type="PackedScene" uid="uid://blqjxlhr7hk0u" path="res://scenes/soldier/uniform_a.tscn" id="3_38kio"]
+
+[sub_resource type="Animation" id="Animation_5rp4h"]
+length = 0.001
+
+[sub_resource type="Animation" id="Animation_pq0iq"]
+resource_name = "rotate"
+length = 8.0
+loop_mode = 1
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_c38uj"]
+_data = {
+"RESET": SubResource("Animation_5rp4h"),
+"rotate": SubResource("Animation_pq0iq")
+}
+
+[sub_resource type="Environment" id="Environment_qk1m6"]
+
+[node name="Soldier3D" type="Node3D"]
+script = ExtResource("1_2rtyn")
+tenue = "C"
+
+[node name="CameraArm" type="SpringArm3D" parent="."]
+transform = Transform3D(0.725375, -0.301755, -0.618689, 0, 0.898793, -0.438371, 0.688355, 0.317983, 0.651962, -0.603387, 4.91316, 0.229454)
+spring_length = 3.045
+
+[node name="Camera3D" type="Camera3D" parent="CameraArm"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+current = true
+fov = 15.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_c38uj")
+}
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_qk1m6")
+
+[node name="UniformC" parent="." instance=ExtResource("2_85pmb")]
+
+[node name="UniformA" parent="." instance=ExtResource("3_38kio")]
+visible = false

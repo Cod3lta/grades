@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://2x2vaawd0ne8"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_ef5cc"]
+[ext_resource type="Texture2D" uid="uid://bjvxhslyog0dc" path="res://assets/fonctions/pontonnier-a.svg" id="2_0l60g"]
+[ext_resource type="Texture2D" uid="uid://4o1x2vwokduu" path="res://assets/fonctions/pontonnier-c.svg" id="3_4nw2e"]
+
+[resource]
+script = ExtResource("1_ef5cc")
+description = ""
+name = "TR_FONCTION_PONTONNIER_NAME"
+texture_a = ExtResource("2_0l60g")
+texture_c = ExtResource("3_4nw2e")
+favourite = false

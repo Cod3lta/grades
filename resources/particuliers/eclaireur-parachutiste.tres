@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Particulier" load_steps=3 format=3 uid="uid://312e2ckmtlis"]
+
+[ext_resource type="Script" path="res://resources/particuliers/particulier.gd" id="1_k22tq"]
+[ext_resource type="Texture2D" uid="uid://4ysyxknqr1ha" path="res://assets/particuliers/eclaireur-parachutiste.svg" id="2_oq7yt"]
+
+[resource]
+script = ExtResource("1_k22tq")
+type = 1
+name = "TR_PARTICULIERS_ECLAIREUR_PARACHUTISTE_NAME"
+texture_c = ExtResource("2_oq7yt")
+favourite = false

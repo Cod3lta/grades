@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://dro1152mnte3g"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_hlj2l"]
+[ext_resource type="Texture2D" uid="uid://cmoy8u2wtysji" path="res://assets/fonctions/sapeur-de-base-aerienne-a.svg" id="2_wi5ql"]
+[ext_resource type="Texture2D" uid="uid://4qyvexxhhk6e" path="res://assets/fonctions/sapeur-de-base-aerienne-c.svg" id="3_4rqvb"]
+
+[resource]
+script = ExtResource("1_hlj2l")
+description = ""
+name = "TR_FONCTION_SAPEUR_DE_BASE_AERIENNE_NAME"
+texture_a = ExtResource("2_wi5ql")
+texture_c = ExtResource("3_4rqvb")
+favourite = false

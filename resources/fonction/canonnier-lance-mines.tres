@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://d1wyrolk4oj1n"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_yhdlg"]
+[ext_resource type="Texture2D" uid="uid://dqj4ybi8vwqug" path="res://assets/fonctions/canonnier-lance-mines-a.svg" id="2_w5gaw"]
+[ext_resource type="Texture2D" uid="uid://bmqq7a4qw0jrk" path="res://assets/fonctions/canonnier-lance-mines-c.svg" id="3_waphj"]
+
+[resource]
+script = ExtResource("1_yhdlg")
+description = ""
+name = "TR_FONCTION_CANONNIER_LANCE_MINES_NAME"
+texture_a = ExtResource("2_w5gaw")
+texture_c = ExtResource("3_waphj")
+favourite = false

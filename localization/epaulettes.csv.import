@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://c6p8k04c1scyb"
+
+[deps]
+
+files=["res://localization/epaulettes.fr.translation", "res://localization/epaulettes.de.translation"]
+
+source_file="res://localization/epaulettes.csv"
+dest_files=["res://localization/epaulettes.fr.translation", "res://localization/epaulettes.de.translation"]
+
+[params]
+
+compress=true
+delimiter=1

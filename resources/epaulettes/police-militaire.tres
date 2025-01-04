@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Epaulettes" load_steps=3 format=3 uid="uid://hgxbgj8kj3bb"]
+
+[ext_resource type="Script" path="res://resources/epaulettes/epaulettes.gd" id="1_4wqqe"]
+[ext_resource type="Texture2D" uid="uid://dqsn5u0j88dd0" path="res://assets/epaulettes/police-militaire.svg" id="2_bit0g"]
+
+[resource]
+script = ExtResource("1_4wqqe")
+incorporation = "TR_EPAULETTE_POLICE_MILITAIRE_INCORPORATION"
+name = "TR_EPAULETTE_POLICE_MILITAIRE_NAME"
+texture_a = ExtResource("2_bit0g")
+favourite = false

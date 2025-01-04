@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://cd2sy2tun853"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_12xbq"]
+[ext_resource type="Texture2D" uid="uid://c22jjffmvlai6" path="res://assets/fonctions/soldat-d-aviation-a.svg" id="2_gnrc8"]
+[ext_resource type="Texture2D" uid="uid://cdgbri38j5esf" path="res://assets/fonctions/soldat-d-aviation-c.svg" id="3_vw5vf"]
+
+[resource]
+script = ExtResource("1_12xbq")
+description = ""
+name = "TR_FONCTION_SOLDAT_D_AVIATION_NAME"
+texture_a = ExtResource("2_gnrc8")
+texture_c = ExtResource("3_vw5vf")
+favourite = false

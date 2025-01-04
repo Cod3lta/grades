@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Beret" load_steps=3 format=3 uid="uid://6ew07woh8yqy"]
+
+[ext_resource type="Script" path="res://resources/berets/berets.gd" id="1_tmidl"]
+[ext_resource type="Texture2D" uid="uid://dk7b1svevcri6" path="res://assets/berets/noir.svg" id="2_a77lx"]
+
+[resource]
+script = ExtResource("1_tmidl")
+incorporation = "TR_BERET_NOIR_INCORPORATION"
+name = "TR_BERET_NOIR_NAME"
+texture_a = ExtResource("2_a77lx")
+favourite = false

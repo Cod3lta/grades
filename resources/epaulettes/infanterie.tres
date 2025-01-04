@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Epaulettes" load_steps=3 format=3 uid="uid://cr5ylkwsliavx"]
+
+[ext_resource type="Script" path="res://resources/epaulettes/epaulettes.gd" id="1_sux2y"]
+[ext_resource type="Texture2D" uid="uid://juqvh5ei4ham" path="res://assets/epaulettes/infanterie.svg" id="2_t84xi"]
+
+[resource]
+script = ExtResource("1_sux2y")
+incorporation = "TR_EPAULETTE_INFANTERIE_INCORPORATION"
+name = "TR_EPAULETTE_INFANTERIE_NAME"
+texture_a = ExtResource("2_t84xi")
+favourite = false

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Epaulettes" load_steps=3 format=3 uid="uid://bfsi8parwgj7v"]
+
+[ext_resource type="Script" path="res://resources/epaulettes/epaulettes.gd" id="1_vagne"]
+[ext_resource type="Texture2D" uid="uid://nnp6giesf747" path="res://assets/epaulettes/troupes-blindees.svg" id="2_k3vwu"]
+
+[resource]
+script = ExtResource("1_vagne")
+incorporation = "TR_EPAULETTE_TROUPES_BLINDEES_INCORPORATION"
+name = "TR_EPAULETTE_TROUPES_BLINDEES_NAME"
+texture_a = ExtResource("2_k3vwu")
+favourite = false

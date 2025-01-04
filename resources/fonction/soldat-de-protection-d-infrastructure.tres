@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://bhhmld852qc0n"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_ocvei"]
+[ext_resource type="Texture2D" uid="uid://dsqa623050265" path="res://assets/fonctions/soldat-de-protection-d-infrastructure-a.svg" id="2_68saf"]
+[ext_resource type="Texture2D" uid="uid://06doswubboqj" path="res://assets/fonctions/soldat-de-protection-d-infrastructure-c.svg" id="3_hyoxw"]
+
+[resource]
+script = ExtResource("1_ocvei")
+description = ""
+name = "TR_FONCTION_SOLDAT_DE_PROTECTION_D_INFRASTRUCTURE_NAME"
+texture_a = ExtResource("2_68saf")
+texture_c = ExtResource("3_hyoxw")
+favourite = false

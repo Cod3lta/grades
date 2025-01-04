@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ArmeService" load_steps=4 format=3 uid="uid://c4iiqi3auiwpn"]
+
+[ext_resource type="Script" path="res://resources/armes-et-services/arme-service.gd" id="1_n8vq7"]
+[ext_resource type="Texture2D" uid="uid://dhsmol4uf2v3k" path="res://assets/armes-et-services/psychopedagogique-a.svg" id="2_rv3hl"]
+[ext_resource type="Texture2D" uid="uid://bec3yjrkj6qbg" path="res://assets/armes-et-services/psychopedagogique-c.svg" id="3_3215k"]
+
+[resource]
+script = ExtResource("1_n8vq7")
+type = 2
+name = "TR_ARME_SERVICE_PSYCHOPEDAGOGIQUE_NAME"
+texture_a = ExtResource("2_rv3hl")
+texture_c = ExtResource("3_3215k")
+favourite = false

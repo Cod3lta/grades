@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://dumaa173n1rum"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_bv1db"]
+[ext_resource type="Texture2D" uid="uid://b4wcffbeaqlk3" path="res://assets/fonctions/compagnie-etat-major-aerodrome-a.svg" id="2_iwacv"]
+[ext_resource type="Texture2D" uid="uid://b1jmyu8448o86" path="res://assets/fonctions/compagnie-etat-major-aerodrome-c.svg" id="3_c4hv5"]
+
+[resource]
+script = ExtResource("1_bv1db")
+description = ""
+name = "TR_FONCTION_COMPAGNIE_ETAT_MAJOR_AERODROME_NAME"
+texture_a = ExtResource("2_iwacv")
+texture_c = ExtResource("3_c4hv5")
+favourite = false

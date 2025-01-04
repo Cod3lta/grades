@@ -1,0 +1,221 @@
+[gd_scene load_steps=14 format=3 uid="uid://y3qjiifo2qey"]
+
+[ext_resource type="Theme" uid="uid://si08rmojap6x" path="res://theme.tres" id="1_nru20"]
+[ext_resource type="Script" path="res://scenes/modals/test_grades/test_grades_modal.gd" id="2_ddiqv"]
+[ext_resource type="Script" path="res://scenes/pages/test_grades/guess_texture.gd" id="3_cxqki"]
+[ext_resource type="PackedScene" uid="uid://b6ik7amcaq60k" path="res://scenes/pages/grades/grade.tscn" id="4_2st6e"]
+[ext_resource type="Resource" uid="uid://cevgcqbiw63vm" path="res://resources/grades/adjudant-chef.tres" id="5_g2884"]
+[ext_resource type="Resource" uid="uid://c4n1sw3mo15pj" path="res://resources/grades/sergent.tres" id="6_cdesg"]
+[ext_resource type="Resource" uid="uid://d31fl30x3j6jh" path="res://resources/grades/major.tres" id="7_yt76o"]
+[ext_resource type="Resource" uid="uid://bmhjg7ipiaw5b" path="res://resources/grades/caporal.tres" id="8_vfenj"]
+[ext_resource type="Script" path="res://scenes/modals/test_grades/line_animation.gd" id="9_8rwi8"]
+[ext_resource type="Script" path="res://scenes/modals/test_grades/guess_name.gd" id="9_lxxpd"]
+
+[sub_resource type="Animation" id="Animation_48qig"]
+resource_name = "correct"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Line2D:points")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4),
+"transitions": PackedFloat32Array(4, 0.25, 1),
+"update": 0,
+"values": [PackedVector2Array(-60, 0, -60, 0, -60, 0), PackedVector2Array(-60, 0, -20, 40, -20, 40), PackedVector2Array(-60, 0, -20, 40, 60, -40)]
+}
+
+[sub_resource type="Animation" id="Animation_xtppj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Line2D:points")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array(0, 0, 0, 0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_la81d"]
+_data = {
+"RESET": SubResource("Animation_xtppj"),
+"correct": SubResource("Animation_48qig")
+}
+
+[node name="TestGradesModal" type="MarginContainer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 358.0
+grow_horizontal = 2
+theme = ExtResource("1_nru20")
+script = ExtResource("2_ddiqv")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 40
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.584314, 0.584314, 0.584314, 1)
+text = "Annuler"
+
+[node name="ProgressBar" type="ProgressBar" parent="VBoxContainer"]
+layout_mode = 2
+show_percentage = false
+
+[node name="GuessTexture" type="VBoxContainer" parent="VBoxContainer"]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 75
+script = ExtResource("3_cxqki")
+
+[node name="Name" type="Label" parent="VBoxContainer/GuessTexture"]
+layout_mode = 2
+theme_type_variation = &"Header3"
+text = "Adjudant Chef"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="VBoxContainer" type="GridContainer" parent="VBoxContainer/GuessTexture"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/h_separation = 60
+theme_override_constants/v_separation = 60
+columns = 2
+
+[node name="Choice1" type="MarginContainer" parent="VBoxContainer/GuessTexture/VBoxContainer"]
+layout_mode = 2
+
+[node name="Grade" parent="VBoxContainer/GuessTexture/VBoxContainer/Choice1" instance=ExtResource("4_2st6e")]
+layout_mode = 2
+size_flags_horizontal = 4
+grade = ExtResource("5_g2884")
+show_text = false
+
+[node name="Button" type="Button" parent="VBoxContainer/GuessTexture/VBoxContainer/Choice1"]
+visibility_layer = 0
+layout_mode = 2
+
+[node name="Choice2" type="MarginContainer" parent="VBoxContainer/GuessTexture/VBoxContainer"]
+layout_mode = 2
+
+[node name="Grade" parent="VBoxContainer/GuessTexture/VBoxContainer/Choice2" instance=ExtResource("4_2st6e")]
+layout_mode = 2
+size_flags_horizontal = 4
+grade = ExtResource("6_cdesg")
+show_text = false
+
+[node name="Button" type="Button" parent="VBoxContainer/GuessTexture/VBoxContainer/Choice2"]
+visibility_layer = 0
+layout_mode = 2
+
+[node name="Choice3" type="MarginContainer" parent="VBoxContainer/GuessTexture/VBoxContainer"]
+layout_mode = 2
+
+[node name="Grade" parent="VBoxContainer/GuessTexture/VBoxContainer/Choice3" instance=ExtResource("4_2st6e")]
+layout_mode = 2
+size_flags_horizontal = 4
+grade = ExtResource("7_yt76o")
+show_text = false
+
+[node name="Button" type="Button" parent="VBoxContainer/GuessTexture/VBoxContainer/Choice3"]
+visibility_layer = 0
+layout_mode = 2
+
+[node name="Choice4" type="MarginContainer" parent="VBoxContainer/GuessTexture/VBoxContainer"]
+layout_mode = 2
+
+[node name="Grade" parent="VBoxContainer/GuessTexture/VBoxContainer/Choice4" instance=ExtResource("4_2st6e")]
+layout_mode = 2
+size_flags_horizontal = 4
+grade = ExtResource("8_vfenj")
+show_text = false
+
+[node name="Button" type="Button" parent="VBoxContainer/GuessTexture/VBoxContainer/Choice4"]
+visibility_layer = 0
+layout_mode = 2
+
+[node name="GuessName" type="VBoxContainer" parent="VBoxContainer"]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 75
+script = ExtResource("9_lxxpd")
+
+[node name="TopContainer" type="GridContainer" parent="VBoxContainer/GuessName"]
+layout_mode = 2
+columns = 3
+
+[node name="Control" type="Control" parent="VBoxContainer/GuessName/TopContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Grade" parent="VBoxContainer/GuessName/TopContainer" instance=ExtResource("4_2st6e")]
+layout_mode = 2
+size_flags_horizontal = 6
+grade = ExtResource("5_g2884")
+show_text = false
+texture_size = "large"
+
+[node name="LineAnimation" type="CenterContainer" parent="VBoxContainer/GuessName/TopContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("9_8rwi8")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="VBoxContainer/GuessName/TopContainer/LineAnimation"]
+libraries = {
+"": SubResource("AnimationLibrary_la81d")
+}
+autoplay = "correct"
+
+[node name="Line2D" type="Line2D" parent="VBoxContainer/GuessName/TopContainer/LineAnimation"]
+points = PackedVector2Array(0, 0, 0, 0, 0, 0)
+width = 20.0
+
+[node name="Control" type="Control" parent="VBoxContainer/GuessName/TopContainer/LineAnimation"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/GuessName"]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="Button" type="Button" parent="VBoxContainer/GuessName/VBoxContainer"]
+custom_minimum_size = Vector2(0, 60.1)
+layout_mode = 2
+theme_type_variation = &"ContentButton"
+text = "text"
+
+[node name="Button2" type="Button" parent="VBoxContainer/GuessName/VBoxContainer"]
+custom_minimum_size = Vector2(0, 60.1)
+layout_mode = 2
+theme_type_variation = &"ContentButton"
+text = "text"
+
+[node name="Button3" type="Button" parent="VBoxContainer/GuessName/VBoxContainer"]
+custom_minimum_size = Vector2(0, 60.1)
+layout_mode = 2
+theme_type_variation = &"ContentButton"
+text = "text"
+
+[node name="Button4" type="Button" parent="VBoxContainer/GuessName/VBoxContainer"]
+custom_minimum_size = Vector2(0, 60.1)
+layout_mode = 2
+theme_type_variation = &"ContentButton"
+text = "text"
+
+[connection signal="pressed" from="VBoxContainer/GuessTexture/VBoxContainer/Choice1/Button" to="VBoxContainer/GuessTexture" method="_on_button_pressed" binds= [0]]
+[connection signal="pressed" from="VBoxContainer/GuessTexture/VBoxContainer/Choice2/Button" to="VBoxContainer/GuessTexture" method="_on_button_pressed" binds= [1]]
+[connection signal="pressed" from="VBoxContainer/GuessTexture/VBoxContainer/Choice3/Button" to="VBoxContainer/GuessTexture" method="_on_button_pressed" binds= [2]]
+[connection signal="pressed" from="VBoxContainer/GuessTexture/VBoxContainer/Choice4/Button" to="VBoxContainer/GuessTexture" method="_on_button_pressed" binds= [3]]
+[connection signal="pressed" from="VBoxContainer/GuessName/VBoxContainer/Button" to="." method="_on_button_pressed" binds= [0]]
+[connection signal="pressed" from="VBoxContainer/GuessName/VBoxContainer/Button2" to="." method="_on_button_pressed" binds= [1]]
+[connection signal="pressed" from="VBoxContainer/GuessName/VBoxContainer/Button3" to="." method="_on_button_pressed" binds= [2]]
+[connection signal="pressed" from="VBoxContainer/GuessName/VBoxContainer/Button4" to="." method="_on_button_pressed" binds= [3]]

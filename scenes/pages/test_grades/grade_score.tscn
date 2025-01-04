@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://befnavdo5h5ri"]
+
+[ext_resource type="Script" path="res://scenes/pages/test_grades/grade_score.gd" id="1_3bybd"]
+[ext_resource type="PackedScene" uid="uid://dhq0g6258e0bu" path="res://scenes/pages/modal_opener.tscn" id="1_4wvoc"]
+[ext_resource type="PackedScene" uid="uid://bopv3ut85pyp7" path="res://scenes/modals/grades/GradeModal.tscn" id="2_cb1cw"]
+[ext_resource type="PackedScene" uid="uid://b6ik7amcaq60k" path="res://scenes/badges/grade/grade.tscn" id="3_tlbxg"]
+
+[node name="GradeScore" type="VBoxContainer"]
+offset_right = 150.0
+offset_bottom = 327.0
+script = ExtResource("1_3bybd")
+
+[node name="ModalOpener" parent="." instance=ExtResource("1_4wvoc")]
+layout_mode = 2
+linked_modal = ExtResource("2_cb1cw")
+
+[node name="Grade" parent="ModalOpener" instance=ExtResource("3_tlbxg")]
+layout_mode = 2
+texture_size = "small"
+show_text = false
+setup = Callable()
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+horizontal_alignment = 1

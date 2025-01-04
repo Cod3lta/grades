@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Grade" load_steps=4 format=3 uid="uid://sfpfn8oinab6"]
+
+[ext_resource type="Script" path="res://resources/grades/grades.gd" id="1_3c186"]
+[ext_resource type="Texture2D" uid="uid://to3yu283qa7k" path="res://assets/grades/soldat-a.svg" id="2_8bykr"]
+[ext_resource type="Texture2D" uid="uid://f6t4xa60nwti" path="res://assets/grades/soldat-c.svg" id="3_0rryh"]
+
+[resource]
+script = ExtResource("1_3c186")
+short = "TR_SOLDAT_SHORT"
+description = "TR_SOLDAT_DESCRIPTION"
+type = 0
+name = "TR_SOLDAT_NAME"
+texture_a = ExtResource("2_8bykr")
+texture_c = ExtResource("3_0rryh")

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ArmeService" load_steps=4 format=3 uid="uid://b7l6x7i8g43at"]
+
+[ext_resource type="Script" path="res://resources/armes-et-services/arme-service.gd" id="1_6mbhu"]
+[ext_resource type="Texture2D" uid="uid://bqrehh6jdfbt7" path="res://assets/armes-et-services/artillerie-a.svg" id="2_utt3y"]
+[ext_resource type="Texture2D" uid="uid://c7hxaayx03uma" path="res://assets/armes-et-services/artillerie-c.svg" id="3_6buhv"]
+
+[resource]
+script = ExtResource("1_6mbhu")
+type = 1
+name = "TR_ARME_SERVICE_ARTILLERIE_NAME"
+texture_a = ExtResource("2_utt3y")
+texture_c = ExtResource("3_6buhv")
+favourite = false

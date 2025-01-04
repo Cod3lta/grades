@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://bmj1gm5eabgd1"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_v55e1"]
+[ext_resource type="Texture2D" uid="uid://usylkg4nvrct" path="res://assets/fonctions/ordonnance-de-bureau-a.svg" id="2_6ire2"]
+[ext_resource type="Texture2D" uid="uid://r64edoymuwgr" path="res://assets/fonctions/ordonnance-de-bureau-c.svg" id="3_ef6xx"]
+
+[resource]
+script = ExtResource("1_v55e1")
+description = ""
+name = "TR_FONCTION_ORDONNANCE_DE_BUREAU_NAME"
+texture_a = ExtResource("2_6ire2")
+texture_c = ExtResource("3_ef6xx")
+favourite = false

@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://cjd66gcdlnlpg"
+
+[deps]
+
+files=["res://localization/coming_soon.fr.translation", "res://localization/coming_soon.de.translation"]
+
+source_file="res://localization/coming_soon.csv"
+dest_files=["res://localization/coming_soon.fr.translation", "res://localization/coming_soon.de.translation"]
+
+[params]
+
+compress=true
+delimiter=1

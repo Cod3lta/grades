@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=3 uid="uid://c3vqlsoygtrc5"]
+
+[ext_resource type="Theme" uid="uid://si08rmojap6x" path="res://theme.tres" id="1_ujwvp"]
+[ext_resource type="Script" path="res://scenes/badges/particuliers/particulier.gd" id="2_f0foc"]
+[ext_resource type="Resource" uid="uid://00701kghndot" path="res://resources/particuliers/candidat-carriere.tres" id="3_7o320"]
+[ext_resource type="Texture2D" uid="uid://bqywmlcn3eumd" path="res://assets/particuliers/candidat.svg" id="4_n7rcf"]
+
+[node name="Particulier" type="MarginContainer" node_paths=PackedStringArray("name_label", "texture_rect_c", "text_container")]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 128.0
+grow_horizontal = 2
+size_flags_vertical = 0
+theme = ExtResource("1_ujwvp")
+script = ExtResource("2_f0foc")
+tenue_type = "C"
+r = ExtResource("3_7o320")
+name_label = NodePath("VBoxContainer/Name")
+texture_rect_c = NodePath("VBoxContainer/TextureC")
+show_text = true
+text_container = NodePath("VBoxContainer/Name")
+setup = Callable()
+
+[node name="VBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+theme_override_constants/separation = 30
+
+[node name="TextureC" type="TextureRect" parent="VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(460, 186)
+layout_mode = 2
+size_flags_horizontal = 0
+texture = ExtResource("4_n7rcf")
+stretch_mode = 5
+
+[node name="Name" type="Label" parent="VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Candidat militaire de carrière"
+autowrap_mode = 3

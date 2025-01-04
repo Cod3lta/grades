@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://b6fhwn1db3t5w"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_yclad"]
+[ext_resource type="Texture2D" uid="uid://crs8dx4itl7g0" path="res://assets/fonctions/conseiller-social-a.svg" id="2_h278s"]
+[ext_resource type="Texture2D" uid="uid://d3knkqu76ue0n" path="res://assets/fonctions/conseiller-social-c.svg" id="3_67aai"]
+
+[resource]
+script = ExtResource("1_yclad")
+description = ""
+name = "TR_FONCTION_CONSEILLER_SOCIAL_NAME"
+texture_a = ExtResource("2_h278s")
+texture_c = ExtResource("3_67aai")
+favourite = false

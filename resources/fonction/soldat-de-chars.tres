@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://d2bio3i8qq06b"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_ptcg5"]
+[ext_resource type="Texture2D" uid="uid://bktwuvahsoxjv" path="res://assets/fonctions/soldat-de-chars-a.svg" id="2_pwfpe"]
+[ext_resource type="Texture2D" uid="uid://dc708p5iyh7l1" path="res://assets/fonctions/soldat-de-chars-c.svg" id="3_qvt8s"]
+
+[resource]
+script = ExtResource("1_ptcg5")
+description = ""
+name = "TR_FONCTION_SOLDAT_DE_CHARS_NAME"
+texture_a = ExtResource("2_pwfpe")
+texture_c = ExtResource("3_qvt8s")
+favourite = false

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://henf1lk6gca7"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_yaixi"]
+[ext_resource type="Texture2D" uid="uid://chnbwb2iprc10" path="res://assets/fonctions/soldat-meteorologue-a.svg" id="2_d1n7l"]
+[ext_resource type="Texture2D" uid="uid://bnb6r20vteuih" path="res://assets/fonctions/soldat-meteorologue-c.svg" id="3_ldsp8"]
+
+[resource]
+script = ExtResource("1_yaixi")
+description = ""
+name = "TR_FONCTION_SOLDAT_METEOROLOGUE_NAME"
+texture_a = ExtResource("2_d1n7l")
+texture_c = ExtResource("3_ldsp8")
+favourite = false

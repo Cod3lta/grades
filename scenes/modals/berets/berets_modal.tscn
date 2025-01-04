@@ -1,0 +1,58 @@
+[gd_scene load_steps=7 format=3 uid="uid://bk2qb1lcgxojp"]
+
+[ext_resource type="Theme" uid="uid://si08rmojap6x" path="res://theme.tres" id="1_l8sfa"]
+[ext_resource type="Script" path="res://scenes/modals/berets/berets_modal.gd" id="2_hs6np"]
+[ext_resource type="Resource" uid="uid://qnyfugpie1bd" path="res://resources/berets/artillerie.tres" id="3_5xmek"]
+[ext_resource type="Texture2D" uid="uid://b2ylwp8bv0tuw" path="res://assets/berets/artillerie.svg" id="4_0h03e"]
+[ext_resource type="FontFile" uid="uid://dkuomcido03dv" path="res://assets/ui/Inter-Italic-VariableFont_opsz,wght.ttf" id="5_ai34d"]
+
+[sub_resource type="FontVariation" id="FontVariation_gn8aj"]
+base_font = ExtResource("5_ai34d")
+variation_embolden = 0.5
+
+[node name="BeretsModal" type="MarginContainer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 358.0
+grow_horizontal = 2
+theme = ExtResource("1_l8sfa")
+theme_override_constants/margin_top = -150
+script = ExtResource("2_hs6np")
+beret = ExtResource("3_5xmek")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 70
+
+[node name="Texture" type="TextureRect" parent="VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(740, 300)
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("4_0h03e")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Name" type="Label" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"Header2"
+text = "TR_BERET_ARTILLERIE_NAME"
+autowrap_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.584314, 0.584314, 0.584314, 1)
+theme_override_fonts/font = SubResource("FontVariation_gn8aj")
+text = "TR_INCORPORATION"
+autowrap_mode = 2
+
+[node name="Incorporation" type="Label" parent="VBoxContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "TR_BERET_ARTILLERIE_INCORPORATION"
+autowrap_mode = 2

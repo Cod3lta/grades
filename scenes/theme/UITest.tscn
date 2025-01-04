@@ -1,0 +1,61 @@
+[gd_scene load_steps=2 format=3 uid="uid://tscwumcxv6aa"]
+
+[ext_resource type="Theme" uid="uid://si08rmojap6x" path="res://theme.tres" id="1_e6fvl"]
+
+[node name="UiTest" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_e6fvl")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.2, 0.2, 0.2, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 2502.0
+offset_bottom = 711.0
+
+[node name="Header1" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_type_variation = &"Header1"
+text = "the quick brown fox jumps over the lazy dog"
+
+[node name="Header2" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_type_variation = &"Header2"
+text = "the quick brown fox jumps over the lazy dog"
+
+[node name="Header3" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_type_variation = &"Header3"
+text = "the quick brown fox jumps over the lazy dog"
+
+[node name="Header4" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_type_variation = &"Header4"
+text = "the quick brown fox jumps over the lazy dog"
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "the quick brown fox jumps over the lazy dog"
+
+[node name="Bold" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_type_variation = &"Bold"
+text = "the quick brown fox jumps over the lazy dog"
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_type_variation = &"ContentButton"
+text = "This is a button"

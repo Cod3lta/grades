@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6kxyioevk1j5"]
+
+[ext_resource type="Theme" uid="uid://si08rmojap6x" path="res://theme.tres" id="1_j1e6d"]
+[ext_resource type="Script" path="res://scenes/pages/coming_soon/coming_soon.gd" id="2_hdfro"]
+[ext_resource type="Texture2D" uid="uid://bjjfkb4uu8col" path="res://assets/ui/tenue-c.svg" id="3_7qene"]
+
+[node name="ComingSoon" type="MarginContainer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 350.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_j1e6d")
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 200
+script = ExtResource("2_hdfro")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 180
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"Header2"
+text = "coming soon"
+autowrap_mode = 2
+uppercase = true
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer"]
+modulate = Color(0.109804, 0.109804, 0.109804, 1)
+layout_mode = 2
+texture = ExtResource("3_7qene")
+stretch_mode = 5

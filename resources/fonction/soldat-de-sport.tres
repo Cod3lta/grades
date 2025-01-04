@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://dvxnl1wqas6k"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_o87jw"]
+[ext_resource type="Texture2D" uid="uid://bn881vii1odlr" path="res://assets/fonctions/soldat-de-sport-a.svg" id="2_eouw7"]
+[ext_resource type="Texture2D" uid="uid://glo1kbc37a4c" path="res://assets/fonctions/soldat-de-sport-c.svg" id="3_yeipd"]
+
+[resource]
+script = ExtResource("1_o87jw")
+description = ""
+name = "TR_FONCTION_SOLDAT_DE_SPORT_NAME"
+texture_a = ExtResource("2_eouw7")
+texture_c = ExtResource("3_yeipd")
+favourite = false

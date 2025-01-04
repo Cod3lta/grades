@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ArmeService" load_steps=4 format=3 uid="uid://cah1mors7ut5g"]
+
+[ext_resource type="Script" path="res://resources/armes-et-services/arme-service.gd" id="1_j2d4n"]
+[ext_resource type="Texture2D" uid="uid://dhvwwrl5juad6" path="res://assets/armes-et-services/aumonerie-chretienne-a.svg" id="2_vnk3g"]
+[ext_resource type="Texture2D" uid="uid://b45w7cdcudtxl" path="res://assets/armes-et-services/aumonerie-chretienne-c.svg" id="3_5318u"]
+
+[resource]
+script = ExtResource("1_j2d4n")
+type = 2
+name = "TR_ARME_SERVICE_AUMONERIE_CHRETIENNE_NAME"
+texture_a = ExtResource("2_vnk3g")
+texture_c = ExtResource("3_5318u")
+favourite = false

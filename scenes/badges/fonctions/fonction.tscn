@@ -1,0 +1,52 @@
+[gd_scene load_steps=5 format=3 uid="uid://bhtk8cl3jl6ry"]
+
+[ext_resource type="Theme" uid="uid://si08rmojap6x" path="res://theme.tres" id="1_trdvv"]
+[ext_resource type="Script" path="res://scenes/badges/fonctions/fonction.gd" id="2_y3gv0"]
+[ext_resource type="Resource" uid="uid://d0cyf1t2rtx1r" path="res://resources/fonction/armurier.tres" id="3_372sp"]
+[ext_resource type="Texture2D" uid="uid://dvjrhukkb1ipu" path="res://assets/fonctions/armurier-c.svg" id="4_eill0"]
+
+[node name="Fonction" type="MarginContainer" node_paths=PackedStringArray("name_label", "texture_rect_a", "texture_rect_c", "text_container")]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 300.0
+grow_horizontal = 2
+theme = ExtResource("1_trdvv")
+script = ExtResource("2_y3gv0")
+tenue_type = "C"
+texture_size = "small"
+r = ExtResource("3_372sp")
+name_label = NodePath("HBoxContainer/Name")
+texture_rect_a = NodePath("HBoxContainer/Texture")
+texture_rect_c = NodePath("HBoxContainer/Texture")
+text_container = NodePath("HBoxContainer/Name")
+setup = Callable()
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_constants/separation = 60
+
+[node name="Texture" type="TextureRect" parent="HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(250, 200)
+layout_mode = 2
+texture = ExtResource("4_eill0")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Name" type="Label" parent="HBoxContainer"]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 45
+text = "Armurier"
+autowrap_mode = 3
+
+[node name="Button" type="Button" parent="."]
+visibility_layer = 0
+layout_mode = 2
+mouse_filter = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

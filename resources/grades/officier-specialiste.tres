@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Grade" load_steps=4 format=3 uid="uid://do3pug8k5a1jk"]
+
+[ext_resource type="Script" path="res://resources/grades/grades.gd" id="1_khthh"]
+[ext_resource type="Texture2D" uid="uid://wir7whath02n" path="res://assets/grades/officier-specialiste-a.svg" id="2_l0t3k"]
+[ext_resource type="Texture2D" uid="uid://bb6uq3nvtf18h" path="res://assets/grades/officier-specialiste-c.svg" id="3_y2tpb"]
+
+[resource]
+script = ExtResource("1_khthh")
+short = "TR_OFFICIER_SPECIALISTE_SHORT"
+description = "TR_OFFICIER_SPECIALISTE_DESCRIPTION"
+type = 4
+name = "TR_OFFICIER_SPECIALISTE_NAME"
+texture_a = ExtResource("2_l0t3k")
+texture_c = ExtResource("3_y2tpb")

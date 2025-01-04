@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://sj6mamddj3hm"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_3pk7m"]
+[ext_resource type="Texture2D" uid="uid://dbwjh5axvn3ya" path="res://assets/fonctions/surete-de-base-aerienne-et-de-transport-aerien-a.svg" id="2_wq5gd"]
+[ext_resource type="Texture2D" uid="uid://u0vsxurugj8b" path="res://assets/fonctions/surete-de-base-aerienne-et-de-transport-aerien-c.svg" id="3_0fjm5"]
+
+[resource]
+script = ExtResource("1_3pk7m")
+description = ""
+name = "TR_FONCTION_SURETE_DE_BASE_AERIENNE_ET_DE_TRANSPORT_AERIEN_NAME"
+texture_a = ExtResource("2_wq5gd")
+texture_c = ExtResource("3_0fjm5")
+favourite = false

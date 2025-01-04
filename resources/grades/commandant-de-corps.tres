@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Grade" load_steps=4 format=3 uid="uid://ceewr1a1lliuo"]
+
+[ext_resource type="Script" path="res://resources/grades/grades.gd" id="1_nmxc1"]
+[ext_resource type="Texture2D" uid="uid://djvd0kpej5pyg" path="res://assets/grades/commandant-de-corps-a.svg" id="2_irs7x"]
+[ext_resource type="Texture2D" uid="uid://pj34po10bknw" path="res://assets/grades/commandant-de-corps-c.svg" id="3_r5bt5"]
+
+[resource]
+script = ExtResource("1_nmxc1")
+short = "TR_COMMANDANT_DE_CORPS_SHORT"
+description = "TR_COMMANDANT_DE_CORPS_DESCRIPTION"
+type = 5
+name = "TR_COMMANDANT_DE_CORPS_NAME"
+texture_a = ExtResource("2_irs7x")
+texture_c = ExtResource("3_r5bt5")

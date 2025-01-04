@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ArmeService" load_steps=4 format=3 uid="uid://d0jjubpmiyi72"]
+
+[ext_resource type="Script" path="res://resources/armes-et-services/arme-service.gd" id="1_q8iqm"]
+[ext_resource type="Texture2D" uid="uid://rkl2o81rfh7p" path="res://assets/armes-et-services/officiers-generaux-a.svg" id="2_usxel"]
+[ext_resource type="Texture2D" uid="uid://i8nm3eamoexc" path="res://assets/armes-et-services/officiers-generaux-c.svg" id="3_rejmy"]
+
+[resource]
+script = ExtResource("1_q8iqm")
+type = 0
+name = "TR_ARME_SERVICE_OFFICIERS_GENERAUX_NAME"
+texture_a = ExtResource("2_usxel")
+texture_c = ExtResource("3_rejmy")
+favourite = false

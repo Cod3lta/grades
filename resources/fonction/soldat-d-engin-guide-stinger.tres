@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://cmi6fe22q0wdf"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_0jvnf"]
+[ext_resource type="Texture2D" uid="uid://bbfcqymhfnldp" path="res://assets/fonctions/soldat-d-engin-guide-stinger-a.svg" id="2_adxdo"]
+[ext_resource type="Texture2D" uid="uid://bro6egor7wv07" path="res://assets/fonctions/soldat-d-engin-guide-stinger-c.svg" id="3_jhmee"]
+
+[resource]
+script = ExtResource("1_0jvnf")
+description = ""
+name = "TR_FONCTION_SOLDAT_D_ENGIN_GUIDE_STINGER_NAME"
+texture_a = ExtResource("2_adxdo")
+texture_c = ExtResource("3_jhmee")
+favourite = false

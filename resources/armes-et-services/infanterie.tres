@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ArmeService" load_steps=4 format=3 uid="uid://bmxxbue7v6omd"]
+
+[ext_resource type="Script" path="res://resources/armes-et-services/arme-service.gd" id="1_d438p"]
+[ext_resource type="Texture2D" uid="uid://06bo1seq07ot" path="res://assets/armes-et-services/infanterie-a.svg" id="2_011s6"]
+[ext_resource type="Texture2D" uid="uid://6a7c1k56wso4" path="res://assets/armes-et-services/infanterie-c.svg" id="3_uej8g"]
+
+[resource]
+script = ExtResource("1_d438p")
+type = 1
+name = "TR_ARME_SERVICE_INFANTERIE_NAME"
+texture_a = ExtResource("2_011s6")
+texture_c = ExtResource("3_uej8g")
+favourite = false

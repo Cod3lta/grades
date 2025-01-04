@@ -1,0 +1,148 @@
+[gd_scene load_steps=15 format=3 uid="uid://k0886xuesryg"]
+
+[ext_resource type="Theme" uid="uid://si08rmojap6x" path="res://theme.tres" id="1_ed23a"]
+[ext_resource type="Script" path="res://scenes/screens/main/main_screen.gd" id="2_1853d"]
+[ext_resource type="Texture2D" uid="uid://ca2g1bnnrmcmu" path="res://assets/background.jpg" id="2_fvawe"]
+[ext_resource type="Texture2D" uid="uid://c6jhs35actajq" path="res://assets/ui/logo-bw.svg" id="4_jwqbx"]
+[ext_resource type="PackedScene" uid="uid://005sihdith00" path="res://scenes/screens/main/main-screen-button/main_screen_button.tscn" id="4_tenc8"]
+[ext_resource type="Script" path="res://scenes/screens/responsive_grid.gd" id="5_kb26i"]
+[ext_resource type="PackedScene" uid="uid://co5fqnib3ohr2" path="res://scenes/pages/grades/grades.tscn" id="5_smfmh"]
+[ext_resource type="Texture2D" uid="uid://d3j8515d1eyjw" path="res://assets/boutons/Group 20.svg" id="6_rlkr2"]
+[ext_resource type="PackedScene" uid="uid://cvh122afs2rte" path="res://scenes/pages/test_grades/test_grades.tscn" id="8_r032b"]
+[ext_resource type="PackedScene" uid="uid://dqwt3gud4r17u" path="res://scenes/pages/parametres/parametres.tscn" id="9_nrtj5"]
+[ext_resource type="Texture2D" uid="uid://12sprc6hx3go" path="res://assets/boutons/cog.svg" id="10_stywq"]
+
+[sub_resource type="Gradient" id="Gradient_uiskm"]
+offsets = PackedFloat32Array(0, 0.7, 1)
+colors = PackedColorArray(0.101961, 0.101961, 0.109804, 0.690196, 0.112427, 0.112427, 0.113302, 0.959447, 0.113725, 0.113725, 0.113725, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ajwtf"]
+gradient = SubResource("Gradient_uiskm")
+fill_from = Vector2(0, 0.350427)
+fill_to = Vector2(0, 1)
+
+[sub_resource type="FontVariation" id="FontVariation_bkxve"]
+variation_embolden = 0.75
+variation_transform = Transform2D(1, 0.22, 0, 1, 0, 0)
+spacing_top = -5
+
+[node name="MainScreen" type="MarginContainer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 2000.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("1_ed23a")
+theme_override_constants/margin_bottom = 250
+script = ExtResource("2_1853d")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Control" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/Control"]
+custom_minimum_size = Vector2(0, 900)
+layout_mode = 2
+size_flags_vertical = 0
+texture = ExtResource("2_fvawe")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TextureRect2" type="TextureRect" parent="VBoxContainer/Control"]
+custom_minimum_size = Vector2(0, 900)
+layout_mode = 2
+size_flags_vertical = 0
+texture = SubResource("GradientTexture2D_ajwtf")
+expand_mode = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Control"]
+layout_mode = 2
+
+[node name="OpenAnimation" type="MarginContainer" parent="VBoxContainer/Control/CenterContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/Control/CenterContainer/OpenAnimation"]
+layout_mode = 2
+theme_override_constants/separation = 30
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/Control/CenterContainer/OpenAnimation/VBoxContainer"]
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("4_jwqbx")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/Control/CenterContainer/OpenAnimation/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Control/CenterContainer/OpenAnimation/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_type_variation = &"Header1"
+text = "TR_GRADES"
+horizontal_alignment = 1
+uppercase = true
+
+[node name="Label2" type="Label" parent="VBoxContainer/Control/CenterContainer/OpenAnimation/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.570865, 0.570908, 0.592789, 1)
+theme_override_fonts/font = SubResource("FontVariation_bkxve")
+text = "TR_DE_L_ARMEE_SUISSE"
+horizontal_alignment = 1
+uppercase = true
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_right = 40
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 20
+theme_override_constants/v_separation = 20
+columns = 2
+script = ExtResource("5_kb26i")
+
+[node name="BtnGrades" parent="VBoxContainer/MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("4_tenc8")]
+custom_minimum_size = Vector2(0, 490)
+layout_mode = 2
+text = "TR_GRADES"
+linked_page = ExtResource("5_smfmh")
+page_position = 0
+background_image = ExtResource("6_rlkr2")
+background_image_size = 0.35
+background_image_position = Vector2(-37, 0)
+
+[node name="BtnTestGrades" parent="VBoxContainer/MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("4_tenc8")]
+custom_minimum_size = Vector2(0, 490)
+layout_mode = 2
+text = "TR_TEST_DES_GRADES"
+style = 1
+linked_page = ExtResource("8_r032b")
+page_position = 0
+background_image = ExtResource("6_rlkr2")
+background_image_size = 0.35
+background_image_position = Vector2(-37, 0)
+
+[node name="BtnInsigneNationalite" parent="VBoxContainer/MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("4_tenc8")]
+custom_minimum_size = Vector2(0, 490)
+layout_mode = 2
+text = "TR_PARAMETRES"
+linked_page = ExtResource("9_nrtj5")
+page_position = 0
+background_image = ExtResource("10_stywq")
+background_image_size = 0.35
+background_image_position = Vector2(-37, 0)

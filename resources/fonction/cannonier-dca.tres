@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://1w4gcpgpra2o"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_likt5"]
+[ext_resource type="Texture2D" uid="uid://cjia81kbgt1ig" path="res://assets/fonctions/canonnier-dca-a.svg" id="2_db81r"]
+[ext_resource type="Texture2D" uid="uid://cc8dwkismmmi" path="res://assets/fonctions/canonnier-dca-c.svg" id="3_xrgyd"]
+
+[resource]
+script = ExtResource("1_likt5")
+description = ""
+name = "TR_FONCTION_CANNONIER_DCA_NAME"
+texture_a = ExtResource("2_db81r")
+texture_c = ExtResource("3_xrgyd")
+favourite = false

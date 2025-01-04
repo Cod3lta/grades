@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://bamu04yxspa6y"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_quklv"]
+[ext_resource type="Texture2D" uid="uid://duidmr5drrj5o" path="res://assets/fonctions/soldat-d-engin-guide-rapier-a.svg" id="2_rmp7g"]
+[ext_resource type="Texture2D" uid="uid://d2lnh2iw76awj" path="res://assets/fonctions/soldat-d-engin-guide-rapier-c.svg" id="3_sjmyl"]
+
+[resource]
+script = ExtResource("1_quklv")
+description = ""
+name = "TR_FONCTION_SOLDAT_D_ENGIN_GUIDE_RAPIER_NAME"
+texture_a = ExtResource("2_rmp7g")
+texture_c = ExtResource("3_sjmyl")
+favourite = false

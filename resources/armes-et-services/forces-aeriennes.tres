@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ArmeService" load_steps=4 format=3 uid="uid://bv2rjitw7guhf"]
+
+[ext_resource type="Script" path="res://resources/armes-et-services/arme-service.gd" id="1_neciv"]
+[ext_resource type="Texture2D" uid="uid://owcv3b24uh46" path="res://assets/armes-et-services/forces-aeriennes-a.svg" id="2_6mvg5"]
+[ext_resource type="Texture2D" uid="uid://l63iuhd7rpja" path="res://assets/armes-et-services/forces-aeriennes-c.svg" id="3_jeo8f"]
+
+[resource]
+script = ExtResource("1_neciv")
+type = 1
+name = "TR_ARME_SERVICE_FORCES_AERIENNES_NAME"
+texture_a = ExtResource("2_6mvg5")
+texture_c = ExtResource("3_jeo8f")
+favourite = false

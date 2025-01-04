@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Distinction" load_steps=3 format=3 uid="uid://cbkimxvigcmvq"]
+
+[ext_resource type="Script" path="res://resources/distinctions/distinction.gd" id="1_37f27"]
+[ext_resource type="Texture2D" uid="uid://cp7sg3venu4eq" path="res://assets/distinctions/navigateur.svg" id="2_ly2ev"]
+
+[resource]
+script = ExtResource("1_37f27")
+description = "TR_DISTINCTIONS_NAVIGATEUR_DESCRIPTION"
+type = 1
+name = "TR_DISTINCTIONS_NAVIGATEUR_NAME"
+texture_a = ExtResource("2_ly2ev")
+favourite = false

@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://b2wyil74nki16"
+
+[deps]
+
+files=["res://localization/parametres.fr.translation", "res://localization/parametres.de.translation"]
+
+source_file="res://localization/parametres.csv"
+dest_files=["res://localization/parametres.fr.translation", "res://localization/parametres.de.translation"]
+
+[params]
+
+compress=true
+delimiter=1

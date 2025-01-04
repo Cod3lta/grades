@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Beret" load_steps=3 format=3 uid="uid://ctoc45o52qtos"]
+
+[ext_resource type="Script" path="res://resources/berets/berets.gd" id="1_morrl"]
+[ext_resource type="Texture2D" uid="uid://ddveks0c46ch6" path="res://assets/berets/onu.svg" id="2_rd45q"]
+
+[resource]
+script = ExtResource("1_morrl")
+incorporation = "TR_BERET_ONU_INCORPORATION"
+name = "TR_BERET_ONU_NAME"
+texture_a = ExtResource("2_rd45q")
+favourite = false

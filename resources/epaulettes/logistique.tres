@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Epaulettes" load_steps=3 format=3 uid="uid://chq4n7t20aim4"]
+
+[ext_resource type="Script" path="res://resources/epaulettes/epaulettes.gd" id="1_j6qbb"]
+[ext_resource type="Texture2D" uid="uid://b44n6jfiu1d1u" path="res://assets/epaulettes/logistique.svg" id="2_h1t6n"]
+
+[resource]
+script = ExtResource("1_j6qbb")
+incorporation = "TR_EPAULETTE_LOGISTIQUE_INCORPORATION"
+name = "TR_EPAULETTE_LOGISTIQUE_NAME"
+texture_a = ExtResource("2_h1t6n")
+favourite = false

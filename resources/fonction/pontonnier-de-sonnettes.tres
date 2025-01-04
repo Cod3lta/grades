@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://uff208c2b2ss"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_ronno"]
+[ext_resource type="Texture2D" uid="uid://dqqlgf2ufplmp" path="res://assets/fonctions/pontonnier-de-sonnettes-a.svg" id="2_n12yl"]
+[ext_resource type="Texture2D" uid="uid://b1ryfuiytpo3o" path="res://assets/fonctions/pontonnier-de-sonnettes-c.svg" id="3_n7ht2"]
+
+[resource]
+script = ExtResource("1_ronno")
+description = ""
+name = "TR_FONCTION_PONTONNIER_DE_SONNETTES_NAME"
+texture_a = ExtResource("2_n12yl")
+texture_c = ExtResource("3_n7ht2")
+favourite = false

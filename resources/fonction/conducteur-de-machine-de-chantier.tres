@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://1yvt6xk282v8"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_x5o2l"]
+[ext_resource type="Texture2D" uid="uid://qlxh7gwebrke" path="res://assets/fonctions/conducteur-de-machine-de-chantier-a.svg" id="2_2b4an"]
+[ext_resource type="Texture2D" uid="uid://bp6gtkter1g36" path="res://assets/fonctions/conducteur-de-machine-de-chantier-c.svg" id="3_x7u7d"]
+
+[resource]
+script = ExtResource("1_x5o2l")
+description = ""
+name = "TR_FONCTION_CONDUCTEUR_DE_MACHINE_DE_CHANTIER_NAME"
+texture_a = ExtResource("2_2b4an")
+texture_c = ExtResource("3_x7u7d")
+favourite = false

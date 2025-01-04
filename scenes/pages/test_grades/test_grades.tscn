@@ -1,0 +1,201 @@
+[gd_scene load_steps=9 format=3 uid="uid://cvh122afs2rte"]
+
+[ext_resource type="Theme" uid="uid://si08rmojap6x" path="res://theme.tres" id="1_hks7h"]
+[ext_resource type="Script" path="res://scenes/pages/test_grades/test_grades.gd" id="1_vnhl7"]
+[ext_resource type="Texture2D" uid="uid://bjjfkb4uu8col" path="res://assets/ui/tenue-c.svg" id="7_faygu"]
+[ext_resource type="PackedScene" uid="uid://dhq0g6258e0bu" path="res://scenes/pages/modal_opener.tscn" id="9_i8jnl"]
+[ext_resource type="PackedScene" uid="uid://y3qjiifo2qey" path="res://scenes/modals/test_grades/test_grades_modal.tscn" id="10_vkm3v"]
+[ext_resource type="Script" path="res://scenes/pages/test_grades/open_question.gd" id="11_6v7sj"]
+
+[sub_resource type="Curve" id="Curve_4ojj0"]
+_data = [Vector2(0, 0), 0.0, 0.433187, 0, 0, Vector2(1, 1), 1.93864, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n4h6q"]
+content_margin_left = 60.0
+content_margin_top = 30.0
+content_margin_right = 60.0
+content_margin_bottom = 30.0
+bg_color = Color(0.113725, 0.113725, 0.113725, 1)
+
+[node name="TestGrades" type="MarginContainer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 2088.0
+grow_horizontal = 2
+theme = ExtResource("1_hks7h")
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 200
+script = ExtResource("1_vnhl7")
+rank_color_curve = SubResource("Curve_4ojj0")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 135
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_type_variation = &"Header2"
+text = "TR_TEST_DES_GRADES"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="ModalOpener" parent="VBoxContainer/VBoxContainer" instance=ExtResource("9_i8jnl")]
+layout_mode = 2
+linked_modal = ExtResource("10_vkm3v")
+dismissable = false
+
+[node name="Button2" type="Button" parent="VBoxContainer/VBoxContainer/ModalOpener"]
+layout_mode = 2
+theme_type_variation = &"ContentButton"
+text = "TR_ENTRAINER_LES_NOMS"
+script = ExtResource("11_6v7sj")
+training = 1
+
+[node name="ModalOpener2" parent="VBoxContainer/VBoxContainer" instance=ExtResource("9_i8jnl")]
+layout_mode = 2
+linked_modal = ExtResource("10_vkm3v")
+dismissable = false
+
+[node name="Button2" type="Button" parent="VBoxContainer/VBoxContainer/ModalOpener2"]
+layout_mode = 2
+mouse_filter = 2
+theme_type_variation = &"ContentButton"
+text = "TR_ENTRAINER_LES_BADGES"
+script = ExtResource("11_6v7sj")
+training = 0
+
+[node name="ModalOpener3" parent="VBoxContainer/VBoxContainer" instance=ExtResource("9_i8jnl")]
+layout_mode = 2
+linked_modal = ExtResource("10_vkm3v")
+dismissable = false
+
+[node name="Button2" type="Button" parent="VBoxContainer/VBoxContainer/ModalOpener3"]
+layout_mode = 2
+mouse_filter = 2
+theme_type_variation = &"ContentButton"
+text = "TR_ENTRAINER_LES_DEUX"
+script = ExtResource("11_6v7sj")
+
+[node name="TabContainer" type="TabContainer" parent="VBoxContainer"]
+layout_mode = 2
+current_tab = 0
+tabs_visible = false
+
+[node name="ResultsContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 135
+metadata/_tab_index = 0
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/TabContainer/ResultsContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = -40
+theme_override_constants/margin_right = -40
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/TabContainer/ResultsContainer/MarginContainer2"]
+layout_mode = 2
+
+[node name="ResultsContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/ResultsContainer"]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="Label4" type="Label" parent="VBoxContainer/TabContainer/ResultsContainer/ResultsContainer"]
+layout_mode = 2
+theme_type_variation = &"Header4"
+text = "TR_RESULTATS"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/TabContainer/ResultsContainer/ResultsContainer"]
+layout_mode = 2
+horizontal_scroll_mode = 3
+vertical_scroll_mode = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/ResultsContainer/ResultsContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ResultsGrid" type="GridContainer" parent="VBoxContainer/TabContainer/ResultsContainer/ResultsContainer/ScrollContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/h_separation = 80
+theme_override_constants/v_separation = 15
+columns = 2
+
+[node name="DateTime" type="Label" parent="VBoxContainer/TabContainer/ResultsContainer/ResultsContainer/ScrollContainer/VBoxContainer/ResultsGrid"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.584314, 0.584314, 0.584314, 1)
+text = "TR_DATE"
+
+[node name="Result" type="Label" parent="VBoxContainer/TabContainer/ResultsContainer/ResultsContainer/ScrollContainer/VBoxContainer/ResultsGrid"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.584314, 0.584314, 0.584314, 1)
+text = "TR_SCORE"
+
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer/TabContainer/ResultsContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = -40
+theme_override_constants/margin_right = -40
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/TabContainer/ResultsContainer/MarginContainer3"]
+layout_mode = 2
+
+[node name="ScoresContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/ResultsContainer"]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="Label" type="Label" parent="VBoxContainer/TabContainer/ResultsContainer/ScoresContainer"]
+layout_mode = 2
+theme_type_variation = &"Header4"
+text = "TR_SCORE_PAR_GRADE"
+
+[node name="GradeScores" type="HFlowContainer" parent="VBoxContainer/TabContainer/ResultsContainer/ScoresContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/h_separation = 30
+theme_override_constants/v_separation = 30
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/TabContainer/ResultsContainer/ScoresContainer"]
+visible = false
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_n4h6q")
+vertical_scroll_mode = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/TabContainer/ResultsContainer/ScoresContainer/ScrollContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/TabContainer"]
+visible = false
+layout_mode = 2
+theme_override_constants/margin_top = 135
+metadata/_tab_index = 1
+
+[node name="NoResult" type="VBoxContainer" parent="VBoxContainer/TabContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/TabContainer/MarginContainer/NoResult"]
+modulate = Color(0.113725, 0.113725, 0.113725, 1)
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+texture = ExtResource("7_faygu")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="VBoxContainer/TabContainer/MarginContainer/NoResult"]
+layout_mode = 2
+theme_type_variation = &"Header4"
+theme_override_colors/font_color = Color(0.584314, 0.584314, 0.584314, 1)
+text = "TR_AUCUN_RESULTAT"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="VBoxContainer/TabContainer/MarginContainer/NoResult"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.584314, 0.584314, 0.584314, 1)
+text = "TR_AUCUN_RESULTAT_DESCRIPTION"
+horizontal_alignment = 1
+autowrap_mode = 2

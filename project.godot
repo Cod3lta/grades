@@ -1,0 +1,77 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[addons]
+
+resources_spreadsheet_view/array_color_tint=100.0
+resources_spreadsheet_view/color_rows=true
+resources_spreadsheet_view/array_min_width=128.0
+resources_spreadsheet_view/resource_preview_size=32.0
+resources_spreadsheet_view/clip_headers=false
+resources_spreadsheet_view/dupe_arrays=true
+resources_spreadsheet_view/context_menu_on_leftclick=false
+resources_spreadsheet_view/fold_docks=false
+
+[application]
+
+config/name="grades"
+config/tags=PackedStringArray("ui")
+run/main_scene="res://scenes/app.tscn"
+config/quit_on_go_back=false
+config/features=PackedStringArray("4.3")
+run/low_processor_mode=true
+boot_splash/bg_color=Color(0.113725, 0.113725, 0.113725, 1)
+boot_splash/image="res://assets/ui/home.png"
+boot_splash/fullsize=false
+config/icon="res://assets/ui/logo-zoomout.png"
+boot_splash/minimum_display_time=500
+
+[display]
+
+window/size/viewport_width=1080
+window/size/viewport_height=1920
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/handheld/orientation=1
+window/ios/hide_home_indicator=false
+window/ios/hide_status_bar=false
+window/ios/suppress_ui_gesture=false
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/resources_spreadsheet_view/plugin.cfg")
+
+[file_customization]
+
+folder_colors={
+"res://assets/": "pink",
+"res://localization/": "orange",
+"res://resources/": "teal",
+"res://scenes/": "yellow"
+}
+
+[global_group]
+
+screens_btn=""
+show_modal=""
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
+[internationalization]
+
+locale/translation_remaps={}
+locale/translations=PackedStringArray("res://localization/armes_services.de.translation", "res://localization/armes_services.fr.translation", "res://localization/berets.de.translation", "res://localization/berets.fr.translation", "res://localization/coming_soon.de.translation", "res://localization/coming_soon.fr.translation", "res://localization/distinctions.de.translation", "res://localization/distinctions.fr.translation", "res://localization/epaulettes.de.translation", "res://localization/epaulettes.fr.translation", "res://localization/fonctions.de.translation", "res://localization/fonctions.fr.translation", "res://localization/grades.de.translation", "res://localization/grades.fr.translation", "res://localization/parametres.de.translation", "res://localization/parametres.fr.translation", "res://localization/particuliers.de.translation", "res://localization/particuliers.fr.translation", "res://localization/screens.de.translation", "res://localization/screens.fr.translation", "res://localization/test_grades.de.translation", "res://localization/test_grades.fr.translation")
+
+[rendering]
+
+renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true

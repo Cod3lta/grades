@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ArmeService" load_steps=4 format=3 uid="uid://bildt4c5f2xmb"]
+
+[ext_resource type="Script" path="res://resources/armes-et-services/arme-service.gd" id="1_ph06d"]
+[ext_resource type="Texture2D" uid="uid://cxb5pukvwff5f" path="res://assets/armes-et-services/sport-a.svg" id="2_ytlyf"]
+[ext_resource type="Texture2D" uid="uid://3qq8acf3jkvo" path="res://assets/armes-et-services/sport-c.svg" id="3_0rrb4"]
+
+[resource]
+script = ExtResource("1_ph06d")
+type = 3
+name = "TR_ARME_SERVICE_SPORT_NAME"
+texture_a = ExtResource("2_ytlyf")
+texture_c = ExtResource("3_0rrb4")
+favourite = false

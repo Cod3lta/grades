@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://ctt052ufloaye"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_7xxdd"]
+[ext_resource type="Texture2D" uid="uid://cafjcgp6wsv0f" path="res://assets/fonctions/compagnie-de-transport-aerien-escadrille-de-transport-aerien-a.svg" id="2_bhlkt"]
+[ext_resource type="Texture2D" uid="uid://bgl47av7d24ea" path="res://assets/fonctions/compagnie-de-transport-aerien-escadrille-de-transport-aerien-c.svg" id="3_ghd2d"]
+
+[resource]
+script = ExtResource("1_7xxdd")
+description = ""
+name = "TR_FONCTION_COMPAGNIE_DE_TRANSPORT_AERIEN_ESCADRILLE_DE_TRANSPORT_AERIEN_NAME"
+texture_a = ExtResource("2_bhlkt")
+texture_c = ExtResource("3_ghd2d")
+favourite = false

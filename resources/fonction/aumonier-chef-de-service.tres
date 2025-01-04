@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://cx1kqviphuirh"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_uwl15"]
+[ext_resource type="Texture2D" uid="uid://cp7sbiwtn0udy" path="res://assets/fonctions/aumonier-chef-de-service-a.svg" id="2_qy8i7"]
+[ext_resource type="Texture2D" uid="uid://de7ikiflerv3d" path="res://assets/fonctions/aumonier-chef-de-service-c.svg" id="3_5b5no"]
+
+[resource]
+script = ExtResource("1_uwl15")
+description = ""
+name = "TR_FONCTION_AUMONIER_CHEF_DE_SERVICE_NAME"
+texture_a = ExtResource("2_qy8i7")
+texture_c = ExtResource("3_5b5no")
+favourite = false

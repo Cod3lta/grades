@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://dbo5jftccyc61"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_3ui10"]
+[ext_resource type="Texture2D" uid="uid://d6q6dmlci0jl" path="res://assets/fonctions/justice-militaire-a.svg" id="2_pd1s7"]
+[ext_resource type="Texture2D" uid="uid://dnbrtg26o8b3b" path="res://assets/fonctions/justice-militaire-c.svg" id="3_a6aue"]
+
+[resource]
+script = ExtResource("1_3ui10")
+description = ""
+name = "TR_FONCTION_JUSTICE_MILITAIRE_NAME"
+texture_a = ExtResource("2_pd1s7")
+texture_c = ExtResource("3_a6aue")
+favourite = false

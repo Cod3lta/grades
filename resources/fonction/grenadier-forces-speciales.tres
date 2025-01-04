@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://ewmm35ixgu4c"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_wnv2o"]
+[ext_resource type="Texture2D" uid="uid://bsoap3hbloved" path="res://assets/fonctions/grenadier-forces-speciales-a.svg" id="2_d0n83"]
+[ext_resource type="Texture2D" uid="uid://hnxh3qqbb1cm" path="res://assets/fonctions/grenadier-forces-speciales-c.svg" id="3_bbttg"]
+
+[resource]
+script = ExtResource("1_wnv2o")
+description = ""
+name = "TR_FONCTION_GRENADIER_FORCES_SPECIALES_NAME"
+texture_a = ExtResource("2_d0n83")
+texture_c = ExtResource("3_bbttg")
+favourite = false

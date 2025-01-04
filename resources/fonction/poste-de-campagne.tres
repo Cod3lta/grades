@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://fjj04rnh51al"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_humlb"]
+[ext_resource type="Texture2D" uid="uid://c7b45ru3cxdya" path="res://assets/fonctions/poste-de-campagne-a.svg" id="2_r3y68"]
+[ext_resource type="Texture2D" uid="uid://cypstphnsr2sc" path="res://assets/fonctions/poste-de-campagne-c.svg" id="3_8hbpt"]
+
+[resource]
+script = ExtResource("1_humlb")
+description = ""
+name = "TR_FONCTION_POSTE_DE_CAMPAGNE_NAME"
+texture_a = ExtResource("2_r3y68")
+texture_c = ExtResource("3_8hbpt")
+favourite = false

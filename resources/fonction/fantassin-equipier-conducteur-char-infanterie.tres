@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://h5ljxc3i4qs1"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_503p4"]
+[ext_resource type="Texture2D" uid="uid://bjodxn6xl5qsd" path="res://assets/fonctions/fantassin-equipier-conducteur-char-infanterie-a.svg" id="2_4mjo2"]
+[ext_resource type="Texture2D" uid="uid://biqxkq6rsi7jg" path="res://assets/fonctions/fantassin-equipier-conducteur-char-infanterie-c.svg" id="3_byf1k"]
+
+[resource]
+script = ExtResource("1_503p4")
+description = ""
+name = "TR_FONCTION_FANTASSIN_EQUIPIER_CONDUCTEUR_CHAR_INFANTERIE_NAME"
+texture_a = ExtResource("2_4mjo2")
+texture_c = ExtResource("3_byf1k")
+favourite = false

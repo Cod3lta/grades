@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://kpj87gjarc0s"
+
+[deps]
+
+files=["res://localization/armes_services.fr.translation", "res://localization/armes_services.de.translation"]
+
+source_file="res://localization/armes_services.csv"
+dest_files=["res://localization/armes_services.fr.translation", "res://localization/armes_services.de.translation"]
+
+[params]
+
+compress=true
+delimiter=1

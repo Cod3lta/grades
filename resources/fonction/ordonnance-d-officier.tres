@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://dm0nfm82emucl"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_cf35v"]
+[ext_resource type="Texture2D" uid="uid://c608lv8mjav3r" path="res://assets/fonctions/ordonnance-d-officier-a.svg" id="2_4qxit"]
+[ext_resource type="Texture2D" uid="uid://rqdgxuvd1y2o" path="res://assets/fonctions/ordonnance-d-officier-c.svg" id="3_t4juc"]
+
+[resource]
+script = ExtResource("1_cf35v")
+description = ""
+name = "TR_FONCTION_ORDONNANCE_D_OFFICIER_NAME"
+texture_a = ExtResource("2_4qxit")
+texture_c = ExtResource("3_t4juc")
+favourite = false

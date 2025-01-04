@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Epaulettes" load_steps=3 format=3 uid="uid://d18anh5cooj5y"]
+
+[ext_resource type="Script" path="res://resources/epaulettes/epaulettes.gd" id="1_76ii5"]
+[ext_resource type="Texture2D" uid="uid://cdnurd8fvyko" path="res://assets/epaulettes/nbc.svg" id="2_8bd5d"]
+
+[resource]
+script = ExtResource("1_76ii5")
+incorporation = "TR_EPAULETTE_NBC_INCORPORATION"
+name = "TR_EPAULETTE_NBC_NAME"
+texture_a = ExtResource("2_8bd5d")
+favourite = false

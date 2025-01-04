@@ -1,0 +1,97 @@
+[gd_scene load_steps=10 format=3 uid="uid://dmddhc440cmmp"]
+
+[ext_resource type="Theme" uid="uid://si08rmojap6x" path="res://theme.tres" id="1_prd0g"]
+[ext_resource type="Script" path="res://scenes/pages/distinctions/distinctions.gd" id="2_xgmxq"]
+[ext_resource type="Script" path="res://scenes/pages/grades/buttons_disposition.gd" id="3_7t8mv"]
+[ext_resource type="Texture2D" uid="uid://bwcu3dpbt5i76" path="res://assets/ui/icon-grid.svg" id="4_iq72j"]
+[ext_resource type="Texture2D" uid="uid://u0pr4cgk01bp" path="res://assets/ui/icon-list.svg" id="5_offtc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wm64x"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_moofj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nmtha"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f6skm"]
+
+[node name="Distinctions" type="MarginContainer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 2441.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_prd0g")
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 200
+script = ExtResource("2_xgmxq")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 40
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_type_variation = &"Header3"
+text = "TR_DISTINCTIONS"
+uppercase = true
+
+[node name="Label2" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.584314, 0.584314, 0.584314, 1)
+text = "TR_DISTINCTIONS_DESCRIPTION"
+autowrap_mode = 2
+
+[node name="ButtonsDisposition2" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 30
+script = ExtResource("3_7t8mv")
+
+[node name="ButtonGrid" type="Button" parent="VBoxContainer/ButtonsDisposition2"]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_colors/icon_normal_color = Color(0.584314, 0.584314, 0.584314, 1)
+theme_override_colors/icon_focus_color = Color(0.584314, 0.584314, 0.584314, 1)
+theme_override_colors/icon_hover_color = Color(0.584314, 0.584314, 0.584314, 1)
+theme_override_constants/icon_max_width = 60
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wm64x")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_moofj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_nmtha")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_f6skm")
+toggle_mode = true
+icon = ExtResource("4_iq72j")
+
+[node name="ButtonList" type="Button" parent="VBoxContainer/ButtonsDisposition2"]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_colors/icon_normal_color = Color(0.584314, 0.584314, 0.584314, 1)
+theme_override_colors/icon_focus_color = Color(0.584314, 0.584314, 0.584314, 1)
+theme_override_colors/icon_hover_color = Color(0.584314, 0.584314, 0.584314, 1)
+theme_override_constants/icon_max_width = 60
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wm64x")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_moofj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_nmtha")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_f6skm")
+toggle_mode = true
+icon = ExtResource("5_offtc")
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="ListDisposition" type="VBoxContainer" parent="VBoxContainer"]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 60
+alignment = 1
+
+[node name="GridDisposition" type="HFlowContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 60
+theme_override_constants/v_separation = 60
+alignment = 1
+last_wrap_alignment = 1
+
+[connection signal="disposition_changed" from="VBoxContainer/ButtonsDisposition2" to="." method="_on_disposition_changed"]
+[connection signal="pressed" from="VBoxContainer/ButtonsDisposition2/ButtonGrid" to="VBoxContainer/ButtonsDisposition2" method="_on_button_pressed" binds= [0]]
+[connection signal="pressed" from="VBoxContainer/ButtonsDisposition2/ButtonList" to="VBoxContainer/ButtonsDisposition2" method="_on_button_pressed" binds= [1]]

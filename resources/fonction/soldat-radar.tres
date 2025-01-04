@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://pbj7jh12gknn"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_365tc"]
+[ext_resource type="Texture2D" uid="uid://c4vohtrk23udo" path="res://assets/fonctions/soldat-radar-a.svg" id="2_ogf4d"]
+[ext_resource type="Texture2D" uid="uid://bw0q20grcpkbp" path="res://assets/fonctions/soldat-radar-c.svg" id="3_m8sh4"]
+
+[resource]
+script = ExtResource("1_365tc")
+description = ""
+name = "TR_FONCTION_SOLDAT_RADAR_NAME"
+texture_a = ExtResource("2_ogf4d")
+texture_c = ExtResource("3_m8sh4")
+favourite = false

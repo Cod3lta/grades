@@ -1,0 +1,67 @@
+[gd_scene load_steps=3 format=3 uid="uid://shlgvl674gnt"]
+
+[ext_resource type="Script" path="res://scenes/soldier/uniform_c.gd" id="1_facqq"]
+[ext_resource type="PackedScene" uid="uid://dc48u8b4e1w5c" path="res://assets/soldier/Uniform C.glb" id="1_l3ex3"]
+
+[node name="UniformC" type="Node3D" node_paths=PackedStringArray("soldier")]
+script = ExtResource("1_facqq")
+soldier = NodePath("Soldier")
+start_rotation = -0.5
+
+[node name="Soldier" parent="." instance=ExtResource("1_l3ex3")]
+transform = Transform3D(4.365, 0, 0, 0, 4.365, 0, 0, 0, 4.365, 0, 0, 0.156989)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.608443, -0.793598, 0, 0.793598, 0.608443, 0, 7.52952, 0)
+light_color = Color(0.97108, 0.817059, 0.82569, 1)
+light_energy = 0.42
+shadow_bias = 0.0
+
+[node name="DirectionalLight3D4" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.222562, -0.544116, 0.808952, 0.0916698, 0.814408, 0.573006, -0.970599, 0.201686, -0.131377, 0, 7.52952, 0)
+light_color = Color(0.967537, 0.91608, 0.918163, 1)
+light_energy = 0.695
+shadow_bias = 0.0
+
+[node name="DirectionalLight3D3" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.787561, 0.292843, -0.542209, 0.0916699, 0.814408, 0.573006, 0.60938, -0.500982, 0.614551, 0, 7.52952, 0)
+light_color = Color(0.967537, 0.91608, 0.918163, 1)
+light_energy = 0.695
+shadow_bias = 0.0
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.434144, -0.557236, -0.707818, -0.0393974, 0.773232, -0.632898, 0.899982, 0.302655, 0.31374, 0, 7.52952, 0)
+light_color = Color(0.591035, 0.521199, 0.197993, 1)
+light_energy = 0.815
+shadow_bias = 0.0
+shadow_opacity = 0.74
+
+[node name="DirectionalLight3D5" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.777146, 0, 0.629321, 0, 1, 0, -0.629321, 0, -0.777146, 0, 7.52952, 0)
+visible = false
+light_color = Color(0.52567, 0.802635, 0.327762, 1)
+light_energy = 0.24
+shadow_bias = 0.0
+shadow_opacity = 0.74
+
+[node name="Positions" type="Node3D" parent="."]
+
+[node name="Default" type="SpringArm3D" parent="Positions"]
+transform = Transform3D(0.920505, 0.0340544, 0.389244, 0, 0.996194, -0.0871558, -0.390731, 0.0802272, 0.917002, 0, 5.965, 0)
+spring_length = 12.265
+
+[node name="Grades" type="SpringArm3D" parent="Positions"]
+transform = Transform3D(0.961261, 0.112112, -0.251807, 0, 0.913545, 0.406737, 0.275637, -0.39098, 0.878156, -0.404281, 5.67445, 0.225457)
+spring_length = 2.925
+
+[node name="ArmesServices" type="SpringArm3D" parent="Positions"]
+transform = Transform3D(0.736097, -0.117538, 0.666593, 0, 0.984807, 0.173648, -0.676876, -0.127822, 0.724914, 0.416057, 5.67445, 0.0763041)
+spring_length = 3.01
+
+[node name="Fonction" type="SpringArm3D" parent="Positions"]
+transform = Transform3D(0.996346, 0.0177592, -0.0835503, 0, 0.978147, 0.207912, 0.0854169, -0.207152, 0.974573, 0.313337, 5.30869, 0.302557)
+spring_length = 2.165
+
+[node name="Particuliers" type="SpringArm3D" parent="Positions"]
+transform = Transform3D(0.614285, -0.16406, 0.771841, 0, 0.978147, 0.207912, -0.789084, -0.127717, 0.600861, 0.492228, 5.29934, 0.228104)
+spring_length = 1.81

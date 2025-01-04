@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Epaulettes" load_steps=3 format=3 uid="uid://csvmls3s87nbe"]
+
+[ext_resource type="Script" path="res://resources/epaulettes/epaulettes.gd" id="1_hdrno"]
+[ext_resource type="Texture2D" uid="uid://dowcv1jkt4147" path="res://assets/epaulettes/artillerie.svg" id="2_i1q5i"]
+
+[resource]
+script = ExtResource("1_hdrno")
+incorporation = "TR_EPAULETTE_ARTILLERIE_INCORPORATION"
+name = "TR_EPAULETTE_ARTILLERIE_NAME"
+texture_a = ExtResource("2_i1q5i")
+favourite = false

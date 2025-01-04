@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ArmeService" load_steps=4 format=3 uid="uid://bmxdwlek7sey3"]
+
+[ext_resource type="Script" path="res://resources/armes-et-services/arme-service.gd" id="1_twr0f"]
+[ext_resource type="Texture2D" uid="uid://qp8gmg0sqxld" path="res://assets/armes-et-services/service-social-a.svg" id="2_kw1bv"]
+[ext_resource type="Texture2D" uid="uid://bkckml7fvb4k7" path="res://assets/armes-et-services/service-social-c.svg" id="3_7yyhl"]
+
+[resource]
+script = ExtResource("1_twr0f")
+type = 3
+name = "TR_ARME_SERVICE_SERVICE_SOCIAL_NAME"
+texture_a = ExtResource("2_kw1bv")
+texture_c = ExtResource("3_7yyhl")
+favourite = false

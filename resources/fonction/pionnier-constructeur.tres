@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://d2tgnmvbhynfd"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_gduna"]
+[ext_resource type="Texture2D" uid="uid://xnqsl5qyh6kq" path="res://assets/fonctions/pionnier-constructeur-a.svg" id="2_mbn3r"]
+[ext_resource type="Texture2D" uid="uid://dxftxw7uamr3n" path="res://assets/fonctions/pionnier-constructeur-c.svg" id="3_4afuu"]
+
+[resource]
+script = ExtResource("1_gduna")
+description = ""
+name = "TR_FONCTION_PIONNIER_CONSTRUCTEUR_NAME"
+texture_a = ExtResource("2_mbn3r")
+texture_c = ExtResource("3_4afuu")
+favourite = false

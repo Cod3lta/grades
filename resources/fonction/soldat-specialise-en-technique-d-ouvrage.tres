@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://b5a575txcbiae"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_j3wb6"]
+[ext_resource type="Texture2D" uid="uid://0hgijbh7brri" path="res://assets/fonctions/soldat-specialise-en-technique-d-ouvrage-a.svg" id="2_8q7dk"]
+[ext_resource type="Texture2D" uid="uid://dlrm3ro16bhvw" path="res://assets/fonctions/soldat-specialise-en-technique-d-ouvrage-c.svg" id="3_bytsr"]
+
+[resource]
+script = ExtResource("1_j3wb6")
+description = ""
+name = "TR_FONCTION_SOLDAT_SPECIALISE_EN_TECHNIQUE_D_OUVRAGE_NAME"
+texture_a = ExtResource("2_8q7dk")
+texture_c = ExtResource("3_bytsr")
+favourite = false

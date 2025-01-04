@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Grade" load_steps=4 format=3 uid="uid://gricq27tb2p"]
+
+[ext_resource type="Script" path="res://resources/grades/grades.gd" id="1_p4jne"]
+[ext_resource type="Texture2D" uid="uid://kp7qfes6rh2v" path="res://assets/grades/adjudant-d-etat-major-a.svg" id="2_4jsrv"]
+[ext_resource type="Texture2D" uid="uid://kxu466hh6v82" path="res://assets/grades/adjudant-d-etat-major-c.svg" id="3_s70ef"]
+
+[resource]
+script = ExtResource("1_p4jne")
+short = "TR_ADJUDANT_D_ETAT_MAJOR_SHORT"
+description = "TR_ADJUDANT_D_ETAT_MAJOR_DESCRIPTION"
+type = 2
+name = "TR_ADJUDANT_D_ETAT_MAJOR_NAME"
+texture_a = ExtResource("2_4jsrv")
+texture_c = ExtResource("3_s70ef")

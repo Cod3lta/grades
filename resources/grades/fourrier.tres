@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Grade" load_steps=4 format=3 uid="uid://bpfpf3qqbwe0g"]
+
+[ext_resource type="Script" path="res://resources/grades/grades.gd" id="1_ogdmo"]
+[ext_resource type="Texture2D" uid="uid://c8uog5a1y1hfl" path="res://assets/grades/fourier-a.svg" id="2_0e0ym"]
+[ext_resource type="Texture2D" uid="uid://uct56y35ngjx" path="res://assets/grades/fourier-c.svg" id="3_buwje"]
+
+[resource]
+script = ExtResource("1_ogdmo")
+short = "TR_FOURRIER_SHORT"
+description = "TR_FOURRIER_DESCRIPTION"
+type = 2
+name = "TR_FOURRIER_NAME"
+texture_a = ExtResource("2_0e0ym")
+texture_c = ExtResource("3_buwje")

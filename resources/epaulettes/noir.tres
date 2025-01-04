@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Epaulettes" load_steps=3 format=3 uid="uid://dc0g6loyf5f03"]
+
+[ext_resource type="Script" path="res://resources/epaulettes/epaulettes.gd" id="1_gcp2r"]
+[ext_resource type="Texture2D" uid="uid://dk63qn5qboyfl" path="res://assets/epaulettes/noir.svg" id="2_flkdd"]
+
+[resource]
+script = ExtResource("1_gcp2r")
+incorporation = "TR_EPAULETTE_NOIR_INCORPORATION"
+name = "TR_EPAULETTE_NOIR_NAME"
+texture_a = ExtResource("2_flkdd")
+favourite = false

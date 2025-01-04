@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Epaulettes" load_steps=3 format=3 uid="uid://bt0w8gtqahn86"]
+
+[ext_resource type="Script" path="res://resources/epaulettes/epaulettes.gd" id="1_bgqee"]
+[ext_resource type="Texture2D" uid="uid://jmhbwg6pygbj" path="res://assets/epaulettes/justice-militaire.svg" id="2_yij7x"]
+
+[resource]
+script = ExtResource("1_bgqee")
+incorporation = "TR_EPAULETTE_JUSTICE_MILITAIRE_INCORPORATION"
+name = "TR_EPAULETTE_JUSTICE_MILITAIRE_NAME"
+texture_a = ExtResource("2_yij7x")
+favourite = false

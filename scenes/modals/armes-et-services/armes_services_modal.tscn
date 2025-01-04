@@ -1,0 +1,71 @@
+[gd_scene load_steps=8 format=3 uid="uid://dh7tdmqfytln8"]
+
+[ext_resource type="Theme" uid="uid://si08rmojap6x" path="res://theme.tres" id="1_rguwx"]
+[ext_resource type="Script" path="res://scenes/modals/armes-et-services/armes_services_modal.gd" id="2_w6ovf"]
+[ext_resource type="Resource" uid="uid://sowmemk3l20s" path="res://resources/armes-et-services/genie.tres" id="3_1bg6g"]
+[ext_resource type="Texture2D" uid="uid://c5ai5uijh0nvm" path="res://assets/armes-et-services/genie-a.svg" id="4_13cqv"]
+[ext_resource type="FontFile" uid="uid://dkuomcido03dv" path="res://assets/ui/Inter-Italic-VariableFont_opsz,wght.ttf" id="5_j6xvb"]
+[ext_resource type="Texture2D" uid="uid://jeqv047txvj3" path="res://assets/armes-et-services/genie-c.svg" id="5_mtv1f"]
+
+[sub_resource type="FontVariation" id="FontVariation_7nr3n"]
+base_font = ExtResource("5_j6xvb")
+variation_embolden = 0.75
+
+[node name="DistinctionsModal" type="MarginContainer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 358.0
+grow_horizontal = 2
+theme = ExtResource("1_rguwx")
+theme_override_constants/margin_top = -200
+script = ExtResource("2_w6ovf")
+arme_service = ExtResource("3_1bg6g")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 70
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 40
+
+[node name="TextureA" type="TextureRect" parent="VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(270, 400)
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("4_13cqv")
+stretch_mode = 5
+
+[node name="TextureC" type="TextureRect" parent="VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200, 400)
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("5_mtv1f")
+stretch_mode = 5
+
+[node name="Name" type="Label" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"Header2"
+text = "TR_ARME_SERVICE_GENIE_NAME"
+autowrap_mode = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.584314, 0.584314, 0.584314, 1)
+theme_override_fonts/font = SubResource("FontVariation_7nr3n")
+text = "TR_TYPE"
+autowrap_mode = 3
+
+[node name="Type" type="Label" parent="VBoxContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "TR_ARME_SERVICE_TYPE_ARMES"
+autowrap_mode = 3

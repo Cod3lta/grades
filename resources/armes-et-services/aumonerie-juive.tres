@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ArmeService" load_steps=4 format=3 uid="uid://bn5fx0s0o7xm4"]
+
+[ext_resource type="Script" path="res://resources/armes-et-services/arme-service.gd" id="1_0ded2"]
+[ext_resource type="Texture2D" uid="uid://cxua2jh0sqnrg" path="res://assets/armes-et-services/aumonerie-juive-a.svg" id="2_ppdi5"]
+[ext_resource type="Texture2D" uid="uid://c3wmvb16aqxnc" path="res://assets/armes-et-services/aumonerie-juive-c.svg" id="3_amuv4"]
+
+[resource]
+script = ExtResource("1_0ded2")
+type = 2
+name = "TR_ARME_SERVICE_AUMONERIE_JUIVE_NAME"
+texture_a = ExtResource("2_ppdi5")
+texture_c = ExtResource("3_amuv4")
+favourite = false

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://drmxtn3pikv8j"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_dteo4"]
+[ext_resource type="Texture2D" uid="uid://jgk2yb2y2ieu" path="res://assets/fonctions/compagnie-de-maintenance-aviation-a.svg" id="2_rwoj3"]
+[ext_resource type="Texture2D" uid="uid://djvcx5to6dgu4" path="res://assets/fonctions/compagnie-de-maintenance-aviation-c.svg" id="3_14pcy"]
+
+[resource]
+script = ExtResource("1_dteo4")
+description = ""
+name = "TR_FONCTION_COMPAGNIE_DE_MAINTENANCE_AVIATION_NAME"
+texture_a = ExtResource("2_rwoj3")
+texture_c = ExtResource("3_14pcy")
+favourite = false

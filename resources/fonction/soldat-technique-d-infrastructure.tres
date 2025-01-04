@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://ce5iqhag7rvp3"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_pt8pc"]
+[ext_resource type="Texture2D" uid="uid://coayfneji4jl7" path="res://assets/fonctions/soldat-technique-d-infrastructure-a.svg" id="2_iwuim"]
+[ext_resource type="Texture2D" uid="uid://du0qa41vhuc5h" path="res://assets/fonctions/soldat-technique-d-infrastructure-c.svg" id="3_mswmr"]
+
+[resource]
+script = ExtResource("1_pt8pc")
+description = ""
+name = "TR_FONCTION_SOLDAT_TECHNIQUE_D_INFRASTRUCTURE_NAME"
+texture_a = ExtResource("2_iwuim")
+texture_c = ExtResource("3_mswmr")
+favourite = false

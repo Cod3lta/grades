@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://c7o2au2ns02ag"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_tedtr"]
+[ext_resource type="Texture2D" uid="uid://jh4vcsmwo1v7" path="res://assets/fonctions/soldat-de-renseignement-topographe-a.svg" id="2_m7wcr"]
+[ext_resource type="Texture2D" uid="uid://cxygrkpuqy4ai" path="res://assets/fonctions/soldat-de-renseignement-topographe-c.svg" id="3_job7f"]
+
+[resource]
+script = ExtResource("1_tedtr")
+description = ""
+name = "TR_FONCTION_SOLDAT_DE_RENSEIGNEMENT_TOPOGRAPHE_NAME"
+texture_a = ExtResource("2_m7wcr")
+texture_c = ExtResource("3_job7f")
+favourite = false

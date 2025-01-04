@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Epaulettes" load_steps=3 format=3 uid="uid://bftdh0rmp41bp"]
+
+[ext_resource type="Script" path="res://resources/epaulettes/epaulettes.gd" id="1_xk08m"]
+[ext_resource type="Texture2D" uid="uid://bup2iymwleall" path="res://assets/epaulettes/sauvetage.svg" id="2_jv65r"]
+
+[resource]
+script = ExtResource("1_xk08m")
+incorporation = "TR_EPAULETTE_SAUVETAGE_INCORPORATION"
+name = "TR_EPAULETTE_SAUVETAGE_NAME"
+texture_a = ExtResource("2_jv65r")
+favourite = false

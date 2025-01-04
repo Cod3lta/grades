@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://c1cg4i5sbu47g"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_10utn"]
+[ext_resource type="Texture2D" uid="uid://8wjsmgsth480" path="res://assets/fonctions/grenadier-a.svg" id="2_00grq"]
+[ext_resource type="Texture2D" uid="uid://yqmyrpsn022d" path="res://assets/fonctions/grenadier-c.svg" id="3_3uckh"]
+
+[resource]
+script = ExtResource("1_10utn")
+description = ""
+name = "TR_FONCTION_GRENADIER_NAME"
+texture_a = ExtResource("2_00grq")
+texture_c = ExtResource("3_3uckh")
+favourite = false

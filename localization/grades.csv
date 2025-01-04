@@ -1,0 +1,82 @@
+KEYS;fr;de
+TR_TROUPE;Troupe;Mannschaft
+TR_SOUS_OFFICIERS;Sous-officiers;Unteroffiziere
+TR_SOUS_OFFICIERS_SUPERIEURS;Sous-officiers supérieurs;Höhere Unteroffiziere
+TR_OFFICIERS;Officiers;Subalternoffiziere
+TR_OFFICIERS_SUPERIEURS;Officiers supérieurs;Stabsoffiziere
+TR_OFFICIERS_GENERAUX;Officiers généraux;Höhere Stabsoffiziere
+TR_RECRUE_NAME;Recrue;Rekrut
+TR_RECRUE_SHORT;Recr;Rekr
+TR_RECRUE_DESCRIPTION;Grade initial lors de l'entrée d'un conscrit à l'école de recrues. Après 12 semaines, la recrue est promue au grade de soldat.;Anfangsgrad beim Eintritt eines Stellungspflichtigen in die Rekrutenschule. Nach 12 Wochen wird der Rekrut in den Rang eines Soldaten befördert.
+TR_SOLDAT_NAME;Soldat;Soldat
+TR_SOLDAT_SHORT;Sdt;Sdt
+TR_SOLDAT_DESCRIPTION; ; 
+TR_APPOINTE_NAME;Appointé;Gefreiter
+TR_APPOINTE_SHORT;App;Gfr
+TR_APPOINTE_DESCRIPTION;Promotion possible après deux cours de répétition.;Beförderung nach zwei Wiederholungskursen möglich.
+TR_APPOINTE_CHEF_NAME;Appointé-chef;Obergefreiter
+TR_APPOINTE_CHEF_SHORT;App chef;Obgfr
+TR_APPOINTE_CHEF_DESCRIPTION;Grade supprimé au 1er janvier 2018. Auparavant grade obtenu à la fin de l'école de sous-officier, avant le stage pratique pour devenir sergent. Appointé devenant app chef durant un cours de répétition, il pouvait alors être chef de groupe.;Dienstgrad wurde am 1. Januar 2018 abgeschafft. Bisheriger Rang, der am Ende der Unteroffiziersschule vor dem Praktikum zum Feldwebel erworben wurde. Gefreiter, der während eines Wiederholungskurses zum Obergefreiten wurde, konnte dann Gruppenführer sein.
+TR_CAPORAL_NAME;Caporal;Korporal
+TR_CAPORAL_SHORT;Cpl;Kpl
+TR_CAPORAL_DESCRIPTION;Avant 2004, chef de groupe. Depuis 2004 sous-officier spécialisé. Plus attribué depuis 2018.;Vor 2004 Gruppenleiter. Seit 2004 Fachunteroffizier. Nicht mehr zugeteilt seit 2018.
+TR_SERGENT_NAME;Sergent;Wachtmeister
+TR_SERGENT_SHORT;Sgt;Wm
+TR_SERGENT_DESCRIPTION;Chef de groupe. Avant 2004, remplaçant du chef de section ou du sergent-major d'unité.;Leiter einer Gruppe. Vor 2004: Stellvertreter des Zugführers oder des Einheitsfeldwebels.
+TR_SERGENT_CHEF_NAME;Sergent-chef;Oberwachtmeister
+TR_SERGENT_CHEF_SHORT;Sgt chef;Obwm
+TR_SERGENT_CHEF_DESCRIPTION;Chef de groupe expérimenté ou remplaçant du chef de section en CR. Avant 2018, aspirant officier durant son stage pratique.;Erfahrener Gruppenführer oder Ersatz für den Zugführer im WK. Vor 2018: Offiziersanwärter während seines Praktikums.
+TR_SERGENT_MAJOR_NAME;Sergent-major;Feldweibel
+TR_SERGENT_MAJOR_SHORT;Sgtm;Fw
+TR_SERGENT_MAJOR_DESCRIPTION;Sous-officier technique (p.ex. chef d'atelier).;Technischer Unteroffizier (z. B. Werkstattleiter).
+TR_FOURRIER_NAME;Fourrier;Fourier
+TR_FOURRIER_SHORT;Four;Four
+TR_FOURRIER_DESCRIPTION;Responsable des cantonnements, de la subsistance, de la comptabilité et de la solde.;Verantwortlich für Unterkünfte, Verpflegung, Buchhaltung und Sold.
+TR_SERGENT_MAJOR_CHEF_NAME;Sergent-major chef;Hauptfeldweibel
+TR_SERGENT_MAJOR_CHEF_SHORT;Sgtm chef;Hptfw
+TR_SERGENT_MAJOR_CHEF_DESCRIPTION;Responsable du service intérieur, de l'organisation des cantonnements et du ravitaillement de l'unité.;Verantwortlich für den Innendienst, die Organisation der Unterkünfte und die Versorgung der Einheit.
+TR_ADJUDANT_SOUS_OFFICIER_NAME;Adjudant sous-officier;Adjutant Unteroffizier
+TR_ADJUDANT_SOUS_OFFICIER_SHORT;Adj sof;Adj Uof
+TR_ADJUDANT_SOUS_OFFICIER_DESCRIPTION;Chef d'une section logistique ou instructeur dans une école de sous-officiers.;Leiter eines Logistikzuges oder Ausbilder in einer Unteroffiziersschule.
+TR_ADJUDANT_D_ETAT_MAJOR_NAME;Adjudant d'état-major;Stabsadjutant
+TR_ADJUDANT_D_ETAT_MAJOR_SHORT;Adj EM;Stabsadj
+TR_ADJUDANT_D_ETAT_MAJOR_DESCRIPTION;Sous-officier incorporé dans l'état-major d'un bataillon ou instructeur chef de classe dans une école de sous-officiers.;Unteroffizier, der in den Stab eines Bataillons eingegliedert ist, oder Klassenleiterausbilder in einer Unteroffiziersschule.
+TR_ADJUDANT_MAJOR_NAME;Adjudant-major;Hauptadjutant
+TR_ADJUDANT_MAJOR_SHORT;Adj maj;Hptadj
+TR_ADJUDANT_MAJOR_DESCRIPTION;Sous-officier incorporé dans l'état-major d'une brigade.;Unteroffizier, der in den Stab einer Brigade aufgenommen wird.
+TR_ADJUDANT_CHEF_NAME;Adjudant-chef;Chefadjutant
+TR_ADJUDANT_CHEF_SHORT;Adj chef;Chefadj
+TR_ADJUDANT_CHEF_DESCRIPTION;Sous-officier incorporé dans l'état-major d'une division territoriale, des forces terrestres, des forces aériennes ou du chef de l'Armée.;Unteroffizier, der in den Stab einer Territorialdivision, der Landstreitkräfte, der Luftstreitkräfte oder des Armeechefs eingegliedert ist.
+TR_LIEUTENANT_NAME;Lieutenant;Leutnant
+TR_LIEUTENANT_SHORT;Lt;Lt
+TR_LIEUTENANT_DESCRIPTION;Chef de section, environ 30 militaires.;Zugführer, ca. 30 Soldaten.
+TR_PREMIER_LIEUTENANT_NAME;Premier-lieutenant;Oberleutnant
+TR_PREMIER_LIEUTENANT_SHORT;Plt;Oblt
+TR_PREMIER_LIEUTENANT_DESCRIPTION;Chef de section expérimenté, peut être remplaçant du commandant de compagnie en CR. Aspirant commandant de compagnie en paiement de gallon dans les ER.;Erfahrener Zugführer, kann den Kompaniekommandanten im WK vertreten. Kompaniekommandantenanwärter in Gallonenzahlung in der RS.
+TR_CAPITAINE_NAME;Capitaine;Hauptmann
+TR_CAPITAINE_SHORT;Cap;Hptm
+TR_CAPITAINE_DESCRIPTION;Commandant d'une compagnie. Grade en outre attribué aux aumôniers de l'Armée et aux juges d'instructions.;Kommandant einer Kompanie. Dieser Rang wurde außerdem Armeeseelsorgern und Untersuchungsrichtern verliehen.
+TR_MAJOR_NAME;Major;Major
+TR_MAJOR_SHORT;Maj;Maj
+TR_MAJOR_DESCRIPTION;En principe officier de l'état-major d'un bataillon ou remplaçant du commandant de bataillon.;In der Regel Offizier des Stabes eines Bataillons oder Stellvertreter des Bataillonskommandeurs.
+TR_LIEUTENANT_COLONEL_NAME;Lieutenant-colonel;Oberstleutnant
+TR_LIEUTENANT_COLONEL_SHORT;Lt col;Oberstlt
+TR_LIEUTENANT_COLONEL_DESCRIPTION;Commandant d'un bataillon, environ 1 000 hommes, ou responsable d'un domaine de base de conduite au sein de l'état-major d'une brigade.;Kommandeur eines Bataillons, ca. 1.000 Mann, oder Leiter eines Führungsgrundgebiets im Stab einer Brigade.
+TR_COLONEL_NAME;Colonel;Oberst
+TR_COLONEL_SHORT;Col;Oberst
+TR_COLONEL_DESCRIPTION;Remplaçant du commandant d'une brigade ou commandant d'une base aérienne, d'une formation aviation ou commandant d'une école de recrues.;Stellvertreter des Kommandanten einer Brigade oder Kommandant eines Flugplatzes, eines Fliegerverbandes oder Kommandant einer Rekrutenschule.
+TR_OFFICIER_SPECIALISTE_NAME;Officier spécialiste;Fachoffizier
+TR_OFFICIER_SPECIALISTE_SHORT;Of spéc;Fachof
+TR_OFFICIER_SPECIALISTE_DESCRIPTION;Grade attribué aux sous-officiers et à la troupe lorsqu'ils se voient attribuer une fonction technique particulière correspondante à un grade d'officier subalterne ou d'officier supérieur. (p. ex. officier de presse et d'information 'PIO', médecin, engagement à l'étranger dans le centre de compétence Swissint).;Dienstgrad, der Unteroffizieren und der Truppe verliehen wird, wenn ihnen eine besondere technische Funktion zugewiesen wird, die einem untergeordneten oder höheren Offiziersgrad entspricht. (z.B. Presse- und Informationsoffizier 'PIO', Arzt, Auslandseinsatz im Kompetenzzentrum Swissint).
+TR_BRIGADIER_NAME;Brigadier;Brigadier
+TR_BRIGADIER_SHORT;Br;Br
+TR_BRIGADIER_DESCRIPTION;Commandant d'une brigade ou d'une formation d'application.;Kommandeur einer Brigade oder eines Lehrverbands.
+TR_DIVISIONNAIRE_NAME;Divisionnaire;Divisionär
+TR_DIVISIONNAIRE_SHORT;Div;Div
+TR_DIVISIONNAIRE_DESCRIPTION;Commandant d'une division territoriale, chef de l'État-Major de l'armée.;Kommandant einer territorialen Division, Leiter des Generalstabs der Armee.
+TR_COMMANDANT_DE_CORPS_NAME;Commandant de corps;Korpskommandant
+TR_COMMANDANT_DE_CORPS_SHORT;Cdt C;KKdt
+TR_COMMANDANT_DE_CORPS_DESCRIPTION;Chef de l'armée. Chef d'un corps d'armée (commandement de l'instruction, commandement des opérations). Attaché de défense à Washington.;Anführer einer Armee. Leiter eines Armeekorps (Ausbildungskommando, Operationskommando). Verteidigungsattaché in Washington.
+TR_GENERAL_NAME;Général;General
+TR_GENERAL_SHORT;Gen;Gen
+TR_GENERAL_DESCRIPTION;Commandant en chef des forces armées suisses, nommé uniquement en temps de guerre par l'Assemblée fédérale.;Oberbefehlshaber der Schweizer Streitkräfte, der nur in Kriegszeiten von der Bundesversammlung ernannt wird.

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://b835pppho8nb3"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_r2agj"]
+[ext_resource type="Texture2D" uid="uid://dtjuljt6gsngr" path="res://assets/fonctions/soldat-veterinaire-a.svg" id="2_y2do5"]
+[ext_resource type="Texture2D" uid="uid://redi1eesrg5w" path="res://assets/fonctions/soldat-veterinaire-c.svg" id="3_hb2j0"]
+
+[resource]
+script = ExtResource("1_r2agj")
+description = ""
+name = "TR_FONCTION_SOLDAT_VETERINAIRE_NAME"
+texture_a = ExtResource("2_y2do5")
+texture_c = ExtResource("3_hb2j0")
+favourite = false

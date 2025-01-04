@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ArmeService" load_steps=4 format=3 uid="uid://d2xahxowrtmqf"]
+
+[ext_resource type="Script" path="res://resources/armes-et-services/arme-service.gd" id="1_fwxyd"]
+[ext_resource type="Texture2D" uid="uid://bo5dncj86i7k7" path="res://assets/armes-et-services/troupes-blindees-a.svg" id="2_nucbs"]
+[ext_resource type="Texture2D" uid="uid://dr613w3vhtujw" path="res://assets/armes-et-services/troupes-blindees-c.svg" id="3_nb0sv"]
+
+[resource]
+script = ExtResource("1_fwxyd")
+type = 1
+name = "TR_ARME_SERVICE_TROUPES_BLINDEES_NAME"
+texture_a = ExtResource("2_nucbs")
+texture_c = ExtResource("3_nb0sv")
+favourite = false

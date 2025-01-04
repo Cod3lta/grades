@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Epaulettes" load_steps=3 format=3 uid="uid://ccnlx63no506t"]
+
+[ext_resource type="Script" path="res://resources/epaulettes/epaulettes.gd" id="1_vkvc5"]
+[ext_resource type="Texture2D" uid="uid://bl5wq67sqsm6d" path="res://assets/epaulettes/territorial.svg" id="2_5dclk"]
+
+[resource]
+script = ExtResource("1_vkvc5")
+incorporation = "TR_EPAULETTE_TERRITORIAL_INCORPORATION"
+name = "TR_EPAULETTE_TERRITORIAL_NAME"
+texture_a = ExtResource("2_5dclk")
+favourite = false

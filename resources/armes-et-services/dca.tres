@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ArmeService" load_steps=4 format=3 uid="uid://cltjhjs1qmha3"]
+
+[ext_resource type="Script" path="res://resources/armes-et-services/arme-service.gd" id="1_4arc7"]
+[ext_resource type="Texture2D" uid="uid://b7xagipfljq0s" path="res://assets/armes-et-services/dca-a.svg" id="2_irqcn"]
+[ext_resource type="Texture2D" uid="uid://bxmmf1qnl4hcs" path="res://assets/armes-et-services/dca-c.svg" id="3_j01xp"]
+
+[resource]
+script = ExtResource("1_4arc7")
+type = 1
+name = "TR_ARME_SERVICE_DCA_NAME"
+texture_a = ExtResource("2_irqcn")
+texture_c = ExtResource("3_j01xp")
+favourite = false

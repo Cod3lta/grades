@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Particulier" load_steps=3 format=3 uid="uid://ck5ybgoatfkbo"]
+
+[ext_resource type="Script" path="res://resources/particuliers/particulier.gd" id="1_va1er"]
+[ext_resource type="Texture2D" uid="uid://beoh0jeujbpiy" path="res://assets/particuliers/milice.svg" id="2_8f8hj"]
+
+[resource]
+script = ExtResource("1_va1er")
+type = 0
+name = "TR_PARTICULIERS_MILICE_NAME"
+texture_c = ExtResource("2_8f8hj")
+favourite = false

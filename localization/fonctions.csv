@@ -1,0 +1,179 @@
+KEYS;fr;de
+TR_FONCTION_ARMURIER_NAME;Armurier;Waffenmechaniker
+TR_FONCTION_AUDITEUR_NAME;Auditeur;Auditor
+TR_FONCTION_AUMONIER_CHEF_DE_SERVICE_NAME;Aumônier chef de service;Dienstchef Armeeseelsorger
+TR_FONCTION_AUTOMOBILISTE_NAME;Automobiliste;Motorfahrer
+TR_FONCTION_BATTEUR_NAME;Batteur;Schlagzeuger
+TR_FONCTION_CANNONIER_DCA_NAME;Canonnier (DCA);Kanonier (Flab)
+TR_FONCTION_CANNONIER_NAME;Canonnier;Kanonier
+TR_FONCTION_CANONNIER_LANCE_MINES_NAME;Canonnier lance-mines;Minenwerferkanonier
+TR_FONCTION_COMPAGNIE_DE_MAINTENANCE_AVIATION_NAME;Compagnie de maintenance aviation;Flugzeuginstandhaltungs- kompanie
+TR_FONCTION_COMPAGNIE_DE_SUPPORT_DE_TRANSPORT_AERIEN_NAME;Compagnie de support de transport aérien;Lufttransport Supportkompanie
+TR_FONCTION_COMPAGNIE_DE_TRANSPORT_AERIEN_ESCADRILLE_DE_TRANSPORT_AERIEN_NAME;Compagnie de transport aérien / Escadrille de transport aérien;Lufttransportkompanie / Lufttransportstaffel
+TR_FONCTION_COMPAGNIE_ETAT_MAJOR_AERODROME_NAME;Compagnie état-major aérodrome;Flugplatzstabskompanie
+TR_FONCTION_COMPAGNIE_LOGISTIQUE_DE_TRANSPORT_AERIEN_NAME;Compagnie logistique de transport aérien;Lufttransport Logistikkompanie
+TR_FONCTION_COMPTABLE_DE_TROUPE_NAME;Comptable de troupe;Truppenbuchhalter
+TR_FONCTION_CONDUCTEUR_DE_CHIEN_NAME;Conducteur de chien;Hundeführer
+TR_FONCTION_CONDUCTEUR_DE_MACHINE_DE_CHANTIER_NAME;Conducteur de machine de chantier;Baumaschinenfahrer
+TR_FONCTION_CONSEILLER_SOCIAL_NAME;Conseiller social;Sozialberater
+TR_FONCTION_CUISINIER_DE_TROUPE_NAME;Cuisinier de troupe;Truppenkoch
+TR_FONCTION_DETACHEMENT_D_EXPLORATION_DE_LARMEE_NAME;Détachement d'exploration de l'armée;Armeeaufklärungsdetachement
+TR_FONCTION_ECLAIREUR_PARACHUTISTE_NAME;Eclaireur;Späher
+TR_FONCTION_ECLAIREUR_NAME;Eclaireur parachutiste;Fallschirmaufklärer
+TR_FONCTION_ESCADRE_D_AVIATION_NAME;Escadre d'aviation;Fliegerschwader
+TR_FONCTION_ESCADRE_DE_DRONE_NAME;Escadre de drone;Drohnengeschwader
+TR_FONCTION_EXPLORATEUR_RADIO_STRATEGIQUE_NAME;Explorateur radio stratégique;Strategischer Funkaufklärer
+TR_FONCTION_EXPLORATEUR_RADIO_NAME;Explorateur radio;Funkaufklärer
+TR_FONCTION_FANTASSIN_EQUIPIER_CONDUCTEUR_CHAR_INFANTERIE_NAME;Fantassin équipier / Conducteur char infanterie;Infanteriebesatzer / Infanteriepanzerfahrer
+TR_FONCTION_FANTASSIN_NAME;Fantassin;Infanterist
+TR_FONCTION_FUSILIER_DE_BORD_NAME;Fusiliser de bord;Bootsschütze
+TR_FONCTION_GREFFIER_DE_TRIBUNAL_NAME;Greffier de tribunal;Gerichtsschreiber
+TR_FONCTION_GRENADIER_DE_LA_POLICE_MILITAIRE_NAME;Grenadier de la police militaire / Soldat de la circulation;Militärpolizist / Verkehrssoldat
+TR_FONCTION_GRENADIER_FORCES_SPECIALES_NAME;Grenadier (Forces Spéciales);Grenadier (Spezialkräfte)
+TR_FONCTION_GRENADIER_NAME;Grenadier;Grenadier
+TR_FONCTION_JUGE_D_INSTRUCTION_NAME;Juge d'instruction;Untersuchungsrichter
+TR_FONCTION_JUSTICE_MILITAIRE_NAME;Justice militaire;Militärjustiz
+TR_FONCTION_KOKAMIR_NAME;KOKAMIR;KOKAMIR
+TR_FONCTION_MARECHAL_FERRANT_NAME;Maréchal-ferrant;Hufschmied
+TR_FONCTION_MECANICIEN_SUR_APPAREILS_ACFA_NAME;Mécanicien sur appareils ACFA;FULW Gerätemechaniker
+TR_FONCTION_MECANICIEN_SUR_APPAREILS_NAME;Mécanicien sur appareils;Gerätemechaniker
+TR_FONCTION_MECANICIEN_SUR_CHARS_NAME;Mécanicien sur chars;Panzermechaniker
+TR_FONCTION_MECANICIEN_SUR_MOTEURS_NAME;Mécanicien sur moteurs;Motormechaniker
+TR_FONCTION_ORDONNANCE_D_OFFICIER_NAME;Ordonnance d'officier;Offiziersordonnanz
+TR_FONCTION_ORDONNANCE_DE_BUREAU_NAME;Ordonnance de bureau;Büroordonnanz
+TR_FONCTION_PIONNIER_CONSTRUCTEUR_NAME;Pionnier constructeur;Baupionier
+TR_FONCTION_PIONNIER_D_ONDES_DIRIGEES_NAME;Pionnier d'ondes dirigées;Richtstrahlpionier
+TR_FONCTION_PIONNIER_INFORMATIQUE_NAME;Pionnier informatique;Informatikpionier
+TR_FONCTION_PONTONNIER_DE_SONNETTES_NAME;Pontonnier de sonnettes;Rammpontonier
+TR_FONCTION_PONTONNIER_NAME;Pontonnier;Pontonier
+TR_FONCTION_POSTE_DE_CAMPAGNE_NAME;Poste de campagne;Feldpost
+TR_FONCTION_PREPOSE_AUX_ENGINS_DE_SAUVETAGE_NAME;Préposé aux engins de sauvetage;Rettungsgerätewart
+TR_FONCTION_PRESIDENT_NAME;Président;Präsident
+TR_FONCTION_SAPEUR_DE_BASE_AERIENNE_NAME;Sapeur de base aérienne;Flugplatzsappeur
+TR_FONCTION_SAPEUR_DE_CHARS_NAME;Sapeur de chars;Panzersappeur
+TR_FONCTION_SAPEUR_NAME;Sapeur;Sappeur
+TR_FONCTION_SECRETAIRE_NAME;Secrétaire;Sekretär
+TR_FONCTION_SOLDAT_ACFA_NAME;Soldat ACFA;FULW Soldat
+TR_FONCTION_SOLDAT_D_AVIATION_NAME;Soldat d'aviation;Fliegersoldat
+TR_FONCTION_SOLDAT_D_ECHELON_DE_CONDUITE_NAME;Soldat d'échelon de conduite;Führungsstaffelsoldat
+TR_FONCTION_SOLDAT_D_ENGIN_GUIDE_RAPIER_NAME;Soldat d'engin guidé RAPIER;Lenkwaffensoldat RAPIER
+TR_FONCTION_SOLDAT_D_ENGIN_GUIDE_STINGER_NAME;Soldat d'engin guidé STINGER;Lenkwaffensoldat STINGER
+TR_FONCTION_SOLDAT_D_EXPLOITATION_NAME;Soldat d'exploitation;Betriebssoldat
+TR_FONCTION_SOLDAT_D_EXPLORATION_NAME;Soldat d'exploration;Aufklärungssoldat
+TR_FONCTION_SOLDAT_D_HOPITAL_NAME;Soldat d'hôpital;Spitalsoldat
+TR_FONCTION_SOLDAT_DE_CHARS_NAME;Soldat de chars;Panzersoldat
+TR_FONCTION_SOLDAT_DE_CHASSEUR_DE_CHARS_NAME;Soldat de chasseur de chars;Panzerjägersoldat
+TR_FONCTION_SOLDAT_DE_PROTECTION_D_INFRASTRUCTURE_NAME;Soldat de protection d'infrastructure;Infrastrukturschutzsoldat
+TR_FONCTION_SOLDAT_DE_PROTECTION_D_OUVRAGE_NAME;Soldat de protection d'ouvrage;Werkschutzsoldat
+TR_FONCTION_SOLDAT_DE_RAVITAILLEMENT_NAME;Soldat de ravitaillement;Nachschubsoldat
+TR_FONCTION_SOLDAT_DE_RENSEIGNEMENT_TOPOGRAPHE_NAME;Soldat de renseignement / Topographe;Nachrichtensoldat / Vermesser
+TR_FONCTION_SOLDAT_DE_SAUVETAGE_NAME;Soldat de sauvetage;Rettungssoldat
+TR_FONCTION_SOLDAT_DE_SECURITE_D_INFRASTRUCTURE_NAME;Soldat de sécurité d'infrastructure;Infrastruktursicherheitssoldat
+TR_FONCTION_SOLDAT_DE_SPORT_NAME;Soldat de sport;Sportsoldat
+TR_FONCTION_SOLDAT_DE_SURETE_ACFA_NAME;Soldat de sûreté ACFA;FULW Sicherungssoldat
+TR_FONCTION_SOLDAT_DE_SURETE_D_OUVRAGE_NAME;Soldat de sûreté d'ouvrage;Werksicherheitssoldat
+TR_FONCTION_SOLDAT_DE_SURETE_NAME;Soldat de sûreté;Sicherungssoldat
+TR_FONCTION_SOLDAT_DE_TRANSMISSION_NAME;Soldat de transmission;Übermittlungssoldat
+TR_FONCTION_SOLDAT_DU_TRAIN_NAME;Soldat du train;Trainsoldat
+TR_FONCTION_SOLDAT_FORCES_SPECIALES_NAME;Soldat forces spéciales;Spezialkräfte Soldat
+TR_FONCTION_SOLDAT_METEOROLOGUE_NAME;Soldat météorologue;Wettersoldat
+TR_FONCTION_SOLDAT_NBC_NAME;Soldat ABC;ABC Soldat
+TR_FONCTION_SOLDAT_RADAR_NAME;Soldat radar;Radarsoldat
+TR_FONCTION_SOLDAT_SANITAIRE_NAME;Soldat sanitaire;Sanitätssoldat
+TR_FONCTION_SOLDAT_SPECIALISE_EN_TECHNIQUE_D_OUVRAGE_NAME;Soldat spécialisé en technique d'ouvrage;Werktechniksoldat
+TR_FONCTION_SOLDAT_TECHNIQUE_D_INFRASTRUCTURE_NAME;Soldat technique d'infrastructure;Infrastrukturtechniksoldat
+TR_FONCTION_SOLDAT_VETERINAIRE_NAME;Soldat vétérinaire;Veterinärsoldat
+TR_FONCTION_SPECIALISTE_DE_MONTAGNE_NAME;Spécialiste de montagne;Gebirgsspezialist
+TR_FONCTION_SPECIALISTE_DU_SERVICE_PSYCHOLOGIQUE_ET_PEDAGOGIQUE_DE_L_ARMEE_NAME;Spécialiste du service psychologique et pédagogique de l'Armée;Spezialist psychologisch pädagogischer Dienst der Armee
+TR_FONCTION_SURETE_DE_BASE_AERIENNE_ET_DE_TRANSPORT_AERIEN_NAME;Sûreté de base aérienne et de transport aérien;Flugplatz und Lufttransportsicherung
+TR_FONCTION_TAMBOUR_NAME;Tambour;Tambour
+TR_FONCTION_TROMPETTE_NAME;Trompette;Trompeter
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

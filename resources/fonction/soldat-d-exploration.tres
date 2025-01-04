@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://c7h7gyfxd08od"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_hgpk2"]
+[ext_resource type="Texture2D" uid="uid://cec1h2qijussp" path="res://assets/fonctions/soldat-d-exploration-a.svg" id="2_2olwc"]
+[ext_resource type="Texture2D" uid="uid://cmpvx13gt2jw" path="res://assets/fonctions/soldat-d-exploration-c.svg" id="3_a85ig"]
+
+[resource]
+script = ExtResource("1_hgpk2")
+description = ""
+name = "TR_FONCTION_SOLDAT_D_EXPLORATION_NAME"
+texture_a = ExtResource("2_2olwc")
+texture_c = ExtResource("3_a85ig")
+favourite = false

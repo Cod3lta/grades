@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://bxp1cdrs4jfy2"
+
+[deps]
+
+files=["res://localization/berets.fr.translation", "res://localization/berets.de.translation"]
+
+source_file="res://localization/berets.csv"
+dest_files=["res://localization/berets.fr.translation", "res://localization/berets.de.translation"]
+
+[params]
+
+compress=true
+delimiter=1

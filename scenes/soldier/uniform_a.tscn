@@ -1,0 +1,78 @@
+[gd_scene load_steps=3 format=3 uid="uid://blqjxlhr7hk0u"]
+
+[ext_resource type="PackedScene" uid="uid://bysocyrl5gbrf" path="res://assets/soldier/Uniform A.glb" id="1_1x4yc"]
+[ext_resource type="Script" path="res://scenes/soldier/uniform_a.gd" id="1_f4y4v"]
+
+[node name="UniformA" type="Node3D" node_paths=PackedStringArray("soldier")]
+script = ExtResource("1_f4y4v")
+soldier = NodePath("Soldier")
+start_rotation = 0.5
+
+[node name="Soldier" parent="." instance=ExtResource("1_1x4yc")]
+transform = Transform3D(4.365, 0, 0, 0, 4.34547, -0.412451, 0, 0.412451, 4.34547, 0, 0, -0.364276)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.608443, -0.793598, 0, 0.793598, 0.608443, 0, 7.52952, 0)
+light_color = Color(0.950506, 0.693474, 0.711586, 1)
+light_energy = 0.43
+shadow_bias = 0.0
+shadow_opacity = 0.74
+shadow_blur = 2.045
+
+[node name="DirectionalLight3D4" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.222562, -0.544116, 0.808952, 0.0916698, 0.814408, 0.573006, -0.970599, 0.201686, -0.131377, 0, 7.52952, 0)
+light_color = Color(0.967537, 0.91608, 0.918163, 1)
+light_energy = 0.695
+shadow_bias = 0.0
+shadow_opacity = 0.74
+shadow_blur = 2.045
+
+[node name="DirectionalLight3D3" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.787561, 0.292843, -0.542209, 0.0916699, 0.814408, 0.573006, 0.60938, -0.500982, 0.614551, 0, 7.52952, 0)
+light_color = Color(0.967537, 0.91608, 0.918163, 1)
+light_energy = 0.695
+shadow_bias = 0.0
+shadow_opacity = 0.74
+shadow_blur = 2.045
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.139173, 0, -0.990268, 0, 1, 0, 0.990268, 0, 0.139173, 0, 7.52952, 0)
+visible = false
+light_color = Color(0.815198, 0.566045, 0.939619, 1)
+light_energy = 0.24
+shadow_bias = 0.0
+shadow_opacity = 0.74
+
+[node name="DirectionalLight3D5" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.777146, 0, 0.629321, 0, 1, 0, -0.629321, 0, -0.777146, 0, 7.52952, 0)
+visible = false
+light_color = Color(0.52567, 0.802635, 0.327762, 1)
+light_energy = 0.24
+shadow_bias = 0.0
+shadow_opacity = 0.74
+
+[node name="Positions" type="Node3D" parent="."]
+
+[node name="Default" type="SpringArm3D" parent="Positions"]
+transform = Transform3D(0.920505, -0.0340544, -0.389244, 0, 0.996194, -0.0871558, 0.390731, 0.0802272, 0.917002, 0, 5.965, 0)
+spring_length = 12.265
+
+[node name="Berets" type="SpringArm3D" parent="Positions"]
+transform = Transform3D(0.953717, -0.0496308, -0.296582, 0, 0.986286, -0.165048, 0.300706, 0.157409, 0.940637, 0.105, 6.755, 0)
+spring_length = 2.99
+
+[node name="ArmesServices" type="SpringArm3D" parent="Positions"]
+transform = Transform3D(0.838671, 0.13176, -0.528461, 0, 0.970295, 0.241922, 0.544639, -0.202893, 0.813759, 0.495, 5.76, 0)
+spring_length = 1.785
+
+[node name="Distinctions" type="SpringArm3D" parent="Positions"]
+transform = Transform3D(0.748956, -0.149057, 0.645637, 0, 0.97437, 0.224951, -0.66262, -0.168478, 0.72976, 0.579793, 5.31929, 0.246922)
+spring_length = 3.325
+
+[node name="Epaulettes" type="SpringArm3D" parent="Positions"]
+transform = Transform3D(0.798635, -0.145592, 0.583939, 0, 0.970295, 0.241922, -0.601815, -0.193207, 0.774913, 0.831, 5.744, -0.225)
+spring_length = 3.045
+
+[node name="Fonction" type="SpringArm3D" parent="Positions"]
+transform = Transform3D(0.725375, -0.301755, -0.618689, 0, 0.898793, -0.438371, 0.688355, 0.317983, 0.651962, -0.603387, 4.91316, 0.229454)
+spring_length = 3.045

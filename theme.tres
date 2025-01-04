@@ -1,0 +1,220 @@
+[gd_resource type="Theme" load_steps=31 format=3 uid="uid://si08rmojap6x"]
+
+[ext_resource type="FontFile" uid="uid://bpch6a5fwb4v7" path="res://assets/ui/Inter-VariableFont_opsz,wght.ttf" id="1_hb8o6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ewf2h"]
+content_margin_left = 40.0
+content_margin_top = 40.0
+content_margin_right = 40.0
+content_margin_bottom = 40.0
+bg_color = Color(0.231373, 0.317647, 0.117647, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eqiyw"]
+content_margin_left = 40.0
+content_margin_top = 40.0
+content_margin_right = 40.0
+content_margin_bottom = 40.0
+bg_color = Color(0.231373, 0.317647, 0.117647, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y5jqv"]
+content_margin_left = 40.0
+content_margin_top = 40.0
+content_margin_right = 40.0
+content_margin_bottom = 40.0
+bg_color = Color(0.231373, 0.317647, 0.117647, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ts411"]
+content_margin_left = 40.0
+content_margin_top = 40.0
+content_margin_right = 40.0
+content_margin_bottom = 40.0
+bg_color = Color(0.145098, 0.196078, 0.0705882, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mws62"]
+content_margin_left = 40.0
+content_margin_top = 40.0
+content_margin_right = 40.0
+content_margin_bottom = 40.0
+bg_color = Color(0.494118, 0.396078, 0.380392, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lp2sj"]
+content_margin_left = 40.0
+content_margin_top = 40.0
+content_margin_right = 40.0
+content_margin_bottom = 40.0
+bg_color = Color(0.494118, 0.396078, 0.380392, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u8v7y"]
+content_margin_left = 40.0
+content_margin_top = 40.0
+content_margin_right = 40.0
+content_margin_bottom = 40.0
+bg_color = Color(0.494118, 0.396078, 0.380392, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j56hd"]
+content_margin_left = 40.0
+content_margin_top = 40.0
+content_margin_right = 40.0
+content_margin_bottom = 40.0
+bg_color = Color(0.494118, 0.396078, 0.380392, 1)
+
+[sub_resource type="FontVariation" id="FontVariation_02qul"]
+base_font = ExtResource("1_hb8o6")
+variation_embolden = 1.3
+
+[sub_resource type="FontVariation" id="FontVariation_ybldy"]
+base_font = ExtResource("1_hb8o6")
+variation_embolden = 1.25
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_asl4q"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qu21o"]
+bg_color = Color(0.2, 0.2, 0.2, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rrn8n"]
+content_margin_left = 20.0
+content_margin_top = 40.0
+content_margin_right = 20.0
+content_margin_bottom = 40.0
+bg_color = Color(0.2, 0.2, 0.2, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8euko"]
+bg_color = Color(0.154876, 0.154876, 0.154876, 1)
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yptbr"]
+content_margin_left = 40.0
+content_margin_top = 40.0
+content_margin_right = 0.0
+content_margin_bottom = 40.0
+bg_color = Color(0.113725, 0.113725, 0.113725, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_slkaq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cfcvy"]
+content_margin_left = 40.0
+content_margin_top = 40.0
+content_margin_right = 40.0
+content_margin_bottom = 40.0
+bg_color = Color(0.301961, 0.301961, 0.301961, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5ft3h"]
+content_margin_left = 40.0
+content_margin_top = 40.0
+content_margin_right = 40.0
+content_margin_bottom = 40.0
+bg_color = Color(0.301961, 0.301961, 0.301961, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cwh7w"]
+content_margin_left = 40.0
+content_margin_top = 40.0
+content_margin_right = 40.0
+content_margin_bottom = 40.0
+bg_color = Color(0.113725, 0.113725, 0.113725, 1)
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_0oxgr"]
+color = Color(0.113725, 0.113725, 0.113725, 1)
+thickness = 4
+
+[sub_resource type="FontVariation" id="FontVariation_8eidq"]
+base_font = ExtResource("1_hb8o6")
+variation_embolden = 1.25
+
+[sub_resource type="FontVariation" id="FontVariation_r8kay"]
+base_font = ExtResource("1_hb8o6")
+variation_embolden = 1.0
+
+[sub_resource type="FontVariation" id="FontVariation_v3gko"]
+base_font = ExtResource("1_hb8o6")
+variation_embolden = 1.0
+
+[sub_resource type="FontVariation" id="FontVariation_v1v4e"]
+base_font = ExtResource("1_hb8o6")
+variation_embolden = 0.75
+
+[sub_resource type="FontVariation" id="FontVariation_qpp1a"]
+base_font = ExtResource("1_hb8o6")
+variation_embolden = 0.5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4a7yg"]
+bg_color = Color(0.2, 0.2, 0.2, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_081sd"]
+bg_color = Color(0.113725, 0.113725, 0.113725, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8uc0y"]
+content_margin_top = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0.584314, 0.584314, 0.584314, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0re7e"]
+
+[resource]
+AccGreenLightButton/base_type = &"Button"
+AccGreenLightButton/colors/font_color = Color(1, 1, 1, 1)
+AccGreenLightButton/colors/icon_normal_color = Color(0.172549, 0.239216, 0.0862745, 1)
+AccGreenLightButton/styles/focus = SubResource("StyleBoxFlat_ewf2h")
+AccGreenLightButton/styles/hover = SubResource("StyleBoxFlat_eqiyw")
+AccGreenLightButton/styles/normal = SubResource("StyleBoxFlat_y5jqv")
+AccGreenLightButton/styles/pressed = SubResource("StyleBoxFlat_ts411")
+AccRedButton/base_type = &"Button"
+AccRedButton/styles/focus = SubResource("StyleBoxFlat_mws62")
+AccRedButton/styles/hover = SubResource("StyleBoxFlat_lp2sj")
+AccRedButton/styles/normal = SubResource("StyleBoxFlat_u8v7y")
+AccRedButton/styles/pressed = SubResource("StyleBoxFlat_j56hd")
+Bold/base_type = &"Label"
+Bold/fonts/font = SubResource("FontVariation_02qul")
+Button/colors/icon_normal_color = Color(0.113725, 0.113725, 0.113725, 1)
+Button/font_sizes/font_size = 50
+Button/fonts/font = SubResource("FontVariation_ybldy")
+Button/styles/focus = SubResource("StyleBoxEmpty_asl4q")
+Button/styles/hover = SubResource("StyleBoxFlat_qu21o")
+Button/styles/normal = SubResource("StyleBoxFlat_rrn8n")
+Button/styles/pressed = SubResource("StyleBoxFlat_8euko")
+ContentButton/base_type = &"Button"
+ContentButton/styles/disabled = SubResource("StyleBoxFlat_yptbr")
+ContentButton/styles/focus = SubResource("StyleBoxEmpty_slkaq")
+ContentButton/styles/hover = SubResource("StyleBoxFlat_cfcvy")
+ContentButton/styles/normal = SubResource("StyleBoxFlat_5ft3h")
+ContentButton/styles/pressed = SubResource("StyleBoxFlat_cwh7w")
+HSeparator/constants/separation = 10
+HSeparator/styles/separator = SubResource("StyleBoxLine_0oxgr")
+Header1/base_type = &"Label"
+Header1/font_sizes/font_size = 115
+Header1/fonts/font = SubResource("FontVariation_8eidq")
+Header2/base_type = &"Label"
+Header2/font_sizes/font_size = 90
+Header2/fonts/font = SubResource("FontVariation_r8kay")
+Header3/base_type = &"Label"
+Header3/font_sizes/font_size = 75
+Header3/fonts/font = SubResource("FontVariation_v3gko")
+Header4/base_type = &"Label"
+Header4/font_sizes/font_size = 65
+Header4/fonts/font = SubResource("FontVariation_v1v4e")
+Label/font_sizes/font_size = 50
+Label/fonts/font = SubResource("FontVariation_qpp1a")
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_4a7yg")
+ProgressBar/styles/background = SubResource("StyleBoxFlat_081sd")
+ProgressBar/styles/fill = SubResource("StyleBoxFlat_8uc0y")
+TabContainer/styles/panel = SubResource("StyleBoxEmpty_0re7e")
+VScrollBar/icons/decrement = null
+VScrollBar/icons/decrement_highlight = null
+VScrollBar/icons/decrement_pressed = null
+VScrollBar/icons/increment = null
+VScrollBar/icons/increment_highlight = null
+VScrollBar/icons/increment_pressed = null
+VScrollBar/styles/grabber = null
+VScrollBar/styles/grabber_highlight = null
+VScrollBar/styles/grabber_pressed = null
+VScrollBar/styles/scroll = null
+VScrollBar/styles/scroll_focus = null

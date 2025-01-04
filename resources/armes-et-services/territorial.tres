@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ArmeService" load_steps=4 format=3 uid="uid://bxwbb5wk5v4ym"]
+
+[ext_resource type="Script" path="res://resources/armes-et-services/arme-service.gd" id="1_hb5ci"]
+[ext_resource type="Texture2D" uid="uid://cn7ycbfklevg6" path="res://assets/armes-et-services/territorial-a.svg" id="2_8w4s2"]
+[ext_resource type="Texture2D" uid="uid://cdx41smtwspui" path="res://assets/armes-et-services/territorial-c.svg" id="3_e6oet"]
+
+[resource]
+script = ExtResource("1_hb5ci")
+type = 2
+name = "TR_ARME_SERVICE_TERRITORIAL_NAME"
+texture_a = ExtResource("2_8w4s2")
+texture_c = ExtResource("3_e6oet")
+favourite = false

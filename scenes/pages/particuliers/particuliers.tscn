@@ -1,0 +1,169 @@
+[gd_scene load_steps=14 format=3 uid="uid://cd4gxspu74vig"]
+
+[ext_resource type="Theme" uid="uid://si08rmojap6x" path="res://theme.tres" id="1_ihc35"]
+[ext_resource type="Script" path="res://scenes/pages/particuliers/particuliers.gd" id="2_ytdrj"]
+[ext_resource type="PackedScene" uid="uid://dhq0g6258e0bu" path="res://scenes/pages/modal_opener.tscn" id="3_m2b4h"]
+[ext_resource type="PackedScene" uid="uid://c3vqlsoygtrc5" path="res://scenes/badges/particuliers/particulier.tscn" id="3_ntlpf"]
+[ext_resource type="PackedScene" uid="uid://rpqhajuyr6lg" path="res://scenes/modals/particuliers/particulier_modal.tscn" id="4_7kb1q"]
+[ext_resource type="Resource" uid="uid://dne5lkycr6li3" path="res://resources/particuliers/carriere.tres" id="4_gm54s"]
+[ext_resource type="Resource" uid="uid://baia6fs2l38hp" path="res://resources/particuliers/aspirant-carriere.tres" id="5_ctkpg"]
+[ext_resource type="Resource" uid="uid://ck5ybgoatfkbo" path="res://resources/particuliers/milice.tres" id="6_7wwak"]
+[ext_resource type="Resource" uid="uid://b2t2y4m43iket" path="res://resources/particuliers/carriere-specialiste.tres" id="7_qdtib"]
+[ext_resource type="Resource" uid="uid://de6ufl3a110i6" path="res://resources/particuliers/pilote.tres" id="7_s0yi5"]
+[ext_resource type="Resource" uid="uid://dcafp875xdydy" path="res://resources/particuliers/contractuel.tres" id="8_8r50d"]
+[ext_resource type="Resource" uid="uid://312e2ckmtlis" path="res://resources/particuliers/eclaireur-parachutiste.tres" id="8_oddij"]
+[ext_resource type="Resource" uid="uid://uwyoomt1uw3p" path="res://resources/particuliers/operateur-de-bord.tres" id="9_qidxm"]
+
+[node name="Particuliers" type="MarginContainer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 2441.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_ihc35")
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 200
+script = ExtResource("2_ytdrj")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 40
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 2
+theme_type_variation = &"Header2"
+text = "TR_PARTICULIERS"
+autowrap_mode = 2
+uppercase = true
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="ListDisposition" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 40
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/ListDisposition"]
+layout_mode = 2
+theme_override_constants/margin_bottom = 40
+
+[node name="Label" type="Label" parent="VBoxContainer/ListDisposition/MarginContainer"]
+layout_mode = 2
+theme_type_variation = &"Header4"
+text = "TR_PARTICULIERS_TYPE_ENGAGEMENT"
+autowrap_mode = 3
+
+[node name="HFlowContainer" type="VBoxContainer" parent="VBoxContainer/ListDisposition"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 60
+alignment = 1
+
+[node name="ModalOpener" parent="VBoxContainer/ListDisposition/HFlowContainer" instance=ExtResource("3_m2b4h")]
+layout_mode = 2
+linked_modal = ExtResource("4_7kb1q")
+
+[node name="Milice" parent="VBoxContainer/ListDisposition/HFlowContainer/ModalOpener" instance=ExtResource("3_ntlpf")]
+layout_mode = 2
+texture_size = "large"
+r = ExtResource("6_7wwak")
+show_text = false
+
+[node name="ModalOpener2" parent="VBoxContainer/ListDisposition/HFlowContainer" instance=ExtResource("3_m2b4h")]
+layout_mode = 2
+linked_modal = ExtResource("4_7kb1q")
+
+[node name="Carriere" parent="VBoxContainer/ListDisposition/HFlowContainer/ModalOpener2" instance=ExtResource("3_ntlpf")]
+layout_mode = 2
+texture_size = "large"
+r = ExtResource("4_gm54s")
+show_text = false
+
+[node name="ModalOpener3" parent="VBoxContainer/ListDisposition/HFlowContainer" instance=ExtResource("3_m2b4h")]
+layout_mode = 2
+linked_modal = ExtResource("4_7kb1q")
+
+[node name="Aspirant" parent="VBoxContainer/ListDisposition/HFlowContainer/ModalOpener3" instance=ExtResource("3_ntlpf")]
+layout_mode = 2
+texture_size = "large"
+r = ExtResource("5_ctkpg")
+show_text = false
+
+[node name="ModalOpener4" parent="VBoxContainer/ListDisposition/HFlowContainer" instance=ExtResource("3_m2b4h")]
+layout_mode = 2
+linked_modal = ExtResource("4_7kb1q")
+
+[node name="Candidat" parent="VBoxContainer/ListDisposition/HFlowContainer/ModalOpener4" instance=ExtResource("3_ntlpf")]
+layout_mode = 2
+texture_size = "large"
+show_text = false
+
+[node name="ModalOpener5" parent="VBoxContainer/ListDisposition/HFlowContainer" instance=ExtResource("3_m2b4h")]
+layout_mode = 2
+linked_modal = ExtResource("4_7kb1q")
+
+[node name="Specialiste" parent="VBoxContainer/ListDisposition/HFlowContainer/ModalOpener5" instance=ExtResource("3_ntlpf")]
+layout_mode = 2
+texture_size = "large"
+r = ExtResource("7_qdtib")
+show_text = false
+
+[node name="ModalOpener6" parent="VBoxContainer/ListDisposition/HFlowContainer" instance=ExtResource("3_m2b4h")]
+layout_mode = 2
+linked_modal = ExtResource("4_7kb1q")
+
+[node name="Contractuel" parent="VBoxContainer/ListDisposition/HFlowContainer/ModalOpener6" instance=ExtResource("3_ntlpf")]
+layout_mode = 2
+texture_size = "large"
+r = ExtResource("8_8r50d")
+show_text = false
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/ListDisposition"]
+layout_mode = 2
+theme_override_constants/margin_top = 80
+theme_override_constants/margin_bottom = 40
+
+[node name="Label" type="Label" parent="VBoxContainer/ListDisposition/MarginContainer2"]
+layout_mode = 2
+theme_type_variation = &"Header4"
+text = "TR_PARTICULIERS_TYPE_FORCES_AERIENNES"
+autowrap_mode = 3
+
+[node name="HFlowContainer2" type="VBoxContainer" parent="VBoxContainer/ListDisposition"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 60
+alignment = 1
+
+[node name="ModalOpener7" parent="VBoxContainer/ListDisposition/HFlowContainer2" instance=ExtResource("3_m2b4h")]
+layout_mode = 2
+linked_modal = ExtResource("4_7kb1q")
+
+[node name="Pilote" parent="VBoxContainer/ListDisposition/HFlowContainer2/ModalOpener7" instance=ExtResource("3_ntlpf")]
+layout_mode = 2
+texture_size = "large"
+r = ExtResource("7_s0yi5")
+show_text = false
+
+[node name="ModalOpener8" parent="VBoxContainer/ListDisposition/HFlowContainer2" instance=ExtResource("3_m2b4h")]
+layout_mode = 2
+linked_modal = ExtResource("4_7kb1q")
+
+[node name="EclaireurParachutiste" parent="VBoxContainer/ListDisposition/HFlowContainer2/ModalOpener8" instance=ExtResource("3_ntlpf")]
+layout_mode = 2
+texture_size = "large"
+r = ExtResource("8_oddij")
+show_text = false
+
+[node name="ModalOpener9" parent="VBoxContainer/ListDisposition/HFlowContainer2" instance=ExtResource("3_m2b4h")]
+layout_mode = 2
+linked_modal = ExtResource("4_7kb1q")
+
+[node name="OperateurDeBord" parent="VBoxContainer/ListDisposition/HFlowContainer2/ModalOpener9" instance=ExtResource("3_ntlpf")]
+layout_mode = 2
+texture_size = "large"
+r = ExtResource("9_qidxm")
+show_text = false

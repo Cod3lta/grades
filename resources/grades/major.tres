@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Grade" load_steps=4 format=3 uid="uid://d31fl30x3j6jh"]
+
+[ext_resource type="Script" path="res://resources/grades/grades.gd" id="1_l7l7b"]
+[ext_resource type="Texture2D" uid="uid://c4v3o0n1i02g8" path="res://assets/grades/major-a.svg" id="2_856nq"]
+[ext_resource type="Texture2D" uid="uid://djpq67n6p3tlq" path="res://assets/grades/major-c.svg" id="3_0j75q"]
+
+[resource]
+script = ExtResource("1_l7l7b")
+short = "TR_MAJOR_SHORT"
+description = "TR_MAJOR_DESCRIPTION"
+type = 4
+name = "TR_MAJOR_NAME"
+texture_a = ExtResource("2_856nq")
+texture_c = ExtResource("3_0j75q")

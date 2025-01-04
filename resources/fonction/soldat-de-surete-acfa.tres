@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://cyxltsyypxnn2"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_qhn7e"]
+[ext_resource type="Texture2D" uid="uid://7110022o5631" path="res://assets/fonctions/soldat-de-surete-acfa-a.svg" id="2_yj5sy"]
+[ext_resource type="Texture2D" uid="uid://bmbsmm3g8y058" path="res://assets/fonctions/soldat-de-surete-acfa-c.svg" id="3_42lal"]
+
+[resource]
+script = ExtResource("1_qhn7e")
+description = ""
+name = "TR_FONCTION_SOLDAT_DE_SURETE_ACFA_NAME"
+texture_a = ExtResource("2_yj5sy")
+texture_c = ExtResource("3_42lal")
+favourite = false

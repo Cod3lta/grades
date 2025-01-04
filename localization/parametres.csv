@@ -1,0 +1,5 @@
+KEYS;fr;de
+TR_LANGUE;Langue;Sprache
+TR_DONNEES_D_ENTRAINEMENT;données d'entrainement;Trainingsdaten
+TR_SUPPRIMER_LES_DONNEES;Supprimer les données;Löschen von Daten
+TR_SUPPRIMER_DONNEES_EXPLICATION;Les données d'entrainement comprennent tous les résultats des tests des grades. Vous pouvez les supprimer dans le cas où vous souhaitez remettre votre évaluation à zéro.;Die Trainingsdaten umfassen alle Testergebnisse der Grade. Sie können sie löschen, falls Sie Ihre Bewertung auf Null zurücksetzen möchten.

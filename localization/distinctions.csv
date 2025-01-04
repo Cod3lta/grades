@@ -1,0 +1,73 @@
+KEYS;fr;de
+TR_DISTINCTIONS_DESCRIPTION;Au maximum 9 rubans de distinction peuvent être portés au-dessus de la poche de poitrine gauche du veston de la tenue A.;Es dürfen höchstens 9 Auszeichnungsbänder über der linken Brusttasche der Jacke von Tenü A getragen werden.
+TR_DISTINCTIONS_TYPE_SERVICE;Insigne de prestation de service;Dienstleistungsabzeichen
+TR_DISTINCTIONS_TYPE_DISTINCTION;Insigne de distinction;Auszeichnungen
+TR_DISTINCTIONS_TYPE_ENGAGEMENT;Insigne de mission;Einsatzabzeichen
+
+TR_DISTINCTIONS_170_JOURS_NAME;170 jours;170 Tage
+TR_DISTINCTIONS_250_JOURS_NAME;250 jours;250 Tage
+TR_DISTINCTIONS_350_JOURS_NAME;350 jours;350 Tage
+TR_DISTINCTIONS_450_JOURS_NAME;450 jours;450 Tage
+TR_DISTINCTIONS_550_JOURS_NAME;550 jours;550 Tage
+TR_DISTINCTIONS_650_JOURS_NAME;650 jours;650 Tage
+TR_DISTINCTIONS_750_JOURS_NAME;750 jours;750 Tage
+TR_DISTINCTIONS_850_JOURS_NAME;850 jours;850 Tage
+TR_DISTINCTIONS_90_JOURS_NAME;90 jours;90 Tage
+TR_DISTINCTIONS_950_JOURS_NAME;950 jours;950 Tage
+TR_DISTINCTIONS_ACTIVITE_HORS_SERVICE_1_NAME;Activité hors du service degré 1;Ausserdienstliche Tätigkeit Stufe 1
+TR_DISTINCTIONS_ACTIVITE_HORS_SERVICE_2_NAME;Activité hors du service degré 2;Ausserdienstliche Tätigkeit Stufe 2
+TR_DISTINCTIONS_ACTIVITE_HORS_SERVICE_3_NAME;Activité hors du service degré 3;Ausserdienstliche Tätigkeit Stufe 3
+TR_DISTINCTIONS_COMPETITION_SPORT_NAME;Compétition de sport militaire;Militärsportwettkampfauszeichnung
+TR_DISTINCTIONS_DISTINCTION_D_ENGAGEMENT_NAME;Distinctions d'engagement;Inland-Einsätze
+TR_DISTINCTIONS_FASS_1_NAME;Fusil d'assaut degré 1;Sturmgewehr Stufe 1
+TR_DISTINCTIONS_FASS_2_NAME;Fusil d'assaut degré 2;Sturmgewehr Stufe 2
+TR_DISTINCTIONS_MONTAGNE_NAME;Distinction de montagne;Gebirgsauszeichnung
+TR_DISTINCTIONS_NAVIGATEUR_NAME;Navigateur;Wasserfahrer
+TR_DISTINCTIONS_NBC_NAME;Aide à soi-même et aux camarades / défense NBC;Selbst- und Kameradenhilfe / ABC Abwehr
+TR_DISTINCTIONS_PARTENARIAT_POUR_LA_PAIX_NAME;Partenariat pour la Paix (PPP);Partnerschaft für den Frieden (PfP)
+TR_DISTINCTIONS_PISTOLET_1_NAME;Pistolet degré 1;Pistole Stufe 1
+TR_DISTINCTIONS_PISTOLET_2_NAME;Pistolet degré 2;Pistole Stufe 2
+TR_DISTINCTIONS_POINTEUR_NAME;Pointeur (arme);Richter
+TR_DISTINCTIONS_PRESTATION_NAME;Prestation exceptionnelle;Ausserordentliche Leistung
+TR_DISTINCTIONS_SERVICE_CROIX_ROUGE_NAME;Service Croix-Rouge;Rotkreuzdienst
+TR_DISTINCTIONS_SERVICE_LONGUE_DUREE_ETRANGER_NAME;Service commandé de longue durée à l'étranger;Lange Auslandkommandierung
+TR_DISTINCTIONS_SPORT_1_NAME;Sport militaire degré 1;Militärsport Stufe 1
+TR_DISTINCTIONS_SPORT_2_NAME;Sport militaire degré 2;Militärsport Stufe 2
+
+TR_DISTINCTIONS_170_JOURS_DESCRIPTION;Avec 1 rosette en bronze pour 170 jours de service;Mit 1 Rosette in Bronze für 170 Diensttage
+TR_DISTINCTIONS_250_JOURS_DESCRIPTION;Avec 2 rosettes en bronze pour 250 jours de service;Mit 2 Rosetten in Bronze für 250 Diensttage
+TR_DISTINCTIONS_350_JOURS_DESCRIPTION;Avec 3 rosettes en bronze pour 350 jours de service;Mit 3 Rosetten in Bronze für 350 Diensttage
+TR_DISTINCTIONS_450_JOURS_DESCRIPTION;Avec 1 rosette en argent pour 450 jours de service;Mit 1 Rosette in Silber für 450 Diensttage
+TR_DISTINCTIONS_550_JOURS_DESCRIPTION;Avec 2 rosettes en argent pour 550 jours de service;Mit 2 Rosetten in Silber für 550 Diensttage
+TR_DISTINCTIONS_650_JOURS_DESCRIPTION;Avec 3 rosettes en argent pour 650 jours de service;Mit 3 Rosetten in Silber für 650 Diensttage
+TR_DISTINCTIONS_750_JOURS_DESCRIPTION;avec 1 rosette en or pour 750 jours de service;Mit 1 Rosette in Gold für 750 Diensttage
+TR_DISTINCTIONS_850_JOURS_DESCRIPTION;Avec 2 rosettes en or pour 850 jours de service;Mit 2 Rosetten in Gold für 850 Diensttage
+TR_DISTINCTIONS_90_JOURS_DESCRIPTION;Sans rosette pour 90 jours de service;Ohne Rosette für 90 Diensttage
+TR_DISTINCTIONS_950_JOURS_DESCRIPTION;Avec 3 rosettes en or pour 950 jours de service;Mit 3 Rosetten in Gold für 950 Diensttage
+TR_DISTINCTIONS_ACTIVITE_HORS_SERVICE_1_DESCRIPTION;La distinction d'activité hors du service de degré 1 s'obtient après avoir cumulé les conditions suivantes : être membre actif d'une société militaire depuis au moins quatre ans, avoir réalisé au minimum 2 concours de tir avec l'arme personnelle (72 points avec le Fass 90, 180 points avec le Pist 75) et avoir accompli avec succès l'instruction à la conduite et perfectionnement de l'instruction de base générale (IBG) et de l'instruction de base spécifique à la fonction (IBF).;Die Auszeichnung für ausserdienstliche Tätigkeit Grad 1 erhält man, wenn man folgende Bedingungen kumuliert: seit mindestens vier Jahren aktives Mitglied eines Militärvereins, mindestens zwei Schiesswettkämpfe mit der persönlichen Waffe absolviert (72 Punkte mit Fass 90, 180 Punkte mit Pist 75) und die Führungs- und Weiterausbildung der allgemeinen Grundausbildung (AGA) und der funktionsbezogenen Grundausbildung (FGA) erfolgreich absolviert hat
+TR_DISTINCTIONS_ACTIVITE_HORS_SERVICE_2_DESCRIPTION;La distinction d'activité hors du service de degré 2 s'obtient après avoir cumulé les conditions suivantes : être membre du comité d'une société militaire depuis au moins deux ans et avoir organisé au moins 4 événements individuels.;Die Auszeichnung für außerdienstliche Tätigkeit Grad 2 erhält man, wenn man die folgenden Bedingungen kumulativ erfüllt: man ist seit mindestens zwei Jahren Vorstandsmitglied eines Militärvereins und hat mindestens vier Einzelveranstaltungen organisiert.
+TR_DISTINCTIONS_ACTIVITE_HORS_SERVICE_3_DESCRIPTION; ; 
+TR_DISTINCTIONS_COMPETITION_SPORT_DESCRIPTION;Elle ne peut être obtenue que dans le cadre d'activités hors du service, telles des manifestations liées à l'armée ou d'association sportives.;Sie kann nur im Rahmen von außerdienstlichen Aktivitäten wie Veranstaltungen der Armee oder von Sportvereinen erworben werden.
+TR_DISTINCTIONS_DISTINCTION_D_ENGAGEMENT_DESCRIPTION;Engagements à l'intérieur du pays comme le World Economic Forum ou l'engagement au profit de la population dans le cadre de la lutte contre le Covid-19. Depuis 2021, cette distinction peut être agrémentée de rosettes en argent ou en or dépendant de la durée de l'engagement.;Inlandsengagements wie das World Economic Forum oder das Engagement für die Bevölkerung im Kampf gegen Covid-19. Seit 2021 kann diese Auszeichnung je nach Dauer des Engagements mit silbernen oder goldenen Rosetten versehen werden.
+TR_DISTINCTIONS_FASS_1_DESCRIPTION;La distinction de tir au fusil est réalisée avec le Fass 90, au stand de tir à 300 mètres avec bipied déployé et sans lunette. Comme programme de tir, après un entraînement, le militaire doit d'abord mettre cinq coups en maximum 10 minutes sur une cible A5 (de forme ronde), avec marquage (possibilité de voir l'impact) après chaque tir. Ensuite, sur une cible B4 (de forme humaine), il doit placer 5 coups en maximum dix minutes avec marquage après chaque tir, puis deux coups en vingt secondes et trois coups en vingt secondes sur la même cible et avec marquage après chaque série. Il doit enfin tirer cinq coups en quarante secondes, avec marquage à la fin de la série. Sur un total de 85 points, il faut en atteindre 72 pour réussir la distinction.;Die Auszeichnung für das Gewehrschießen wird mit dem Fass 90 durchgeführt, auf dem Schießstand auf 300 Meter mit ausgeklapptem Zweibein und ohne Zielfernrohr. Als Schießprogramm muss der Soldat nach einem Training zunächst fünf Schüsse in maximal 10 Minuten auf eine Scheibe A5 (runde Form) abgeben, wobei nach jedem Schuss eine Markierung (Möglichkeit, den Einschlag zu sehen) angebracht wird. Danach muss er auf einer Scheibe B4 (menschliche Form) fünf Schüsse in höchstens zehn Minuten mit Markierung nach jedem Schuss abgeben, dann zwei Schüsse in zwanzig Sekunden und drei Schüsse in zwanzig Sekunden auf dieselbe Scheibe und mit Markierung nach jeder Serie. Schließlich muss er fünf Schüsse in vierzig Sekunden abgeben, mit Markierung am Ende der Serie. Von insgesamt 85 Punkten müssen 72 erreicht werden, um die Auszeichnung zu bestehen.
+TR_DISTINCTIONS_FASS_2_DESCRIPTION;Le degré 2 est atteint après avoir réussi trois fois la distinction.;Grad 2 wird erreicht, wenn du die Auszeichnung dreimal bestanden hast
+TR_DISTINCTIONS_MONTAGNE_DESCRIPTION;Cette distinction, réalisée en principe par les spécialistes de montagne, est aussi ouverte aux "militaires qui ont apporté la preuve qu'ils ont acquis, au civil, une solide expérience de la montagne".;Diese Auszeichnung, die in der Regel von Bergspezialisten durchgeführt wird, steht auch "Militärangehörigen offen, die den Nachweis erbracht haben, dass sie im Zivilberuf eine solide Erfahrung im Gebirge erworben haben".
+TR_DISTINCTIONS_NAVIGATEUR_DESCRIPTION;Elle est effectuée dans les écoles de recrue de pontonniers et de fusiliers de bord.;Sie wird in den Rekrutenschulen für Pontoniere und Bordfüsiliere durchgeführt.
+TR_DISTINCTIONS_NBC_DESCRIPTION;Réalisée par toutes les recrues, cette distinction récompense une bonne maîtrise des acquis en matière de défense NBC et de Service sanitaire militaire (aide au camarade).\nElle s'effectue en deux temps : d'abord un examen théorique, et pour ceux qui le réussissent, un examen pratique portant notamment sur l'utilisation de la tenue NBC, la pose d'un pansement compressif ou d'un garrot et la mise en œuvre des gestes de premiers secours. ;Diese Auszeichnung, die von allen Rekruten absolviert wird, belohnt eine gute Beherrschung der Kenntnisse in den Bereichen ABC-Abwehr und Militärsanitätsdienst (Kameradenhilfe).\nSie besteht aus zwei Teilen: zunächst eine theoretische Prüfung und für diejenigen, die sie bestehen, eine praktische Prüfung, die unter anderem die Verwendung des ABC-Anzugs, das Anlegen eines Druckverbands oder eines Tourniquets und die Durchführung von Erste-Hilfe-Maßnahmen umfasst.
+TR_DISTINCTIONS_PARTENARIAT_POUR_LA_PAIX_DESCRIPTION;Pour service avec l'OTAN dans le cadre du Partenariat pour la paix (PPP).;Für Dienst mit der NATO im Rahmen der Partnerschaft für den Frieden (PfP).
+TR_DISTINCTIONS_PISTOLET_1_DESCRIPTION;La distinction de tir au pistolet est réalisée avec le Pist 75 à 25 mètres. Le nombre total de points est de 200, et la distinction est atteinte avec 180.;Die Auszeichnung im Pistolenschießen wird mit der Pist 75 auf 25 Meter erreicht. Die Gesamtpunktzahl beträgt 200, und die Auszeichnung wird mit 180 Punkten erreicht.
+TR_DISTINCTIONS_PISTOLET_2_DESCRIPTION;Le degré 2 est atteint après avoir réussi trois fois la distinction.;Grad 2 wird erreicht, wenn du die Auszeichnung dreimal bestanden hast.
+TR_DISTINCTIONS_POINTEUR_DESCRIPTION;Elle est effectuée dans les écoles de recrue de soldats de char.;Sie wird in den Rekrutenschulen für Panzersoldaten durchgeführt.
+TR_DISTINCTIONS_PRESTATION_DESCRIPTION;Cette distinction est décernée par le Chef de l'Armée pour réalisations extraordinaires et prestations exceptionnelles. Cette distinction a été remise pour la première fois le 2 juin 2020.;Diese Auszeichnung wird vom Chef der Armee für außergewöhnliche Errungenschaften und Leistungen verliehen. Diese Auszeichnung wurde am 2. Juni 2020 zum ersten Mal verliehen.
+TR_DISTINCTIONS_SERVICE_CROIX_ROUGE_DESCRIPTION; ; 
+TR_DISTINCTIONS_SERVICE_LONGUE_DUREE_ETRANGER_DESCRIPTION;Pour 150 jours de service commandé de longue durée à l'étranger.;Für 150 Tage eines längerfristigen kommandierten Dienstes im Ausland.
+TR_DISTINCTIONS_SPORT_1_DESCRIPTION;La distinction sportive, de couleur verte, s'obtient pour un minimum de 80 points sur 125 lors du recrutement ou pendant le service militaire.\nElle comprend plusieurs tests de fitness, dont de la force explosive, du gainage, de l'endurance et de l'équilibre.;Das Sportabzeichen ist grün und wird für mindestens 80 von 125 Punkten bei der Rekrutierung oder während des Militärdienstes verliehen.\nSie umfasst mehrere Fitnesstests, darunter Explosivkraft, Muskelaufbau, Ausdauer und Gleichgewicht.
+TR_DISTINCTIONS_SPORT_2_DESCRIPTION;Le degré 2 est atteint après avoir réussi trois fois la distinction.;Stufe 2 wird nach dreimaligem Bestehen der Auszeichnung erreicht.
+
+
+
+
+
+
+
+

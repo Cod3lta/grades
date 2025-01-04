@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Particulier" load_steps=3 format=3 uid="uid://uwyoomt1uw3p"]
+
+[ext_resource type="Script" path="res://resources/particuliers/particulier.gd" id="1_mkayg"]
+[ext_resource type="Texture2D" uid="uid://cdtkn4ukvsqy2" path="res://assets/particuliers/operateur-de-bord.svg" id="2_fin0r"]
+
+[resource]
+script = ExtResource("1_mkayg")
+type = 1
+name = "TR_PARTICULIERS_OPERATEUR_DE_BORD_NAME"
+texture_c = ExtResource("2_fin0r")
+favourite = false

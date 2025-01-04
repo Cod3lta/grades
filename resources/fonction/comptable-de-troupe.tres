@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://c4dmicxn2gp6p"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_1b7oc"]
+[ext_resource type="Texture2D" uid="uid://c0j4nydrhdudk" path="res://assets/fonctions/comptable-de-troupe-a.svg" id="2_rp8hc"]
+[ext_resource type="Texture2D" uid="uid://dm18ie1jrl6cb" path="res://assets/fonctions/comptable-de-troupe-c.svg" id="3_rlk6b"]
+
+[resource]
+script = ExtResource("1_1b7oc")
+description = ""
+name = "TR_FONCTION_COMPTABLE_DE_TROUPE_NAME"
+texture_a = ExtResource("2_rp8hc")
+texture_c = ExtResource("3_rlk6b")
+favourite = false

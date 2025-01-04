@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://bwkuc1jqrpvia"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_r4vj0"]
+[ext_resource type="Texture2D" uid="uid://dj5334oc2okq6" path="res://assets/fonctions/sapeur-de-chars-a.svg" id="2_iov5g"]
+[ext_resource type="Texture2D" uid="uid://dq5v53l6msppr" path="res://assets/fonctions/sapeur-de-chars-c.svg" id="3_moj1q"]
+
+[resource]
+script = ExtResource("1_r4vj0")
+description = ""
+name = "TR_FONCTION_SAPEUR_DE_CHARS_NAME"
+texture_a = ExtResource("2_iov5g")
+texture_c = ExtResource("3_moj1q")
+favourite = false

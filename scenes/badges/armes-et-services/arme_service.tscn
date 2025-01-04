@@ -1,0 +1,45 @@
+[gd_scene load_steps=5 format=3 uid="uid://7rh0pwors47e"]
+
+[ext_resource type="Theme" uid="uid://si08rmojap6x" path="res://theme.tres" id="1_jxucw"]
+[ext_resource type="Script" path="res://scenes/badges/armes-et-services/arme_service.gd" id="2_ijs1s"]
+[ext_resource type="Resource" uid="uid://bdu0y17yfjnhx" path="res://resources/armes-et-services/aide-au-commandement.tres" id="3_kcsi5"]
+[ext_resource type="Texture2D" uid="uid://dv56ndhqdb3jc" path="res://assets/armes-et-services/aide-au-commandement-a.svg" id="4_v3p6i"]
+
+[node name="ArmeService" type="MarginContainer" node_paths=PackedStringArray("name_label", "texture_rect_a", "texture_rect_c", "text_container")]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 300.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme = ExtResource("1_jxucw")
+script = ExtResource("2_ijs1s")
+r = ExtResource("3_kcsi5")
+name_label = NodePath("HBoxContainer/Name")
+texture_rect_a = NodePath("HBoxContainer/Texture")
+texture_rect_c = NodePath("HBoxContainer/Texture")
+show_text = true
+text_container = NodePath("HBoxContainer/Name")
+setup = Callable()
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 30
+
+[node name="Texture" type="TextureRect" parent="HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 300)
+layout_mode = 2
+texture = ExtResource("4_v3p6i")
+expand_mode = 4
+stretch_mode = 5
+
+[node name="Name" type="Label" parent="HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 45
+text = "Troupes d’aide au commandement"
+autowrap_mode = 3

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://cmvyk5x2rvg0l"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_qa716"]
+[ext_resource type="Texture2D" uid="uid://b4oeulamm7oax" path="res://assets/fonctions/president-a.svg" id="2_rdeol"]
+[ext_resource type="Texture2D" uid="uid://dhs0pm1fsgl6e" path="res://assets/fonctions/president-c.svg" id="3_1rmo0"]
+
+[resource]
+script = ExtResource("1_qa716")
+description = ""
+name = "TR_FONCTION_PRESIDENT_NAME"
+texture_a = ExtResource("2_rdeol")
+texture_c = ExtResource("3_1rmo0")
+favourite = false

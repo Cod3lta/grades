@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://c0bnryk7x3o2d"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_abndr"]
+[ext_resource type="Texture2D" uid="uid://b1twf4j71gc48" path="res://assets/fonctions/soldat-de-transmission-a.svg" id="2_nw6ku"]
+[ext_resource type="Texture2D" uid="uid://b1kkhoxn81ieh" path="res://assets/fonctions/soldat-de-transmission-c.svg" id="3_j6p7f"]
+
+[resource]
+script = ExtResource("1_abndr")
+description = ""
+name = "TR_FONCTION_SOLDAT_DE_TRANSMISSION_NAME"
+texture_a = ExtResource("2_nw6ku")
+texture_c = ExtResource("3_j6p7f")
+favourite = false

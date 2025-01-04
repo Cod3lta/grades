@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://dmsp0avvkpdwo"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_b0oiv"]
+[ext_resource type="Texture2D" uid="uid://iupgic7yy0tc" path="res://assets/fonctions/greffier-de-tribunal-a.svg" id="2_iewjh"]
+[ext_resource type="Texture2D" uid="uid://c8rbiafi6iny1" path="res://assets/fonctions/greffier-de-tribunal-c.svg" id="3_s7dk0"]
+
+[resource]
+script = ExtResource("1_b0oiv")
+description = ""
+name = "TR_FONCTION_GREFFIER_DE_TRIBUNAL_NAME"
+texture_a = ExtResource("2_iewjh")
+texture_c = ExtResource("3_s7dk0")
+favourite = false

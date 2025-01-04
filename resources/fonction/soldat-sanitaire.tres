@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://dpi7c3p6wg83b"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_dbswq"]
+[ext_resource type="Texture2D" uid="uid://cyasi4p0qof7r" path="res://assets/fonctions/soldat-sanitaire-a.svg" id="2_8jik4"]
+[ext_resource type="Texture2D" uid="uid://s17wlw8hu5bv" path="res://assets/fonctions/soldat-sanitaire-c.svg" id="3_md5nl"]
+
+[resource]
+script = ExtResource("1_dbswq")
+description = ""
+name = "TR_FONCTION_SOLDAT_SANITAIRE_NAME"
+texture_a = ExtResource("2_8jik4")
+texture_c = ExtResource("3_md5nl")
+favourite = false

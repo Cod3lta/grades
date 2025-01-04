@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ArmeService" load_steps=4 format=3 uid="uid://cf6minqmrlyh5"]
+
+[ext_resource type="Script" path="res://resources/armes-et-services/arme-service.gd" id="1_jic5b"]
+[ext_resource type="Texture2D" uid="uid://6e4flqnwygs" path="res://assets/armes-et-services/defense-nbc-a.svg" id="2_t7yml"]
+[ext_resource type="Texture2D" uid="uid://5jhullt8g8h2" path="res://assets/armes-et-services/defense-nbc-c.svg" id="3_b2qts"]
+
+[resource]
+script = ExtResource("1_jic5b")
+type = 1
+name = "TR_ARME_SERVICE_DEFENSE_NBC_NAME"
+texture_a = ExtResource("2_t7yml")
+texture_c = ExtResource("3_b2qts")
+favourite = false

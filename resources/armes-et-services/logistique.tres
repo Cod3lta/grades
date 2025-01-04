@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ArmeService" load_steps=4 format=3 uid="uid://bagqdu65d6dfd"]
+
+[ext_resource type="Script" path="res://resources/armes-et-services/arme-service.gd" id="1_s7sxj"]
+[ext_resource type="Texture2D" uid="uid://bbch2w3iv0boc" path="res://assets/armes-et-services/logistique-a.svg" id="2_bmt6s"]
+[ext_resource type="Texture2D" uid="uid://dsa1fcwcrfv8k" path="res://assets/armes-et-services/logistique-c.svg" id="3_xek86"]
+
+[resource]
+script = ExtResource("1_s7sxj")
+type = 1
+name = "TR_ARME_SERVICE_LOGISTIQUE_NAME"
+texture_a = ExtResource("2_bmt6s")
+texture_c = ExtResource("3_xek86")
+favourite = false

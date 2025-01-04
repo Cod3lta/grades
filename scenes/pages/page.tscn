@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://doqnbbhcef63p"]
+
+[ext_resource type="Script" path="res://scenes/pages/page.gd" id="1_atpux"]
+
+[node name="Page" type="MarginContainer"]
+script = ExtResource("1_atpux")

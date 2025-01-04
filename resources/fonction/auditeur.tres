@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://bgns7rvgo6t7s"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_ipd4j"]
+[ext_resource type="Texture2D" uid="uid://b3h1sfef2mwt5" path="res://assets/fonctions/auditeur-a.svg" id="2_4y4cx"]
+[ext_resource type="Texture2D" uid="uid://cykijy4qofgi0" path="res://assets/fonctions/auditeur-c.svg" id="3_h7vv5"]
+
+[resource]
+script = ExtResource("1_ipd4j")
+description = ""
+name = "TR_FONCTION_AUDITEUR_NAME"
+texture_a = ExtResource("2_4y4cx")
+texture_c = ExtResource("3_h7vv5")
+favourite = false

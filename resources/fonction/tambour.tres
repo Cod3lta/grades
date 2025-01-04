@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://b8k5rcpiuk1mk"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_tlpaa"]
+[ext_resource type="Texture2D" uid="uid://x2hq5lpit8ad" path="res://assets/fonctions/tambour-a.svg" id="2_sij23"]
+[ext_resource type="Texture2D" uid="uid://dsni0bj47as30" path="res://assets/fonctions/tambour-c.svg" id="3_ra218"]
+
+[resource]
+script = ExtResource("1_tlpaa")
+description = ""
+name = "TR_FONCTION_TAMBOUR_NAME"
+texture_a = ExtResource("2_sij23")
+texture_c = ExtResource("3_ra218")
+favourite = false

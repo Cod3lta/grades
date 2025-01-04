@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Fonction" load_steps=4 format=3 uid="uid://bj0qpkloo1tbi"]
+
+[ext_resource type="Script" path="res://resources/fonction/fonction.gd" id="1_hqrui"]
+[ext_resource type="Texture2D" uid="uid://473dwpajluvh" path="res://assets/fonctions/mecanicien-sur-appareils-a.svg" id="2_jyee5"]
+[ext_resource type="Texture2D" uid="uid://blocgh8ssihr8" path="res://assets/fonctions/mecanicien-sur-appareils-c.svg" id="3_cw16q"]
+
+[resource]
+script = ExtResource("1_hqrui")
+description = ""
+name = "TR_FONCTION_MECANICIEN_SUR_APPAREILS_NAME"
+texture_a = ExtResource("2_jyee5")
+texture_c = ExtResource("3_cw16q")
+favourite = false

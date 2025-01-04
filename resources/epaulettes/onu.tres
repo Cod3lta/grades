@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Epaulettes" load_steps=3 format=3 uid="uid://mpr2snpn8sfn"]
+
+[ext_resource type="Script" path="res://resources/epaulettes/epaulettes.gd" id="1_156nu"]
+[ext_resource type="Texture2D" uid="uid://cbivqvmpobmwo" path="res://assets/epaulettes/onu.svg" id="2_sqoy0"]
+
+[resource]
+script = ExtResource("1_156nu")
+incorporation = "TR_EPAULETTE_ONU_INCORPORATION"
+name = "TR_EPAULETTE_ONU_NAME"
+texture_a = ExtResource("2_sqoy0")
+favourite = false

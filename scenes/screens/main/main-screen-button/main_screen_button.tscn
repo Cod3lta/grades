@@ -1,0 +1,90 @@
+[gd_scene load_steps=7 format=3 uid="uid://005sihdith00"]
+
+[ext_resource type="Theme" uid="uid://si08rmojap6x" path="res://theme.tres" id="1_r2qxl"]
+[ext_resource type="Script" path="res://scenes/screens/main/main-screen-button/main_screen_button.gd" id="2_p5ke8"]
+[ext_resource type="Shader" path="res://scenes/screens/main/main-screen-button/main_screen_button.gdshader" id="3_3kclt"]
+[ext_resource type="Script" path="res://scenes/touch_button.gd" id="3_7clol"]
+[ext_resource type="Texture2D" uid="uid://blkugqelmf2a" path="res://assets/boutons/Vector(1).svg" id="3_nqape"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tqnr0"]
+resource_local_to_scene = true
+shader = ExtResource("3_3kclt")
+shader_parameter/color = Vector3(0.113725, 0.113725, 0.113725)
+shader_parameter/image = ExtResource("3_nqape")
+
+[node name="MainButton" type="MarginContainer" groups=["screens_btn"]]
+clip_contents = true
+custom_minimum_size = Vector2(0, 456)
+offset_right = 456.0
+offset_bottom = 456.0
+size_flags_horizontal = 3
+theme = ExtResource("1_r2qxl")
+script = ExtResource("2_p5ke8")
+text = "Texte exemple"
+page_position = 1
+background_image = ExtResource("3_nqape")
+background_image_size = 0.44
+background_image_position = Vector2(-35.91, 0)
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+layout_mode = 2
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(456, 456)
+render_target_update_mode = 4
+
+[node name="MarginContainer2" type="MarginContainer" parent="SubViewportContainer/SubViewport"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("1_r2qxl")
+
+[node name="Button" type="Button" parent="SubViewportContainer/SubViewport/MarginContainer2"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 1
+theme_type_variation = &"Button"
+script = ExtResource("3_7clol")
+
+[node name="BackgroundMargin" type="Control" parent="SubViewportContainer/SubViewport/MarginContainer2"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+
+[node name="BackgroundImage" type="TextureRect" parent="SubViewportContainer/SubViewport/MarginContainer2/BackgroundMargin"]
+unique_name_in_owner = true
+material = SubResource("ShaderMaterial_tqnr0")
+layout_mode = 2
+offset_left = -99.2712
+offset_top = 103.603
+offset_right = 227.772
+offset_bottom = 352.397
+mouse_filter = 2
+texture = ExtResource("3_nqape")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="MarginContainer" type="MarginContainer" parent="SubViewportContainer/SubViewport/MarginContainer2"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_right = 40
+
+[node name="Label" type="Label" parent="SubViewportContainer/SubViewport/MarginContainer2/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"Bold"
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Texte exemple"
+horizontal_alignment = 1
+autowrap_mode = 3
+uppercase = true
+
+[connection signal="touch_pressed" from="SubViewportContainer/SubViewport/MarginContainer2/Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://bv7k0ytuga3jb"
+
+[deps]
+
+files=["res://localization/test_grades.fr.translation", "res://localization/test_grades.de.translation"]
+
+source_file="res://localization/test_grades.csv"
+dest_files=["res://localization/test_grades.fr.translation", "res://localization/test_grades.de.translation"]
+
+[params]
+
+compress=true
+delimiter=1

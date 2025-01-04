@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ArmeService" load_steps=4 format=3 uid="uid://bjpwnso4usdts"]
+
+[ext_resource type="Script" path="res://resources/armes-et-services/arme-service.gd" id="1_iffk0"]
+[ext_resource type="Texture2D" uid="uid://csh0j6t2sfx7u" path="res://assets/armes-et-services/etat-major-general-a.svg" id="2_cgdvp"]
+[ext_resource type="Texture2D" uid="uid://cnga5jx14egmo" path="res://assets/armes-et-services/etat-major-general-c.svg" id="3_2lnlc"]
+
+[resource]
+script = ExtResource("1_iffk0")
+type = 2
+name = "TR_ARME_SERVICE_ETAT_MAJOR_GENERAL_NAME"
+texture_a = ExtResource("2_cgdvp")
+texture_c = ExtResource("3_2lnlc")
+favourite = false

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Epaulettes" load_steps=3 format=3 uid="uid://dxoosi2gh0h4p"]
+
+[ext_resource type="Script" path="res://resources/epaulettes/epaulettes.gd" id="1_cgipn"]
+[ext_resource type="Texture2D" uid="uid://6mb1ytxmo1ew" path="res://assets/epaulettes/sanitaire.svg" id="2_8sufw"]
+
+[resource]
+script = ExtResource("1_cgipn")
+incorporation = "TR_EPAULETTE_SANITAIRE_INCORPORATION"
+name = "TR_EPAULETTE_SANITAIRE_NAME"
+texture_a = ExtResource("2_8sufw")
+favourite = false
