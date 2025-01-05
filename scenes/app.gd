@@ -28,6 +28,7 @@ func _ready() -> void:
 		%PageSwipeDown.swiping_down.connect(screen.swiping_down)
 		%PageSwipeDown.swiping_rejected.connect(screen.swiping_rejected)
 
+
 func go_back_requested() -> void:
 	var modal: Modal = %ModalContainer.get_modal()
 	var page: Page = %PageContainer.get_page()

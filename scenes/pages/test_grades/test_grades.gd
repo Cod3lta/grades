@@ -9,7 +9,7 @@ var grade_score_scene = preload("res://scenes/pages/test_grades/grade_score.tscn
 var grade_modal_scene = preload("res://scenes/modals/grades/GradeModal.tscn")
 
 
-func _ready() -> void:
+func opening() -> void:
 	update_results()
 
 
@@ -63,6 +63,7 @@ func set_result_table() -> void:
 		date.text = str('il y a ', difference_days, ' jours')
 		progress_bar.value = test.correct.size() * 100 / test.nb_questions
 		progress_bar.show_percentage = false
+		progress_bar.size_flags_vertical = Control.SIZE_SHRINK_CENTER
 		%ResultsGrid.add_child(date)
 		%ResultsGrid.add_child(progress_bar)
 
@@ -92,8 +93,10 @@ func set_grades_rank() -> void:
 		var badge: Badge = modal_opener.get_child(1)
 		# Set nodes parameters
 		modal_opener.linked_modal = grade_modal_scene
+		#btn.button_pressed.connect(show_modal)
+		modal_opener.button_pressed.connect(app.show_modal)
 		badge.r = grade
-		#var score: float = get_grade_score(, badges_score[grade][""])
+		
 		grade_score.won = badges_score[grade]["correct"]
 		grade_score.total = badges_score[grade]["total"]
 		score_nodes.push_back(grade_score)
@@ -109,7 +112,7 @@ func set_grades_rank() -> void:
 	for s in score_nodes:
 		var color: Color = Color("#959595")
 		if _min < _max:
-			color = lerp(Color.FIREBRICK, Color.GREEN, rank_color_curve.sample(remap(s.get_score(), _min, _max, 0, 1)))
+			color = lerp(Color("6976d9"), Color("95e42c"), rank_color_curve.sample(remap(s.get_score(), _min, _max, 0, 1)))
 		s.get_child(1).add_theme_color_override("font_color", color)
 		s.get_child(1).set_text(str(s.won, '/', s.total))
 		%GradeScores.add_child(s)

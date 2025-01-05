@@ -18,7 +18,6 @@ linked_modal = ExtResource("2_cb1cw")
 layout_mode = 2
 texture_size = "small"
 show_text = false
-setup = Callable()
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 2

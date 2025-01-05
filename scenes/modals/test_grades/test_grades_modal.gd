@@ -71,15 +71,17 @@ func setup_grades_to_ask() -> void:
 	# Shuffle to avoid alphabetical order
 	grades.shuffle()
 	grades.sort_custom(custom_sort)
-	# If nb_questions = 10, we take the 6 first grades of the array (=the 6 with the lowest score)
-	var nb_lowest_grades: int = floor(nb_questions * 2/3)
+	# If nb_questions = 10, we take the 3 first grades of the array (=the 3 with the lowest score)
+	var nb_lowest_grades: int = floor(nb_questions * 1/2)
 	grades_to_ask = grades.slice(0, nb_lowest_grades)
 	# Then we push 4 random grades from the rest of the array
 	for g in range(nb_questions - nb_lowest_grades):
 		var filter: Callable = func(a):
 			return a not in grades_to_ask
-		var random_grade: Grade = grades.slice(nb_lowest_grades, nb_questions).filter(filter).pick_random()
+		var random_grade: Grade = grades.slice(nb_lowest_grades, grades.size()).filter(filter).pick_random()
 		grades_to_ask.push_back(random_grade)
+	#for g in grades_to_ask:
+		#print(g.name)
 	grades_to_ask.shuffle()
 
 

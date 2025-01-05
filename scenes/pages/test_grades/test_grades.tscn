@@ -92,6 +92,38 @@ layout_mode = 2
 theme_override_constants/separation = 135
 metadata/_tab_index = 0
 
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer/TabContainer/ResultsContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = -40
+theme_override_constants/margin_right = -40
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/TabContainer/ResultsContainer/MarginContainer3"]
+layout_mode = 2
+
+[node name="ScoresContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/ResultsContainer"]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="Label" type="Label" parent="VBoxContainer/TabContainer/ResultsContainer/ScoresContainer"]
+layout_mode = 2
+theme_type_variation = &"Header4"
+text = "TR_SCORE_PAR_GRADE"
+
+[node name="GradeScores" type="HFlowContainer" parent="VBoxContainer/TabContainer/ResultsContainer/ScoresContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/h_separation = 30
+theme_override_constants/v_separation = 30
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/TabContainer/ResultsContainer/ScoresContainer"]
+visible = false
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_n4h6q")
+vertical_scroll_mode = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/TabContainer/ResultsContainer/ScoresContainer/ScrollContainer"]
+layout_mode = 2
+
 [node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/TabContainer/ResultsContainer"]
 layout_mode = 2
 theme_override_constants/margin_left = -40
@@ -135,38 +167,6 @@ layout_mode = 2
 size_flags_horizontal = 3
 theme_override_colors/font_color = Color(0.584314, 0.584314, 0.584314, 1)
 text = "TR_SCORE"
-
-[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer/TabContainer/ResultsContainer"]
-layout_mode = 2
-theme_override_constants/margin_left = -40
-theme_override_constants/margin_right = -40
-
-[node name="HSeparator" type="HSeparator" parent="VBoxContainer/TabContainer/ResultsContainer/MarginContainer3"]
-layout_mode = 2
-
-[node name="ScoresContainer" type="VBoxContainer" parent="VBoxContainer/TabContainer/ResultsContainer"]
-layout_mode = 2
-theme_override_constants/separation = 30
-
-[node name="Label" type="Label" parent="VBoxContainer/TabContainer/ResultsContainer/ScoresContainer"]
-layout_mode = 2
-theme_type_variation = &"Header4"
-text = "TR_SCORE_PAR_GRADE"
-
-[node name="GradeScores" type="HFlowContainer" parent="VBoxContainer/TabContainer/ResultsContainer/ScoresContainer"]
-unique_name_in_owner = true
-layout_mode = 2
-theme_override_constants/h_separation = 30
-theme_override_constants/v_separation = 30
-
-[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/TabContainer/ResultsContainer/ScoresContainer"]
-visible = false
-layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_n4h6q")
-vertical_scroll_mode = 0
-
-[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/TabContainer/ResultsContainer/ScoresContainer/ScrollContainer"]
-layout_mode = 2
 
 [node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/TabContainer"]
 visible = false

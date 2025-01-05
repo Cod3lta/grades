@@ -15,7 +15,7 @@ var margin_top: int = 0:
 
 func get_page() -> Page:
 	if node_container.get_child_count() > 0 and not closing:
-		return node_container.get_child(0)
+		return node_container.get_current_tab_control()
 	return null
 
 
