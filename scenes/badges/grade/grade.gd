@@ -8,9 +8,8 @@ func _ready() -> void:
 		"medium": Vector2(200, 400),
 		"large": Vector2(250, 500)
 	}
-	#setup = setup_specific
 	super._ready()
 
-func setup() -> void:
+func update() -> void:
 	%Abbr.set_text(r.short)
-	super.setup()
+	super.update()

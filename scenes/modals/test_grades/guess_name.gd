@@ -3,7 +3,7 @@ extends VBoxContainer
 
 func setup(grades: Array) -> void:
 	%Grade.r = grades[0]
-	%Grade.setup.call()
+	%Grade.update()
 	grades.shuffle()
 	var i: int = 0
 	for btn: Button in $VBoxContainer.get_children():

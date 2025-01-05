@@ -25,9 +25,10 @@ var modal_opener_scene = preload("res://scenes/pages/modal_opener.tscn")
 
 func _ready() -> void:
 	for epaulette in epaulettes:
-		var epaulette_node: Node = epaulettes_scene.instantiate()
+		var epaulette_node: Badge = epaulettes_scene.instantiate()
 		var modal_opener: Node = modal_opener_scene.instantiate()
 		epaulette_node.r = epaulette
 		modal_opener.linked_modal = epaulettes_modal
+		update_badges_type.connect(epaulette_node.set_type)
 		modal_opener.add_child(epaulette_node)
 		$VBoxContainer/EpaulettesContainer.add_child(modal_opener)

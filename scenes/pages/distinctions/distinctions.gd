@@ -41,19 +41,21 @@ func _ready() -> void:
 	_on_disposition_changed(0)
 	for distinction in distinctions:
 		# Grid disposition
-		var distinction_grid: Node = distinction_scene.instantiate()
+		var distinction_grid: Badge = distinction_scene.instantiate()
 		var modal_opener_grid: Node = modal_opener_scene.instantiate()
 		distinction_grid.r = distinction
 		modal_opener_grid.linked_modal = distinction_modal
 		distinction_grid.show_text = false
+		update_badges_type.connect(distinction_grid.set_type)
 		modal_opener_grid.add_child(distinction_grid)
 		$VBoxContainer/GridDisposition.add_child(modal_opener_grid)
 		# List disposition
-		var distinction_list: Node = distinction_scene.instantiate()
+		var distinction_list: Badge = distinction_scene.instantiate()
 		var modal_opener_list: Node = modal_opener_scene.instantiate()
 		distinction_list.r = distinction
 		modal_opener_list.linked_modal = distinction_modal
 		distinction_list.show_text = true
+		update_badges_type.connect(distinction_list.set_type)
 		modal_opener_list.add_child(distinction_list)
 		$VBoxContainer/ListDisposition.add_child(modal_opener_list)
 

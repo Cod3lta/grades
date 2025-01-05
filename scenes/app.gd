@@ -15,6 +15,18 @@ func _ready() -> void:
 	else:
 		TranslationServer.set_locale("fr")
 
+	var buttons_open_page: Array = get_tree().get_nodes_in_group("show_page")
+	for btn in buttons_open_page:
+		btn.button_pressed.connect(show_page)
+	
+	var buttons_open_modal: Array = get_tree().get_nodes_in_group("show_modal")
+	for btn in buttons_open_modal:
+		btn.button_pressed.connect(show_modal)
+	
+	# For the 3d model's animation when swiping down
+	for screen: Screen in %ScreenContainer.node_container.get_children():
+		%PageSwipeDown.swiping_down.connect(screen.swiping_down)
+		%PageSwipeDown.swiping_rejected.connect(screen.swiping_rejected)
 
 func go_back_requested() -> void:
 	var modal: Modal = %ModalContainer.get_modal()
@@ -30,15 +42,6 @@ func go_back_requested() -> void:
 
 
 func screens_changed(index: int):
-	# Reconnect the buttons on the new screen
-	var buttons: Array = get_tree().get_nodes_in_group("screens_btn")
-	for btn in buttons:
-		btn.button_pressed.connect(show_page)
-	
-	# For the 3d model's animation when swiping down
-	%PageSwipeDown.swiping_down.connect(%ScreenContainer.get_screen().swiping_down)
-	%PageSwipeDown.swiping_rejected.connect(%ScreenContainer.get_screen().swiping_rejected)
-	
 	# Set the footer's button's colors
 	var nav_buttons: Array = $Footer/HBoxContainer.get_children()
 	for nav_btn in nav_buttons:
@@ -51,7 +54,9 @@ func screens_changed(index: int):
 	nav_buttons[index].add_theme_color_override("icon_hover_color", Color("7E6561"))
 	nav_buttons[index].add_theme_color_override("icon_pressed_color", Color("7E6561"))
 	nav_buttons[index].add_theme_color_override("icon_focus_color", Color("7E6561"))
-
+	
+	%ScreenContainer.get_screen().open_animation()
+	
 
 # TODO: Don't use the 'screenshot' method anymore, but having dedicated viewports
 # for the button & page to animate so they can be displayed 'in real time' with
@@ -61,30 +66,21 @@ func screens_changed(index: int):
 func show_page(button: MainScreenButton) -> void:
 	hide_footer()
 	%PageContainer.margin_top = button.page_position
+	%PageContainer.scroll_vertical = 0
 	
-	var page_instance: Node = button.linked_page.instantiate()
-	page_instance.tenue_type = button.tenue_type
-	#TODO: takes too much processing time depending on the page
-	%PageContainer.node_container.add_child.call_deferred(page_instance)
+	var page: Page = %PageContainer.get_page_by_scene(button.linked_page_name)
+	page.opening()
+	page.tenue_type = button.tenue_type
+	%PageContainer.node_container.current_tab = page.get_index()
 	
-	
+	# Play the animation
 	button.set_visibility_layer_bit(0, false)
 	$PageViewport.set_visibility_layer_bit(0, false)
 	$PageViewport.visible = true
-	
-	await page_instance.ready
-	await get_tree().process_frame
-	
-	# Play the animation
 	transition.screen_to_page(
 		button, 
 		%PageContainer, 
 		%PageViewport/SubViewport.get_viewport())
-	
-	# Connect the buttons on the new page
-	var buttons: Array = get_tree().get_nodes_in_group("show_modal")
-	for btn in buttons:
-		btn.button_pressed.connect(show_modal)
 	await transition.animation_finished
 	button.set_visibility_layer_bit(0, true)
 	$PageViewport.set_visibility_layer_bit(0, true)

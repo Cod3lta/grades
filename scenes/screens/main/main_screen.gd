@@ -1,7 +1,7 @@
 extends Screen
 
 
-func _ready() -> void:
+func open_animation() -> void:
 	%OpenAnimation.add_theme_constant_override("margin_top", -80)
 	%OpenAnimation.add_theme_constant_override("margin_bottom", 80)
 	

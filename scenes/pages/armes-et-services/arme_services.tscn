@@ -26,6 +26,7 @@ theme_override_constants/margin_top = 40
 theme_override_constants/margin_right = 40
 theme_override_constants/margin_bottom = 200
 script = ExtResource("2_dt4en")
+tenue_type = "C"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 2
@@ -79,12 +80,9 @@ layout_mode = 2
 theme_override_constants/separation = 80
 alignment = 1
 
-[node name="GridDisposition" type="HFlowContainer" parent="VBoxContainer"]
+[node name="GridDisposition" type="VBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_constants/h_separation = 60
-theme_override_constants/v_separation = 60
 alignment = 1
-last_wrap_alignment = 1
 
 [node name="ListDisposition" type="VBoxContainer" parent="VBoxContainer"]
 visible = false

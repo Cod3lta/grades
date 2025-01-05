@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://igdegj2lahsa"
-path="res://.godot/imported/logo-skewed.svg-44a6a92046f14649c4fcf02dc78c1548.ctex"
+uid="uid://bgdbvxna7aiy8"
+path="res://.godot/imported/main_screen.svg-9e09a43ac5b9c09c6a95be9aae30faec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ui/logo-skewed.svg"
-dest_files=["res://.godot/imported/logo-skewed.svg-44a6a92046f14649c4fcf02dc78c1548.ctex"]
+source_file="res://assets/ui/main_screen.svg"
+dest_files=["res://.godot/imported/main_screen.svg-9e09a43ac5b9c09c6a95be9aae30faec.ctex"]
 
 [params]
 

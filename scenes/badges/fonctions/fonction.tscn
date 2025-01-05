@@ -19,7 +19,6 @@ name_label = NodePath("HBoxContainer/Name")
 texture_rect_a = NodePath("HBoxContainer/Texture")
 texture_rect_c = NodePath("HBoxContainer/Texture")
 text_container = NodePath("HBoxContainer/Name")
-setup = Callable()
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 2
@@ -41,7 +40,7 @@ custom_minimum_size = Vector2(250, 0)
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 45
-text = "Armurier"
+text = "TR_FONCTION_ARMURIER_NAME"
 autowrap_mode = 3
 
 [node name="Button" type="Button" parent="."]

@@ -4,7 +4,7 @@ class_name Uniform3D
 @export var soldier: Node3D
 @export var start_rotation: float
 
-func _ready() -> void:
+func open_animation() -> void:
 	var end_rotation: Vector3 = soldier.rotation
 	soldier.rotation.y = end_rotation.y + start_rotation
 	var t = get_tree().create_tween()

@@ -1,18 +1,14 @@
-[gd_scene load_steps=18 format=3 uid="uid://cg6mtkhg76hvj"]
+[gd_scene load_steps=14 format=3 uid="uid://cg6mtkhg76hvj"]
 
 [ext_resource type="Theme" uid="uid://si08rmojap6x" path="res://theme.tres" id="1_dfd4h"]
 [ext_resource type="Script" path="res://scenes/screens/tenue_c/tenue_c_screen.gd" id="2_45gi1"]
 [ext_resource type="Texture2D" uid="uid://3qkfbnadefxr" path="res://assets/curve-level.svg" id="3_6qulb"]
 [ext_resource type="PackedScene" uid="uid://c80ksj3kscv3s" path="res://scenes/soldier/soldier_3d.tscn" id="3_578k8"]
 [ext_resource type="PackedScene" uid="uid://005sihdith00" path="res://scenes/screens/main/main-screen-button/main_screen_button.tscn" id="4_ul33p"]
-[ext_resource type="PackedScene" uid="uid://bo37frw78vf4i" path="res://scenes/pages/armes-et-services/arme_services.tscn" id="5_2chrk"]
 [ext_resource type="Script" path="res://scenes/screens/responsive_grid.gd" id="5_6jqpy"]
 [ext_resource type="Texture2D" uid="uid://bpyiviafma026" path="res://assets/boutons/Group 19.svg" id="6_aecr7"]
-[ext_resource type="PackedScene" uid="uid://co5fqnib3ohr2" path="res://scenes/pages/grades/grades.tscn" id="7_qq3m8"]
 [ext_resource type="Texture2D" uid="uid://d3j8515d1eyjw" path="res://assets/boutons/Group 20.svg" id="7_uwg8b"]
 [ext_resource type="Texture2D" uid="uid://db06u5c78478h" path="res://assets/boutons/Group 110.svg" id="8_kq6aj"]
-[ext_resource type="PackedScene" uid="uid://b01r6rg673tdj" path="res://scenes/pages/fonctions/fonctions.tscn" id="9_rfyln"]
-[ext_resource type="PackedScene" uid="uid://cd4gxspu74vig" path="res://scenes/pages/particuliers/particuliers.tscn" id="11_cayq0"]
 
 [sub_resource type="Gradient" id="Gradient_fxtbc"]
 colors = PackedColorArray(0.113725, 0.113725, 0.113725, 1, 0.113725, 0.113725, 0.113725, 0)
@@ -84,6 +80,7 @@ size = Vector2i(1080, 1000)
 render_target_update_mode = 4
 
 [node name="Node3D" parent="VBoxContainer2/MarginContainer2/SubViewportContainer/SubViewport" instance=ExtResource("3_578k8")]
+unique_name_in_owner = true
 
 [node name="TextureRect3" type="TextureRect" parent="VBoxContainer2/MarginContainer2"]
 layout_mode = 2
@@ -127,7 +124,7 @@ layout_mode = 2
 text = "TR_GRADES"
 soldier_position = 6
 tenue_type = "C"
-linked_page = ExtResource("7_qq3m8")
+linked_page_name = "Grades"
 background_image = ExtResource("7_uwg8b")
 background_image_size = 0.35
 background_image_position = Vector2(-35, 0)
@@ -138,7 +135,7 @@ layout_mode = 2
 text = "TR_ARMES_ET_SERVICES"
 soldier_position = 2
 tenue_type = "C"
-linked_page = ExtResource("5_2chrk")
+linked_page_name = "ArmeServices"
 background_image = ExtResource("6_aecr7")
 background_image_size = 0.35
 background_image_position = Vector2(-35, 0)
@@ -149,7 +146,7 @@ layout_mode = 2
 text = "TR_FONCTIONS"
 soldier_position = 3
 tenue_type = "C"
-linked_page = ExtResource("9_rfyln")
+linked_page_name = "Fonctions"
 background_image_size = 0.35
 background_image_position = Vector2(-35, 0)
 
@@ -159,7 +156,7 @@ layout_mode = 2
 text = "TR_PARTICULIERS"
 soldier_position = 7
 tenue_type = "C"
-linked_page = ExtResource("11_cayq0")
+linked_page_name = "Particuliers"
 background_image = ExtResource("8_kq6aj")
 background_image_size = 0.35
 background_image_position = Vector2(-35, 0)

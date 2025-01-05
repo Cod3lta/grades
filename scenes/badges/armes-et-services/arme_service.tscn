@@ -2,7 +2,7 @@
 
 [ext_resource type="Theme" uid="uid://si08rmojap6x" path="res://theme.tres" id="1_jxucw"]
 [ext_resource type="Script" path="res://scenes/badges/armes-et-services/arme_service.gd" id="2_ijs1s"]
-[ext_resource type="Resource" uid="uid://bdu0y17yfjnhx" path="res://resources/armes-et-services/aide-au-commandement.tres" id="3_kcsi5"]
+[ext_resource type="Resource" uid="uid://cf6minqmrlyh5" path="res://resources/armes-et-services/defense-nbc.tres" id="3_3uq1o"]
 [ext_resource type="Texture2D" uid="uid://dv56ndhqdb3jc" path="res://assets/armes-et-services/aide-au-commandement-a.svg" id="4_v3p6i"]
 
 [node name="ArmeService" type="MarginContainer" node_paths=PackedStringArray("name_label", "texture_rect_a", "texture_rect_c", "text_container")]
@@ -14,13 +14,12 @@ size_flags_horizontal = 3
 size_flags_vertical = 0
 theme = ExtResource("1_jxucw")
 script = ExtResource("2_ijs1s")
-r = ExtResource("3_kcsi5")
+r = ExtResource("3_3uq1o")
 name_label = NodePath("HBoxContainer/Name")
 texture_rect_a = NodePath("HBoxContainer/Texture")
 texture_rect_c = NodePath("HBoxContainer/Texture")
 show_text = true
 text_container = NodePath("HBoxContainer/Name")
-setup = Callable()
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 2
@@ -41,5 +40,5 @@ custom_minimum_size = Vector2(250, 0)
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 45
-text = "Troupes d’aide au commandement"
+text = "TR_ARME_SERVICE_DEFENSE_NBC_NAME"
 autowrap_mode = 3

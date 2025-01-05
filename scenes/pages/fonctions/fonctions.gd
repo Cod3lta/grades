@@ -99,10 +99,17 @@ var modal_opener_scene = preload("res://scenes/pages/modal_opener.tscn")
 
 func _ready() -> void:
 	for fonction in fonctions:
-		var fonction_node: Node = fonction_scene.instantiate()
+		var fonction_node: Badge = fonction_scene.instantiate()
 		var modal_opener: Node = modal_opener_scene.instantiate()
 		fonction_node.r = fonction
 		fonction_node.tenue_type = tenue_type
 		modal_opener.linked_modal = fonction_modal
 		modal_opener.add_child(fonction_node)
+		update_badges_type.connect(fonction_node.set_type)
 		$VBoxContainer/FonctionsContainer.add_child(modal_opener)
+
+#func update_badges() -> void:
+	#for fonction_modal_opener: Control in $VBoxContainer/FonctionsContainer.get_children():
+		#var fonction: Badge = fonction_modal_opener.get_child(0)
+		#fonction.tenue_type = tenue_type
+		#fonction.update()

@@ -8,7 +8,8 @@ class_name MainScreenButton
 @export var soldier_position: Uniform3D.CameraPosition = Uniform3D.CameraPosition.DEFAULT
 @export_enum("A", "C") var tenue_type: String = "A"
 @export_category("page")
-@export var linked_page: PackedScene
+#@export var linked_page: PackedScene
+@export var linked_page_name: String
 @export var page_position: PagePosition
 @export_category("Background image")
 @export var background_image: Texture2D

@@ -27,11 +27,9 @@ run/main_scene="res://scenes/app.tscn"
 config/quit_on_go_back=false
 config/features=PackedStringArray("4.3")
 run/low_processor_mode=true
-boot_splash/bg_color=Color(0.113725, 0.113725, 0.113725, 1)
-boot_splash/image="res://assets/ui/home.png"
+boot_splash/image="res://assets/ui/logo-small-bw.png"
 boot_splash/fullsize=false
 config/icon="res://assets/ui/logo-zoomout.png"
-boot_splash/minimum_display_time=500
 
 [display]
 
@@ -59,8 +57,9 @@ folder_colors={
 
 [global_group]
 
-screens_btn=""
 show_modal=""
+show_page=""
+badge=""
 
 [input_devices]
 

@@ -7,6 +7,7 @@
 [ext_resource type="Script" path="res://scenes/pages_container.gd" id="5_26340"]
 [ext_resource type="PackedScene" uid="uid://di183jtkfhqik" path="res://scenes/swipe_down.tscn" id="5_qypmb"]
 [ext_resource type="PackedScene" uid="uid://bajttu25cdiit" path="res://scenes/screens/tenue_a/tenue_a_screen.tscn" id="5_rwll5"]
+[ext_resource type="Texture2D" uid="uid://tkku23s5xa4i" path="res://assets/home.svg" id="6_8bkru"]
 [ext_resource type="Texture2D" uid="uid://cjyrmmki1107l" path="res://assets/ui/down-arrow.svg" id="6_8v1ok"]
 [ext_resource type="PackedScene" uid="uid://cg6mtkhg76hvj" path="res://scenes/screens/tenue_c/tenue_c_screen.tscn" id="6_xv46r"]
 [ext_resource type="Texture2D" uid="uid://diujqwp3wyko4" path="res://assets/ui/tenue-a.svg" id="7_gka7q"]
@@ -23,7 +24,6 @@
 [ext_resource type="PackedScene" uid="uid://dqwt3gud4r17u" path="res://scenes/pages/parametres/parametres.tscn" id="15_vvv5o"]
 [ext_resource type="PackedScene" uid="uid://cd4gxspu74vig" path="res://scenes/pages/particuliers/particuliers.tscn" id="16_yuqbp"]
 [ext_resource type="PackedScene" uid="uid://cvh122afs2rte" path="res://scenes/pages/test_grades/test_grades.tscn" id="17_qg3dc"]
-[ext_resource type="Texture2D" uid="uid://bgdbvxna7aiy8" path="res://assets/ui/main_screen.svg" id="22_nffve"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pk0mu"]
 resource_local_to_scene = true
@@ -361,7 +361,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_i1tyf")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_b8cno")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_i05v6")
 text = " "
-icon = ExtResource("22_nffve")
+icon = ExtResource("6_8bkru")
 icon_alignment = 1
 expand_icon = true
 

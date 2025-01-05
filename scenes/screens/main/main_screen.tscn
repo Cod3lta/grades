@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://k0886xuesryg"]
+[gd_scene load_steps=12 format=3 uid="uid://k0886xuesryg"]
 
 [ext_resource type="Theme" uid="uid://si08rmojap6x" path="res://theme.tres" id="1_ed23a"]
 [ext_resource type="Script" path="res://scenes/screens/main/main_screen.gd" id="2_1853d"]
@@ -6,10 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://c6jhs35actajq" path="res://assets/ui/logo-bw.svg" id="4_jwqbx"]
 [ext_resource type="PackedScene" uid="uid://005sihdith00" path="res://scenes/screens/main/main-screen-button/main_screen_button.tscn" id="4_tenc8"]
 [ext_resource type="Script" path="res://scenes/screens/responsive_grid.gd" id="5_kb26i"]
-[ext_resource type="PackedScene" uid="uid://co5fqnib3ohr2" path="res://scenes/pages/grades/grades.tscn" id="5_smfmh"]
 [ext_resource type="Texture2D" uid="uid://d3j8515d1eyjw" path="res://assets/boutons/Group 20.svg" id="6_rlkr2"]
-[ext_resource type="PackedScene" uid="uid://cvh122afs2rte" path="res://scenes/pages/test_grades/test_grades.tscn" id="8_r032b"]
-[ext_resource type="PackedScene" uid="uid://dqwt3gud4r17u" path="res://scenes/pages/parametres/parametres.tscn" id="9_nrtj5"]
 [ext_resource type="Texture2D" uid="uid://12sprc6hx3go" path="res://assets/boutons/cog.svg" id="10_stywq"]
 
 [sub_resource type="Gradient" id="Gradient_uiskm"]
@@ -120,7 +117,8 @@ script = ExtResource("5_kb26i")
 custom_minimum_size = Vector2(0, 490)
 layout_mode = 2
 text = "TR_GRADES"
-linked_page = ExtResource("5_smfmh")
+tenue_type = "C"
+linked_page_name = "Grades"
 page_position = 0
 background_image = ExtResource("6_rlkr2")
 background_image_size = 0.35
@@ -131,7 +129,7 @@ custom_minimum_size = Vector2(0, 490)
 layout_mode = 2
 text = "TR_TEST_DES_GRADES"
 style = 1
-linked_page = ExtResource("8_r032b")
+linked_page_name = "TestGrades"
 page_position = 0
 background_image = ExtResource("6_rlkr2")
 background_image_size = 0.35
@@ -141,7 +139,7 @@ background_image_position = Vector2(-37, 0)
 custom_minimum_size = Vector2(0, 490)
 layout_mode = 2
 text = "TR_PARAMETRES"
-linked_page = ExtResource("9_nrtj5")
+linked_page_name = "Parametres"
 page_position = 0
 background_image = ExtResource("10_stywq")
 background_image_size = 0.35

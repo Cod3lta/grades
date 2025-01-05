@@ -19,6 +19,13 @@ func get_page() -> Page:
 	return null
 
 
+func get_page_by_scene(scene: String) -> Page:
+	for node in node_container.get_children():
+		if node.name == scene:
+			return node
+	return null
+
+
 # Used in the 3d animation to open a page
 func get_panel() -> PanelContainer:
 	return $PageMargin/PanelContainer
@@ -33,7 +40,7 @@ func _on_swiping_accepted(_time_to_close: float) -> void:
 
 
 func _on_swiping_finished() -> void:
-	node_container.get_child(0).queue_free()
+	#node_container.get_child(0).queue_free()
 	closing = false
 
 

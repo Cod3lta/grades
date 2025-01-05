@@ -7,7 +7,7 @@ func setup(grades: Array) -> void:
 	var i: int = 0
 	for c: Control in $VBoxContainer.get_children():
 		c.get_child(0).r = grades[i]
-		c.get_child(0).setup.call()
+		c.get_child(0).update()
 		i += 1
 
 

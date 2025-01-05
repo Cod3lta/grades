@@ -15,5 +15,5 @@ func get_spring_arm(pos: CameraPosition) -> SpringArm3D:
 			return $Positions/Distinctions
 		CameraPosition.EPAULETTE:
 			return $Positions/Epaulettes
-	push_error("Unknown camera position asked")
+	push_error("Unknown camera position asked: ", pos)
 	return $Positions/Default

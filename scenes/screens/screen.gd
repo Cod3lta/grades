@@ -8,9 +8,14 @@ class_name Screen
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	if soldier_scene:
-		var buttons: Array = get_tree().get_nodes_in_group("screens_btn")
+		var buttons: Array = get_tree().get_nodes_in_group("show_page")
 		for btn: MainScreenButton in buttons:
-			btn.button_pressed.connect(soldier_scene.page_opened.bind(tenue))
+			if btn.tenue_type == tenue:
+				btn.button_pressed.connect(soldier_scene.page_opened.bind(tenue))
+
+
+func open_animation() -> void:
+	pass
 
 
 func reset_soldier_camera(time: float) -> void:

@@ -19,7 +19,6 @@ r = ExtResource("3_flw3i")
 name_label = NodePath("HBoxContainer/Name")
 texture_rect_a = NodePath("HBoxContainer/TextureC")
 text_container = NodePath("HBoxContainer/Name")
-setup = Callable()
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 2

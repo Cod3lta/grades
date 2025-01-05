@@ -23,16 +23,21 @@ var texture_sizes: Dictionary = {
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	setup()
+	update()
 
 
 func _process(_delta: float) -> void:
 	if Engine.is_editor_hint():
-		setup()
+		update()
+
+
+func set_type(type : String) -> void:
+	tenue_type = type
+	update()
 
 
 # Setup the common values of the badge (textures, name, size, show_text)
-func setup() -> void:
+func update() -> void:
 	# Textures
 	if tenue_type == "A" and texture_rect_a:
 		texture_rect_a.set_texture(r.texture_a)

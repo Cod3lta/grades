@@ -12,7 +12,7 @@ shader = ExtResource("3_3kclt")
 shader_parameter/color = Vector3(0.113725, 0.113725, 0.113725)
 shader_parameter/image = ExtResource("3_nqape")
 
-[node name="MainButton" type="MarginContainer" groups=["screens_btn"]]
+[node name="MainButton" type="MarginContainer" groups=["show_page"]]
 clip_contents = true
 custom_minimum_size = Vector2(0, 456)
 offset_right = 456.0
@@ -21,6 +21,7 @@ size_flags_horizontal = 3
 theme = ExtResource("1_r2qxl")
 script = ExtResource("2_p5ke8")
 text = "Texte exemple"
+linked_page_name = null
 page_position = 1
 background_image = ExtResource("3_nqape")
 background_image_size = 0.44

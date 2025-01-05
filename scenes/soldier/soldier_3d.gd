@@ -24,6 +24,7 @@ func set_values() -> void:
 	$CameraArm.position = spring_arm.position
 	$CameraArm.rotation = spring_arm.rotation
 	$CameraArm.spring_length = spring_arm.spring_length
+	current_position = get_soldier_node().get_spring_arm(Uniform3D.CameraPosition.DEFAULT)
 	
 
 

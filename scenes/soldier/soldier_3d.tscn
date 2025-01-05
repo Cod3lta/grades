@@ -30,7 +30,6 @@ spring_length = 3.045
 
 [node name="Camera3D" type="Camera3D" parent="CameraArm"]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 current = true
 fov = 15.0
 

@@ -1,7 +1,8 @@
 extends Page
 
 
-func _ready() -> void:
+func opening() -> void:
+	print(TranslationServer.get_locale())
 	%Francais.theme_type_variation = "AccGreenLightButton" if TranslationServer.get_locale() == "fr" else "ContentButton"
 	%Deutsch.theme_type_variation = "AccGreenLightButton" if TranslationServer.get_locale() == "de" else "ContentButton"
 	if DirAccess.dir_exists_absolute("user://results"):
