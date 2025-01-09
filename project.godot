@@ -44,7 +44,7 @@ window/ios/suppress_ui_gesture=false
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/resources_spreadsheet_view/plugin.cfg")
+enabled=PackedStringArray()
 
 [file_customization]
 

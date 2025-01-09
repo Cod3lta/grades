@@ -4,7 +4,7 @@ extends ScrollContainer
 
 var closing: bool = false
 
-var margin_top: int = 0: 
+var margin_top: int = 40: 
 	set(value):
 		if value == MainScreenButton.PagePosition.TOP:
 			margin_top = 40

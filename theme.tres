@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=31 format=3 uid="uid://si08rmojap6x"]
+[gd_resource type="Theme" load_steps=32 format=3 uid="uid://si08rmojap6x"]
 
 [ext_resource type="FontFile" uid="uid://bpch6a5fwb4v7" path="res://assets/ui/Inter-VariableFont_opsz,wght.ttf" id="1_hb8o6"]
 
@@ -157,6 +157,10 @@ corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
+[sub_resource type="FontVariation" id="FontVariation_b6aam"]
+base_font = ExtResource("1_hb8o6")
+variation_embolden = 0.5
+
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0re7e"]
 
 [resource]
@@ -206,6 +210,12 @@ Label/fonts/font = SubResource("FontVariation_qpp1a")
 PanelContainer/styles/panel = SubResource("StyleBoxFlat_4a7yg")
 ProgressBar/styles/background = SubResource("StyleBoxFlat_081sd")
 ProgressBar/styles/fill = SubResource("StyleBoxFlat_8uc0y")
+RichTextLabel/font_sizes/bold_font_size = 50
+RichTextLabel/font_sizes/bold_italics_font_size = 50
+RichTextLabel/font_sizes/italics_font_size = 50
+RichTextLabel/font_sizes/mono_font_size = 50
+RichTextLabel/font_sizes/normal_font_size = 50
+RichTextLabel/fonts/normal_font = SubResource("FontVariation_b6aam")
 TabContainer/styles/panel = SubResource("StyleBoxEmpty_0re7e")
 VScrollBar/icons/decrement = null
 VScrollBar/icons/decrement_highlight = null

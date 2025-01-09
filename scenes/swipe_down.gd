@@ -9,6 +9,9 @@ class_name SwipeDown
 @export var content_child: Control
 # The number of the past frames analyzed for the gesture
 @export var nb_frames_gesture: int = 10
+# If the content can be dismissed by swiping down
+@export var dismissable: bool = true
+
 
 signal swiping_down(percentage: float)
 signal swiping_accepted(time_to_close: float)
@@ -19,7 +22,6 @@ var last_touch_pos = null
 var start_pos: Vector2
 var gesture_quitting: bool = false
 var quit_velocity: float = 0.0
-var dismissable: bool = true
 var nb_frames_since_start: int = 0
 var velocity_last_frames: Array
 

@@ -66,6 +66,7 @@ func screens_changed(index: int):
 # the screensContainer's screenshot won't exist anymore
 func show_page(button: MainScreenButton) -> void:
 	hide_footer()
+	%PageSwipeDown.dismissable = true
 	%PageContainer.margin_top = button.page_position
 	%PageContainer.scroll_vertical = 0
 	
