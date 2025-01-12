@@ -1,6 +1,6 @@
 extends GridContainer
 
-@export_range(150, 1000, 1) var item_max_size: int = 450
+@export_range(500, 1000, 1) var max_width: int = 800
 
 func _ready() -> void:
 	resized.connect(resize)
@@ -9,4 +9,4 @@ func _ready() -> void:
 
 
 func resize() -> void:
-	columns = clamp(floor(size.x / item_max_size), 1, 10)
+	pass#columns = clamp(floor(size.x / item_max_size), 1, 10)

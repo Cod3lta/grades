@@ -2,10 +2,18 @@ extends Control
 
 @onready var transition: Node3D = $Transition/TransitionViewport/Transition3D
 
+# Count the amount of page or modal currently open
+# Can be either 0, 1 or 2
+# Used to hide or show the footer when the var changes betweeen 0 and 1
+var page_depth: int = 0:
+	set(value):
+		page_depth = clampi(value, 0, 10)
+
 func _ready() -> void:
 	get_tree().get_root().go_back_requested.connect(go_back_requested)
 	screens_changed(0)
 	
+	# Set the language
 	var config = ConfigFile.new()
 	if FileAccess.file_exists("user://parameters.cfg"):
 		config.load("user://parameters.cfg")
@@ -14,11 +22,13 @@ func _ready() -> void:
 		TranslationServer.set_locale(OS.get_locale_language())
 	else:
 		TranslationServer.set_locale("fr")
-
+	
+	# Connect buttons to open pages
 	var buttons_open_page: Array = get_tree().get_nodes_in_group("show_page")
 	for btn in buttons_open_page:
 		btn.button_pressed.connect(show_page)
 	
+	# Connect buttons to open modals
 	var buttons_open_modal: Array = get_tree().get_nodes_in_group("show_modal")
 	for btn in buttons_open_modal:
 		btn.button_pressed.connect(show_modal)
@@ -27,6 +37,21 @@ func _ready() -> void:
 	for screen: Screen in %ScreenContainer.node_container.get_children():
 		%PageSwipeDown.swiping_down.connect(screen.swiping_down)
 		%PageSwipeDown.swiping_rejected.connect(screen.swiping_rejected)
+	
+	# Show intro page
+	var intro_seen: bool = config.get_value("parameters", "intro_seen", false)
+	if not intro_seen:
+		# Show the intro page, hide the footer (without animation)
+		var page: Page = %PageContainer.get_page_by_scene("Intro")
+		%PageContainer.node_container.current_tab = page.get_index()
+		%PageSwipeDown.dismissable = false
+		$PageViewport.visible = true
+		%PageContainer.get_node("PageMargin/PanelContainer/VBoxContainer/MarginContainer/DownArrow").visible = false
+		var height: int = %Footer.get_size().y
+		page_depth = 1
+		%Footer.add_theme_constant_override("margin_bottom", %Footer.get_size().y * -1)
+		config.set_value("parameters", "intro_seen", true)
+		config.save("user://parameters.cfg")
 
 
 func go_back_requested() -> void:
@@ -44,17 +69,12 @@ func go_back_requested() -> void:
 
 func screens_changed(index: int):
 	# Set the footer's button's colors
-	var nav_buttons: Array = $Footer/HBoxContainer.get_children()
+	var nav_buttons: Array = $Footer/MarginContainer/HBoxContainer.get_children()
 	for nav_btn in nav_buttons:
-		nav_btn.add_theme_color_override("icon_normal_color", Color("ffffff"))
-		nav_btn.add_theme_color_override("icon_hover_color", Color("ffffff"))
-		nav_btn.add_theme_color_override("icon_pressed_color", Color("ffffff"))
-		nav_btn.add_theme_color_override("icon_focus_color", Color("ffffff"))
+		var img: TextureRect = nav_btn.get_node("VBoxContainer/TextureRect")
+		img.modulate = Color("#ffffff")
 	# Set current nav button's color to brown
-	nav_buttons[index].add_theme_color_override("icon_normal_color", Color("7E6561"))
-	nav_buttons[index].add_theme_color_override("icon_hover_color", Color("7E6561"))
-	nav_buttons[index].add_theme_color_override("icon_pressed_color", Color("7E6561"))
-	nav_buttons[index].add_theme_color_override("icon_focus_color", Color("7E6561"))
+	nav_buttons[index].get_node("VBoxContainer/TextureRect").modulate = Color("#729841")
 	
 	%ScreenContainer.get_screen().open_animation()
 	
@@ -67,6 +87,7 @@ func screens_changed(index: int):
 func show_page(button: MainScreenButton) -> void:
 	hide_footer()
 	%PageSwipeDown.dismissable = true
+	%PageContainer.get_node("PageMargin/PanelContainer/VBoxContainer/MarginContainer/DownArrow").visible = true
 	%PageContainer.margin_top = button.page_position
 	%PageContainer.scroll_vertical = 0
 	
@@ -88,34 +109,44 @@ func show_page(button: MainScreenButton) -> void:
 	$PageViewport.set_visibility_layer_bit(0, true)
 
 
-func close_page() -> void:
-	%PageSwipeDown.accept_swipe_down()
-
-
 func _on_swiping_accepted(time_to_close: float) -> void:
 	%ScreenContainer.get_screen().reset_soldier_camera(time_to_close)
 	await get_tree().create_timer(time_to_close).timeout
-	show_footer()
 	$PageViewport.visible = false
+	show_footer()
 
 
 func show_modal(modal_opener: Control, button: Control) -> void:
 	%ModalContainer.show_modal(modal_opener, button)
+	hide_footer()
+
+
+func _on_modal_swipe_down_swiping_accepted(time_to_close: float) -> void:
+	show_footer()
 
 
 func show_footer() -> void:
-	var footer: Node = %Footer
-	var tween: Tween = get_tree().create_tween()
-	tween.tween_property(footer, "theme_override_constants/margin_bottom", 0, 0.4)\
-		.set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_OUT)
+	page_depth -= 1
+	if page_depth == 0:
+		var footer: Node = %Footer
+		var tween: Tween = get_tree().create_tween()
+		tween.tween_property(footer, "theme_override_constants/margin_bottom", 0, 0.4)\
+			.set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_OUT)
 
 
 func hide_footer() -> void:
-	var footer: Node = %Footer
-	var height: int = footer.get_size().y
-	var tween: Tween = get_tree().create_tween()
-	tween.tween_property(footer, "theme_override_constants/margin_bottom", -height, 0.4)\
-		.set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_IN)
+	page_depth += 1
+	if page_depth == 1:
+		var footer: Node = %Footer
+		var height: int = footer.get_size().y
+		var tween: Tween = get_tree().create_tween()
+		tween.tween_property(footer, "theme_override_constants/margin_bottom", -height, 0.4)\
+			.set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_IN)
+
+
+# Called by the current page in case of a back_request
+func close_page() -> void:
+	%PageSwipeDown.accept_swipe_down()
 
 
 func get_page() -> Page:

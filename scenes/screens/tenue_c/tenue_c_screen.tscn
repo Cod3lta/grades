@@ -31,7 +31,7 @@ fill_to = Vector2(0, 1)
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_bottom = 998.0
+offset_bottom = 328.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
@@ -98,27 +98,33 @@ layout_mode = 2
 size_flags_vertical = 3
 vertical_scroll_mode = 3
 
-[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer2/MarginContainer/ScrollContainer"]
+[node name="FlowContainer" type="FlowContainer" parent="VBoxContainer2/MarginContainer/ScrollContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer2/MarginContainer/ScrollContainer/FlowContainer"]
+custom_minimum_size = Vector2(1000, 0)
+layout_mode = 2
 size_flags_vertical = 3
 theme_override_constants/margin_top = 100
 theme_override_constants/margin_bottom = 400
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/MarginContainer/ScrollContainer/MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/MarginContainer/ScrollContainer/FlowContainer/MarginContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_constants/separation = 45
 
-[node name="GridContainer3" type="GridContainer" parent="VBoxContainer2/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+[node name="GridContainer3" type="GridContainer" parent="VBoxContainer2/MarginContainer/ScrollContainer/FlowContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_constants/h_separation = 20
 theme_override_constants/v_separation = 20
 columns = 2
 script = ExtResource("5_6jqpy")
 
-[node name="BtnGrades" parent="VBoxContainer2/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/GridContainer3" instance=ExtResource("4_ul33p")]
+[node name="BtnGrades" parent="VBoxContainer2/MarginContainer/ScrollContainer/FlowContainer/MarginContainer/VBoxContainer/GridContainer3" instance=ExtResource("4_ul33p")]
 custom_minimum_size = Vector2(0, 490)
 layout_mode = 2
 text = "TR_GRADES"
@@ -129,7 +135,7 @@ background_image = ExtResource("7_uwg8b")
 background_image_size = 0.35
 background_image_position = Vector2(-35, 0)
 
-[node name="BtnArmesEtServices" parent="VBoxContainer2/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/GridContainer3" instance=ExtResource("4_ul33p")]
+[node name="BtnArmesEtServices" parent="VBoxContainer2/MarginContainer/ScrollContainer/FlowContainer/MarginContainer/VBoxContainer/GridContainer3" instance=ExtResource("4_ul33p")]
 custom_minimum_size = Vector2(0, 490)
 layout_mode = 2
 text = "TR_ARMES_ET_SERVICES"
@@ -140,7 +146,7 @@ background_image = ExtResource("6_aecr7")
 background_image_size = 0.35
 background_image_position = Vector2(-35, 0)
 
-[node name="BtnFonctions" parent="VBoxContainer2/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/GridContainer3" instance=ExtResource("4_ul33p")]
+[node name="BtnFonctions" parent="VBoxContainer2/MarginContainer/ScrollContainer/FlowContainer/MarginContainer/VBoxContainer/GridContainer3" instance=ExtResource("4_ul33p")]
 custom_minimum_size = Vector2(0, 490)
 layout_mode = 2
 text = "TR_FONCTIONS"
@@ -150,7 +156,7 @@ linked_page_name = "Fonctions"
 background_image_size = 0.35
 background_image_position = Vector2(-35, 0)
 
-[node name="BtnParticuliers" parent="VBoxContainer2/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/GridContainer3" instance=ExtResource("4_ul33p")]
+[node name="BtnParticuliers" parent="VBoxContainer2/MarginContainer/ScrollContainer/FlowContainer/MarginContainer/VBoxContainer/GridContainer3" instance=ExtResource("4_ul33p")]
 custom_minimum_size = Vector2(0, 490)
 layout_mode = 2
 text = "TR_PARTICULIERS"

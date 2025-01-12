@@ -15,6 +15,7 @@ theme_override_constants/margin_top = 40
 theme_override_constants/margin_right = 40
 theme_override_constants/margin_bottom = 200
 script = ExtResource("2_lwafy")
+metadata/_edit_horizontal_guides_ = [-510.0]
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 2
@@ -23,52 +24,46 @@ theme_override_constants/separation = 135
 [node name="Label" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 theme_type_variation = &"Header2"
-text = "Introduction"
+text = "TR_INTRODUCTION"
 uppercase = true
 
-[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer"]
-layout_mode = 2
-mouse_filter = 1
-bbcode_enabled = true
-text = " [font_size=75][b]Clause de non-responsabilité[/b][/font_size]
-Cette application est développée de manière indépendante et n'est pas une application officielle de l'Armée Suisse. Elle n'est pas affiliée, approuvée ou endossée par l'Armée Suisse.
-Son objectif est uniquement éducatif, pour aider les utilisateurs à apprendre et reconnaître les grades & d'autres insignes de l'Armée Suisse. Toutes les informations présentées sont publiques et utilisées dans un contexte pédagogique.
-
-[font_size=75][b]Sources des informations[/b][/font_size]
-Les informations contenues dans cette application sont basées sur les sources suivantes :
-[ul][url=https://www.armee.ch/fr/insignes-militaires]https://www.armee.ch/fr/insignes-militaires[/url] : Site officiel de l'Armée Suisse présentant les insignes militaires et leurs significations[/ul]
-[ul][url=https://en.wikipedia.org/wiki/Ranks_of_the_Swiss_Army]https://en.wikipedia.org/wiki/Ranks_of_the_Swiss_Army[/url] : Article Wikipédia détaillant la hiérarchie et les grades de l'Armée Suisse[/ul]
-"
-fit_content = true
-
-[node name="NoResult2" type="VBoxContainer" parent="VBoxContainer"]
+[node name="Language" type="VBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_constants/separation = 30
 
-[node name="Label" type="Label" parent="VBoxContainer/NoResult2"]
+[node name="Label" type="Label" parent="VBoxContainer/Language"]
 layout_mode = 2
 theme_type_variation = &"Header4"
 text = "TR_LANGUE"
 
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/NoResult2"]
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/Language"]
 layout_mode = 2
 theme_override_constants/separation = 30
 
-[node name="Francais" type="Button" parent="VBoxContainer/NoResult2/HBoxContainer"]
+[node name="Francais" type="Button" parent="VBoxContainer/Language/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
+mouse_filter = 1
 theme_type_variation = &"AccGreenLightButton"
 text = "Français"
 script = ExtResource("3_4at3m")
 
-[node name="Deutsch" type="Button" parent="VBoxContainer/NoResult2/HBoxContainer"]
+[node name="Deutsch" type="Button" parent="VBoxContainer/Language/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
+mouse_filter = 1
 theme_type_variation = &"ContentButton"
 text = "Deutsch"
 script = ExtResource("3_4at3m")
+
+[node name="Disclaimer" type="RichTextLabel" parent="VBoxContainer"]
+layout_mode = 2
+mouse_filter = 1
+bbcode_enabled = true
+text = "TR_CLAUSE_DE_NON_RESPONSABILITE"
+fit_content = true
 
 [node name="NoResult3" type="VBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
@@ -77,11 +72,12 @@ theme_override_constants/separation = 30
 [node name="Continuer" type="Button" parent="VBoxContainer/NoResult3"]
 layout_mode = 2
 size_flags_horizontal = 3
+mouse_filter = 1
 theme_type_variation = &"ContentButton"
-text = "Continuer"
+text = "TR_CONTINUER"
 script = ExtResource("3_4at3m")
 
-[connection signal="meta_clicked" from="VBoxContainer/RichTextLabel" to="." method="_on_rich_text_label_meta_clicked"]
-[connection signal="touch_pressed" from="VBoxContainer/NoResult2/HBoxContainer/Francais" to="." method="_on_francais_touch_pressed"]
-[connection signal="touch_pressed" from="VBoxContainer/NoResult2/HBoxContainer/Deutsch" to="." method="_on_deutsch_touch_pressed"]
+[connection signal="touch_pressed" from="VBoxContainer/Language/HBoxContainer/Francais" to="." method="_on_francais_touch_pressed"]
+[connection signal="touch_pressed" from="VBoxContainer/Language/HBoxContainer/Deutsch" to="." method="_on_deutsch_touch_pressed"]
+[connection signal="meta_clicked" from="VBoxContainer/Disclaimer" to="." method="_on_rich_text_label_meta_clicked"]
 [connection signal="touch_pressed" from="VBoxContainer/NoResult3/Continuer" to="." method="back_request"]

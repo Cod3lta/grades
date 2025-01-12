@@ -4,10 +4,7 @@ extends Page
 func opening() -> void:
 	%Francais.theme_type_variation = "AccGreenLightButton" if TranslationServer.get_locale() == "fr" else "ContentButton"
 	%Deutsch.theme_type_variation = "AccGreenLightButton" if TranslationServer.get_locale() == "de" else "ContentButton"
-	if DirAccess.dir_exists_absolute("user://results"):
-		%DeleteData.disabled = DirAccess.open("user://results").get_files().size() == 0
-	else:
-		%DeleteData.disabled = true
+	
 
 
 func _on_francais_touch_pressed() -> void:

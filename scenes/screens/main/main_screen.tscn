@@ -1,13 +1,21 @@
-[gd_scene load_steps=12 format=3 uid="uid://k0886xuesryg"]
+[gd_scene load_steps=22 format=3 uid="uid://k0886xuesryg"]
 
 [ext_resource type="Theme" uid="uid://si08rmojap6x" path="res://theme.tres" id="1_ed23a"]
 [ext_resource type="Script" path="res://scenes/screens/main/main_screen.gd" id="2_1853d"]
 [ext_resource type="Texture2D" uid="uid://ca2g1bnnrmcmu" path="res://assets/background.jpg" id="2_fvawe"]
 [ext_resource type="Texture2D" uid="uid://c6jhs35actajq" path="res://assets/ui/logo-bw.svg" id="4_jwqbx"]
 [ext_resource type="PackedScene" uid="uid://005sihdith00" path="res://scenes/screens/main/main-screen-button/main_screen_button.tscn" id="4_tenc8"]
-[ext_resource type="Script" path="res://scenes/screens/responsive_grid.gd" id="5_kb26i"]
 [ext_resource type="Texture2D" uid="uid://d3j8515d1eyjw" path="res://assets/boutons/Group 20.svg" id="6_rlkr2"]
+[ext_resource type="PackedScene" uid="uid://dhq0g6258e0bu" path="res://scenes/pages/modal_opener.tscn" id="7_e0aqa"]
+[ext_resource type="PackedScene" uid="uid://b6ik7amcaq60k" path="res://scenes/badges/grade/grade.tscn" id="8_en2j8"]
+[ext_resource type="Resource" uid="uid://sfpfn8oinab6" path="res://resources/grades/soldat.tres" id="8_ku6f3"]
+[ext_resource type="PackedScene" uid="uid://bopv3ut85pyp7" path="res://scenes/modals/grades/GradeModal.tscn" id="8_prdbl"]
+[ext_resource type="Resource" uid="uid://c4n1sw3mo15pj" path="res://resources/grades/sergent.tres" id="9_qfs4c"]
 [ext_resource type="Texture2D" uid="uid://12sprc6hx3go" path="res://assets/boutons/cog.svg" id="10_stywq"]
+[ext_resource type="Resource" uid="uid://1al8koavmvjf" path="res://resources/grades/lieutenant.tres" id="10_v372g"]
+[ext_resource type="Resource" uid="uid://ctwmdad8xmg7h" path="res://resources/grades/sergent-major-chef.tres" id="11_1rx6n"]
+[ext_resource type="Resource" uid="uid://bpfpf3qqbwe0g" path="res://resources/grades/fourrier.tres" id="12_0sioi"]
+[ext_resource type="Resource" uid="uid://bf861qrd1jmrs" path="res://resources/grades/capitaine.tres" id="13_mwm5r"]
 
 [sub_resource type="Gradient" id="Gradient_uiskm"]
 offsets = PackedFloat32Array(0, 0.7, 1)
@@ -23,10 +31,18 @@ variation_embolden = 0.75
 variation_transform = Transform2D(1, 0.22, 0, 1, 0, 0)
 spacing_top = -5
 
+[sub_resource type="Gradient" id="Gradient_w6rac"]
+interpolation_mode = 2
+colors = PackedColorArray(0.11, 0.11, 0.11, 0, 0.109804, 0.109804, 0.109804, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_djo14"]
+gradient = SubResource("Gradient_w6rac")
+width = 220
+
 [node name="MainScreen" type="MarginContainer"]
 anchors_preset = 10
 anchor_right = 1.0
-offset_bottom = 2000.0
+offset_bottom = 2674.0
 grow_horizontal = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -97,25 +113,39 @@ uppercase = true
 
 [node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
 layout_mode = 2
-size_flags_horizontal = 3
+size_flags_vertical = 3
 theme_override_constants/margin_left = 40
 theme_override_constants/margin_right = 40
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/MarginContainer"]
+[node name="Control" type="HFlowContainer" parent="VBoxContainer/MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="GridContainer" type="VBoxContainer" parent="VBoxContainer/MarginContainer/Control"]
+custom_minimum_size = Vector2(1000, 0)
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="HBoxContainer" type="MarginContainer" parent="VBoxContainer/MarginContainer/Control/GridContainer"]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/MarginContainer/Control/GridContainer/HBoxContainer"]
+custom_minimum_size = Vector2(0, 450)
+layout_mode = 2
+size_flags_horizontal = 3
+horizontal_scroll_mode = 3
+vertical_scroll_mode = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/MarginContainer/Control/GridContainer/HBoxContainer/ScrollContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_constants/separation = 20
 
-[node name="GridContainer" type="GridContainer" parent="VBoxContainer/MarginContainer/VBoxContainer"]
+[node name="BtnGrades" parent="VBoxContainer/MarginContainer/Control/GridContainer/HBoxContainer/ScrollContainer/HBoxContainer" instance=ExtResource("4_tenc8")]
+custom_minimum_size = Vector2(490, 490)
 layout_mode = 2
-theme_override_constants/h_separation = 20
-theme_override_constants/v_separation = 20
-columns = 2
-script = ExtResource("5_kb26i")
-
-[node name="BtnGrades" parent="VBoxContainer/MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("4_tenc8")]
-custom_minimum_size = Vector2(0, 490)
-layout_mode = 2
+size_flags_vertical = 4
 text = "TR_GRADES"
 tenue_type = "C"
 linked_page_name = "Grades"
@@ -124,7 +154,88 @@ background_image = ExtResource("6_rlkr2")
 background_image_size = 0.35
 background_image_position = Vector2(-37, 0)
 
-[node name="BtnTestGrades" parent="VBoxContainer/MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("4_tenc8")]
+[node name="ModalOpener" parent="VBoxContainer/MarginContainer/Control/GridContainer/HBoxContainer/ScrollContainer/HBoxContainer" instance=ExtResource("7_e0aqa")]
+layout_mode = 2
+linked_modal = ExtResource("8_prdbl")
+
+[node name="Grade" parent="VBoxContainer/MarginContainer/Control/GridContainer/HBoxContainer/ScrollContainer/HBoxContainer/ModalOpener" instance=ExtResource("8_en2j8")]
+layout_mode = 2
+size_flags_vertical = 1
+texture_size = "large"
+r = ExtResource("8_ku6f3")
+show_text = false
+
+[node name="ModalOpener2" parent="VBoxContainer/MarginContainer/Control/GridContainer/HBoxContainer/ScrollContainer/HBoxContainer" instance=ExtResource("7_e0aqa")]
+layout_mode = 2
+linked_modal = ExtResource("8_prdbl")
+
+[node name="Grade" parent="VBoxContainer/MarginContainer/Control/GridContainer/HBoxContainer/ScrollContainer/HBoxContainer/ModalOpener2" instance=ExtResource("8_en2j8")]
+layout_mode = 2
+size_flags_vertical = 1
+texture_size = "large"
+r = ExtResource("9_qfs4c")
+show_text = false
+
+[node name="ModalOpener3" parent="VBoxContainer/MarginContainer/Control/GridContainer/HBoxContainer/ScrollContainer/HBoxContainer" instance=ExtResource("7_e0aqa")]
+layout_mode = 2
+linked_modal = ExtResource("8_prdbl")
+
+[node name="Grade" parent="VBoxContainer/MarginContainer/Control/GridContainer/HBoxContainer/ScrollContainer/HBoxContainer/ModalOpener3" instance=ExtResource("8_en2j8")]
+layout_mode = 2
+size_flags_vertical = 1
+texture_size = "large"
+r = ExtResource("10_v372g")
+show_text = false
+
+[node name="ModalOpener4" parent="VBoxContainer/MarginContainer/Control/GridContainer/HBoxContainer/ScrollContainer/HBoxContainer" instance=ExtResource("7_e0aqa")]
+layout_mode = 2
+linked_modal = ExtResource("8_prdbl")
+
+[node name="Grade" parent="VBoxContainer/MarginContainer/Control/GridContainer/HBoxContainer/ScrollContainer/HBoxContainer/ModalOpener4" instance=ExtResource("8_en2j8")]
+layout_mode = 2
+size_flags_vertical = 1
+texture_size = "large"
+r = ExtResource("11_1rx6n")
+show_text = false
+
+[node name="ModalOpener5" parent="VBoxContainer/MarginContainer/Control/GridContainer/HBoxContainer/ScrollContainer/HBoxContainer" instance=ExtResource("7_e0aqa")]
+layout_mode = 2
+linked_modal = ExtResource("8_prdbl")
+
+[node name="Grade" parent="VBoxContainer/MarginContainer/Control/GridContainer/HBoxContainer/ScrollContainer/HBoxContainer/ModalOpener5" instance=ExtResource("8_en2j8")]
+layout_mode = 2
+size_flags_vertical = 1
+texture_size = "large"
+r = ExtResource("12_0sioi")
+show_text = false
+
+[node name="ModalOpener6" parent="VBoxContainer/MarginContainer/Control/GridContainer/HBoxContainer/ScrollContainer/HBoxContainer" instance=ExtResource("7_e0aqa")]
+layout_mode = 2
+linked_modal = ExtResource("8_prdbl")
+
+[node name="Grade" parent="VBoxContainer/MarginContainer/Control/GridContainer/HBoxContainer/ScrollContainer/HBoxContainer/ModalOpener6" instance=ExtResource("8_en2j8")]
+layout_mode = 2
+size_flags_vertical = 1
+texture_size = "large"
+r = ExtResource("13_mwm5r")
+show_text = false
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/MarginContainer/Control/GridContainer/HBoxContainer/ScrollContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 110
+
+[node name="Gradient" type="TextureRect" parent="VBoxContainer/MarginContainer/Control/GridContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+mouse_filter = 2
+texture = SubResource("GradientTexture2D_djo14")
+metadata/_edit_lock_ = true
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/MarginContainer/Control/GridContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="BtnTestGrades" parent="VBoxContainer/MarginContainer/Control/GridContainer/HBoxContainer2" instance=ExtResource("4_tenc8")]
 custom_minimum_size = Vector2(0, 490)
 layout_mode = 2
 text = "TR_TEST_DES_GRADES"
@@ -135,7 +246,7 @@ background_image = ExtResource("6_rlkr2")
 background_image_size = 0.35
 background_image_position = Vector2(-37, 0)
 
-[node name="BtnInsigneNationalite" parent="VBoxContainer/MarginContainer/VBoxContainer/GridContainer" instance=ExtResource("4_tenc8")]
+[node name="BtnParametres" parent="VBoxContainer/MarginContainer/Control/GridContainer/HBoxContainer2" instance=ExtResource("4_tenc8")]
 custom_minimum_size = Vector2(0, 490)
 layout_mode = 2
 text = "TR_PARAMETRES"

@@ -84,6 +84,30 @@ text = "TR_SUPPRIMER_LES_DONNEES"
 autowrap_mode = 3
 script = ExtResource("4_66qs0")
 
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer"]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="Credits" type="RichTextLabel" parent="VBoxContainer"]
+layout_mode = 2
+mouse_filter = 1
+bbcode_enabled = true
+text = "TR_CREDITS"
+fit_content = true
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer"]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="Disclaimer" type="RichTextLabel" parent="VBoxContainer"]
+layout_mode = 2
+mouse_filter = 1
+bbcode_enabled = true
+text = "TR_CLAUSE_DE_NON_RESPONSABILITE"
+fit_content = true
+
 [connection signal="touch_pressed" from="VBoxContainer/NoResult2/HBoxContainer/Francais" to="." method="_on_francais_touch_pressed"]
 [connection signal="touch_pressed" from="VBoxContainer/NoResult2/HBoxContainer/Deutsch" to="." method="_on_deutsch_touch_pressed"]
 [connection signal="touch_pressed" from="VBoxContainer/NoResult3/HBoxContainer/DeleteData" to="." method="_on_delete_data_touch_pressed"]
+[connection signal="meta_clicked" from="VBoxContainer/Credits" to="." method="_on_rich_text_label_meta_clicked"]
+[connection signal="meta_clicked" from="VBoxContainer/Disclaimer" to="." method="_on_rich_text_label_meta_clicked"]

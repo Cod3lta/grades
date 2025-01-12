@@ -1,4 +1,4 @@
-extends Button
+extends Control
 class_name TouchButton
 
 var starting_position: Vector2
